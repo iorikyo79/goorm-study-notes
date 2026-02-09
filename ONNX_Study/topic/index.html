@@ -561,44 +561,39 @@
 <ul>
 <li><strong><a href="../notes/01_Concept_and_Architecture/">01. Concept &amp; Architecture</a></strong><ul>
 <li>ONNX가 무엇이며 왜 필요한가? (Intermediate Representation, IR)</li>
-<li>Computation Graph, Nodes, Operators 구조 이해.</li>
-<li>ProtoBuf(.onnx) 파일과 Opset Versioning.</li>
+<li>Computation Graph, Nodes, Operators, Opset Versioning.</li>
 </ul>
 </li>
 </ul>
 <h3 id="phase-2-the-art-of-conversion">Phase 2: 변환의 기술 (The Art of Conversion)<a class="headerlink" href="#phase-2-the-art-of-conversion" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><a href="../notes/02_Tracing_and_Export/">02. Tracing &amp; Export</a></strong><ul>
-<li>Tracing vs Scripting: PyTorch 모델 변환의 두 가지 메커니즘.</li>
-<li><code>torch.onnx.export</code> 핵심 파라미터와 <strong>Dynamic Axes</strong> 설정법.</li>
-<li>변환된 모델의 무결성 검증(Validation).</li>
+<li>Tracing vs Scripting: PyTorch 모델을 ONNX로 변환하는 두 가지 메커니즘.</li>
+<li>Dynamic Axes: 가변 입력(Batch, Sequence Length) 처리 방법.</li>
 </ul>
 </li>
 </ul>
 <h3 id="phase-3-onnx-runtime-ort-execution-providers">Phase 3: ONNX Runtime (ORT) &amp; Execution Providers<a class="headerlink" href="#phase-3-onnx-runtime-ort-execution-providers" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><a href="../notes/03_Runtime_and_Providers/">03. Runtime &amp; Providers</a></strong><ul>
-<li>ORT의 그래프 최적화 원리.</li>
-<li><strong>Execution Providers (EP)</strong>: CPU, CUDA, TensorRT 등 하드웨어 가속 연결.</li>
-<li>IO Binding을 통한 데이터 복사 비용 절감.</li>
+<li>ORT Architecture: 추론 엔진이 그래프를 최적화하는 과정.</li>
+<li>Execution Providers (EP): CPU, CUDA, TensorRT 등 하드웨어 가속기 연결.</li>
 </ul>
 </li>
 </ul>
 <h3 id="phase-4-optimization-quantization">Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)<a class="headerlink" href="#phase-4-optimization-quantization" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><a href="../notes/04_Optimization_and_Quantization/">04. Optimization &amp; Quantization</a></strong><ul>
-<li>양자화(Quantization)의 원리: FP32 → INT8.</li>
-<li><strong>Dynamic vs Static Quantization</strong>: 상황별 선택 가이드.</li>
-<li>실습: GLiNER 모델을 1/4 크기로 줄이고 속도 3배 높이기.</li>
+<li>Graph Optimization: Constant Folding, Operator Fusion.</li>
+<li>Quantization: FP32 → INT8 변환의 원리와 Dynamic/Static Quantization 실습.</li>
 </ul>
 </li>
 </ul>
 <h3 id="phase-5-advanced">Phase 5: 디버깅과 커스텀 (Advanced)<a class="headerlink" href="#phase-5-advanced" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><a href="../notes/05_Advanced_Topics/">05. Advanced Topics</a></strong><ul>
-<li>Unsupported Operator(미지원 연산자) 해결 전략.</li>
-<li><strong>Netron</strong>을 활용한 그래프 시각화 및 디버깅.</li>
-<li>Shape Inference 오류 해결법.</li>
+<li>Troubleshooting: 지원하지 않는 연산자(Unsupported Operator) 해결법.</li>
+<li>Custom Ops: ONNX 표준에 없는 연산자 직접 구현하기.</li>
 </ul>
 </li>
 </ul>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/AI_News/notes/2026-02-17_Report/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Agentic_Workflow/notes/01_Prototype_Setup/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>2026-02-17 AI 트렌드 리포트 - 구름이의 공부노트</title>
+        <title>초기 프로토타입 셋업 가이드 (PoC 단계) - 구름이의 공부노트</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-02-17-ai" class="md-skip">
+        <a href="#poc" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026-02-17 AI 트렌드 리포트
+              초기 프로토타입 셋업 가이드 (PoC 단계)
             
           </span>
         </div>
@@ -240,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
+        <a href="../../topic/" class="md-tabs__link">
           
   
   
@@ -383,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -453,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -550,102 +550,79 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#medical-ai-ai" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏥 Medical AI (의료 AI)
+        💡 환경 설정 팁
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="🏥 Medical AI (의료 AI)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. 의료 AI 책임 보험 등장: 테크 지원 진료의 법적 보호
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-et-now-gbs-2026-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. ET Now GBS 2026: AI를 통한 의료 비용 절감과 인력 부족 해결
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 의대생을 위한 AI 리소스 국가 지원 확대
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-ai-ai" class="md-nav__link">
+  <a href="#step-1-context-seeding" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💻 General AI (일반 AI 및 기술 트렌드)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="💻 General AI (일반 AI 및 기술 트렌드)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-in-context-scheming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. [중요] 인컨텍스트 스키밍(In-context Scheming) 위험성
+        Step 1. 도메인 컨텍스트 형성 (Context Seeding)
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-ai" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. AI를 이용한 알츠하이머 유전적 제어 센터 발견
+        Step 2. 과업 구체화 및 방향성 타진
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-ai_1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#step-3-claudemd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 데이터 효율성 혁명: 적은 데이터로 학습하는 AI
+        Step 3. 코어 시스템 문서 (CLAUDE.md) 생성
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 상태 관리 및 추적(Tracking) 구조화
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-6-skillcommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5 ~ 6. 자동화 도구(Skill/Command) 기획 및 구현
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-7-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7. 캐싱(Cache) 메커니즘 구축
+      
+    </span>
+  </a>
   
 </li>
       
@@ -669,43 +646,58 @@
   
 
 
-<h1 id="2026-02-17-ai">2026-02-17 AI 트렌드 리포트<a class="headerlink" href="#2026-02-17-ai" title="Permanent link">&para;</a></h1>
-<p><strong>작성일:</strong> 2026-02-17
-<strong>주요 키워드:</strong> 의료 AI 보험, 연말정산 공지, 인컨텍스트 스키밍, 데이터 효율성</p>
-<hr />
-<h2 id="medical-ai-ai">🏥 Medical AI (의료 AI)<a class="headerlink" href="#medical-ai-ai" title="Permanent link">&para;</a></h2>
-<h3 id="1-ai">1. 의료 AI 책임 보험 등장: 테크 지원 진료의 법적 보호<a class="headerlink" href="#1-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> AI의 판단으로 발생할 수 있는 새로운 책임 위험(Liability Risks)을 관리하기 위한 전용 보험 상품과 법적 가이드라인이 강화되고 있음.</li>
-<li><strong>출처:</strong> <a href="https://www.prunderground.com/ai-and-algorithms-pip-future-proofs-healthcare-professionals-with-coverage-for-tech-assisted-liability/00372931/">PRUnderground</a></li>
-</ul>
-<h3 id="2-et-now-gbs-2026-ai">2. ET Now GBS 2026: AI를 통한 의료 비용 절감과 인력 부족 해결<a class="headerlink" href="#2-et-now-gbs-2026-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> AI가 원격 의료 전문성을 강화하고 진단 효율을 높여, 의료 비용을 낮추고 인력 부족 문제를 해결할 핵심 열쇠가 될 것으로 전망.</li>
-<li><strong>출처:</strong> <a href="https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/et-now-gbs-2026-ai-can-cut-healthcare-costs-and-bridge-talent-gap-say-industry-leaders/articleshow/128435718.cms">The Economic Times</a></li>
-</ul>
-<h3 id="3-ai">3. 의대생을 위한 AI 리소스 국가 지원 확대<a class="headerlink" href="#3-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 미래 의료 인력인 의대생들이 교육 단계에서부터 고성능 AI 리소스를 활용할 수 있도록 정부 차원의 지원이 추진됨.</li>
-<li><strong>출처:</strong> <a href="https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/govt-looks-to-provide-access-to-ai-resources-to-medical-students-official/articleshow/128415255.cms">The Economic Times</a></li>
-</ul>
-<hr />
-<h2 id="general-ai-ai">💻 General AI (일반 AI 및 기술 트렌드)<a class="headerlink" href="#general-ai-ai" title="Permanent link">&para;</a></h2>
-<h3 id="1-in-context-scheming">1. [중요] 인컨텍스트 스키밍(In-context Scheming) 위험성<a class="headerlink" href="#1-in-context-scheming" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 고급 AI 모델들이 '문맥 내 도식화'를 통해 정렬되지 않은 목표를 은밀히 추구할 수 있다는 징후 발견. 엄격한 검증 프레임워크 필요성 강조.</li>
-<li><strong>출처:</strong> <a href="https://www.orfonline.org/expert-speak/india-ai-impact-summit-2026-from-artificial-to-augmented-intelligence">Observer Research Foundation</a></li>
-</ul>
-<h3 id="2-ai">2. AI를 이용한 알츠하이머 유전적 제어 센터 발견<a class="headerlink" href="#2-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 방대한 유전 데이터를 분석하여 알츠하이머 유발 숨겨진 조절 지점 발견. 신약 개발 타겟 정밀화.</li>
-<li><strong>출처:</strong> <a href="https://www.sciencedaily.com/">ScienceDaily</a></li>
-</ul>
-<h3 id="3-ai_1">3. 데이터 효율성 혁명: 적은 데이터로 학습하는 AI<a class="headerlink" href="#3-ai_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 무한한 데이터 의존성에서 벗어나 인간의 뇌와 유사한 패턴으로 학습하는 새로운 아키텍처 가능성 제시.</li>
-<li><strong>출처:</strong> <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/">ScienceDaily</a></li>
-</ul>
+<h1 id="poc">초기 프로토타입 셋업 가이드 (PoC 단계)<a class="headerlink" href="#poc" title="Permanent link">&para;</a></h1>
+<p>Claude Code CLI 환경에서 AI가 스스로 시스템을 구축하도록 유도하는 선문답(Context Seeding) 형태의 셋업 과정입니다. </p>
+<h3 id="_1">💡 환경 설정 팁<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>권한 승인(Permission) 대기를 최소화하고 시스템 안전성을 확보하기 위해 로컬 PC가 아닌 <strong>격리된 가상 머신(VM)이나 Docker 컨테이너 환경</strong>에서 실행하는 것을 권장합니다.</p>
+</blockquote>
+<h3 id="step-1-context-seeding">Step 1. 도메인 컨텍스트 형성 (Context Seeding)<a class="headerlink" href="#step-1-context-seeding" title="Permanent link">&para;</a></h3>
+<p>작업 대상에 대한 배경지식을 먼저 탐색하게 하여 환각(Hallucination)을 줄이고 목표 해상도를 높입니다.</p>
+<blockquote>
+<p><strong>Prompt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>노정석 최승준의 유튜브에 대해 탐색하고 어떤 내용을 다루는지 알려주세요.
+</code></pre></div></p>
+</blockquote>
+<h3 id="step-2">Step 2. 과업 구체화 및 방향성 타진<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>코드를 바로 요구하지 않고, 목표 달성을 위해 필요한 '고려 사항'을 AI가 먼저 도출하도록 유도합니다.</p>
+<blockquote>
+<p><strong>Prompt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>우리는 노정석 최승준의 유튜브 채널에서 구독자들에게 2026년 설 뉴스레터 인사부터 시작해서 이후에 다양한 이벤트가 있을 때 안내 이메일을 작성하고 발송해보려고 합니다. 이 과정에서 고려해야 할 것들은 무엇일까요?
+</code></pre></div></p>
+</blockquote>
+<h3 id="step-3-claudemd">Step 3. 코어 시스템 문서 (<code>CLAUDE.md</code>) 생성<a class="headerlink" href="#step-3-claudemd" title="Permanent link">&para;</a></h3>
+<p>프로젝트의 영혼(Soul)이자 최우선 참조 지침이 될 시스템 문서를 정의합니다.</p>
+<blockquote>
+<p><strong>Prompt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>이런 일들을 자동화할 수 있도록 하는 프로젝트를 셋업하려고 합니다. 플랫폼 셋업은 지금 할 건 아니니까요. 하지 말고 이메일 작성 정도로 합시다. 필요한 내용을 MD에 작성해 주세요.
+</code></pre></div></p>
+</blockquote>
+<h3 id="step-4-tracking">Step 4. 상태 관리 및 추적(Tracking) 구조화<a class="headerlink" href="#step-4-tracking" title="Permanent link">&para;</a></h3>
+<p>서브 에이전트 간의 컨텍스트 공유를 위한 상태 추적 파이프라인을 구축합니다.</p>
+<blockquote>
+<p><strong>Prompt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>일을 어디까지 했는지 PROGRESS.md와 PLAN.md에서 관리하도록 합시다. 그리고 새로 시작할 때 두 파일을 읽어서 내가 무슨 일을 해야 하는지 에이전트들이 알 수 있게 합시다. 이렇게 CLAUDE.md를 업데이트합시다.
+</code></pre></div></p>
+</blockquote>
+<h3 id="step-5-6-skillcommand">Step 5 ~ 6. 자동화 도구(Skill/Command) 기획 및 구현<a class="headerlink" href="#step-5-6-skillcommand" title="Permanent link">&para;</a></h3>
+<p>AI가 스스로 필요한 도구를 설계하고, 지정된 포맷(YAML 등)에 맞춰 구현하도록 강제합니다.</p>
+<blockquote>
+<p><strong>Prompt (기획):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>이런 일들을 할 때 필요한 에이전트, command, skill들이 무엇이 있을지 고민해 보고 아이디어들을 알려주세요.
+</code></pre></div>
+<strong>Prompt (구현):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>에이전트 command key 구조를 조사한 후 그에 따라서 하위에 필요한 위에서 제안한 것들을 만들어 주세요. 정확한 포맷으로
+</code></pre></div></p>
+</blockquote>
+<h3 id="step-7-cache">Step 7. 캐싱(Cache) 메커니즘 구축<a class="headerlink" href="#step-7-cache" title="Permanent link">&para;</a></h3>
+<p>반복적인 외부 검색으로 인한 토큰 낭비 및 지연(Latency)을 막기 위한 지식 저장소를 만듭니다.</p>
+<blockquote>
+<p><strong>Prompt:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>후에 참고할 수 있도록 저장하고 읽어오는 기능을 추가하고 그걸 에이전트 및 skill이 사용할 수 있게 합시다.
+</code></pre></div></p>
+</blockquote>
+<p><em>(※ Step 7 완료 후, 생성된 Skill과 환경 설정을 로드하기 위해 CLI를 종료(<code>exit</code>)하고 재시작합니다.)</em></p>
 
 
 

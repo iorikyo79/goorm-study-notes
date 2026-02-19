@@ -6,29 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Claude Code를 활용한 Agentic Workflow 구축 및 패턴 연구">
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/AI_News/notes/2026-02-17_Report/">
+      
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Agentic_Workflow/topic/">
       
       
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../ONNX_Study/topic/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>2026-02-17 AI 트렌드 리포트 - 구름이의 공부노트</title>
+        <title>Agentic Workflow - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2026-02-17-ai" class="md-skip">
+        <a href="#claude-code-agentic-workflow" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -86,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2026-02-17 AI 트렌드 리포트
+              Agentic Workflow
             
           </span>
         </div>
@@ -219,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -236,11 +242,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -274,7 +282,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -304,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -328,26 +336,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -365,7 +378,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -380,10 +393,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Workflow
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -406,6 +453,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 문서 개요 (Overview)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 학습 목표 (Learning Objectives)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curriculum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#part-1-poc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part 1. 초기 셋업 (PoC)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Part 2. 아키텍처 고도화
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-do-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 To-Do &amp; Progress
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -418,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
+      <a href="../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -453,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topic/" class="md-nav__link">
+      <a href="../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -488,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Night_Study/topic/" class="md-nav__link">
+      <a href="../../Night_Study/topic/" class="md-nav__link">
         
   
   
@@ -550,22 +689,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#medical-ai-ai" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏥 Medical AI (의료 AI)
+        📖 문서 개요 (Overview)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏥 Medical AI (의료 AI)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 학습 목표 (Learning Objectives)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curriculum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-ai" class="md-nav__link">
+  <a href="#part-1-poc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 의료 AI 책임 보험 등장: 테크 지원 진료의 법적 보호
+        Part 1. 초기 셋업 (PoC)
       
     </span>
   </a>
@@ -573,21 +734,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-et-now-gbs-2026-ai" class="md-nav__link">
+  <a href="#part-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. ET Now GBS 2026: AI를 통한 의료 비용 절감과 인력 부족 해결
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 의대생을 위한 AI 리소스 국가 지원 확대
+        Part 2. 아키텍처 고도화
       
     </span>
   </a>
@@ -600,52 +750,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-ai-ai" class="md-nav__link">
+  <a href="#to-do-progress" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💻 General AI (일반 AI 및 기술 트렌드)
+        🚀 To-Do &amp; Progress
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="💻 General AI (일반 AI 및 기술 트렌드)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-in-context-scheming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. [중요] 인컨텍스트 스키밍(In-context Scheming) 위험성
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-ai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. AI를 이용한 알츠하이머 유전적 제어 센터 발견
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-ai_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. 데이터 효율성 혁명: 적은 데이터로 학습하는 AI
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -669,42 +780,38 @@
   
 
 
-<h1 id="2026-02-17-ai">2026-02-17 AI 트렌드 리포트<a class="headerlink" href="#2026-02-17-ai" title="Permanent link">&para;</a></h1>
-<p><strong>작성일:</strong> 2026-02-17
-<strong>주요 키워드:</strong> 의료 AI 보험, 연말정산 공지, 인컨텍스트 스키밍, 데이터 효율성</p>
-<hr />
-<h2 id="medical-ai-ai">🏥 Medical AI (의료 AI)<a class="headerlink" href="#medical-ai-ai" title="Permanent link">&para;</a></h2>
-<h3 id="1-ai">1. 의료 AI 책임 보험 등장: 테크 지원 진료의 법적 보호<a class="headerlink" href="#1-ai" title="Permanent link">&para;</a></h3>
+<h1 id="claude-code-agentic-workflow">Claude Code 기반 Agentic Workflow<a class="headerlink" href="#claude-code-agentic-workflow" title="Permanent link">&para;</a></h1>
+<h2 id="overview">📖 문서 개요 (Overview)<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>본 문서는 단일 프롬프트 기반의 단순 AI 활용을 넘어, 다중 에이전트가 협력하여 코드를 작성하고 시스템을 유지보수하는 <strong>에이전틱 워크플로우(Agentic Workflow)</strong>의 초기 셋업 방법론과 이를 실제 프로덕션 환경으로 확장하기 위한 아키텍처 개선안을 다룹니다.</p>
+<h2 id="learning-objectives">📚 학습 목표 (Learning Objectives)<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>내용:</strong> AI의 판단으로 발생할 수 있는 새로운 책임 위험(Liability Risks)을 관리하기 위한 전용 보험 상품과 법적 가이드라인이 강화되고 있음.</li>
-<li><strong>출처:</strong> <a href="https://www.prunderground.com/ai-and-algorithms-pip-future-proofs-healthcare-professionals-with-coverage-for-tech-assisted-liability/00372931/">PRUnderground</a></li>
+<li>Claude Code CLI 환경에서의 Context Seeding 및 초기 셋업 방법 습득</li>
+<li>프로덕션 레벨에서의 시스템 강건성(Robustness) 확보 방안 연구</li>
+<li>비용 최적화, 에러 핸들링, 메모리 관리 등 아키텍처 개선 패턴 적용</li>
 </ul>
-<h3 id="2-et-now-gbs-2026-ai">2. ET Now GBS 2026: AI를 통한 의료 비용 절감과 인력 부족 해결<a class="headerlink" href="#2-et-now-gbs-2026-ai" title="Permanent link">&para;</a></h3>
+<h2 id="curriculum">🗺️ 커리큘럼 &amp; 목차 (Curriculum)<a class="headerlink" href="#curriculum" title="Permanent link">&para;</a></h2>
+<h3 id="part-1-poc">Part 1. 초기 셋업 (PoC)<a class="headerlink" href="#part-1-poc" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>내용:</strong> AI가 원격 의료 전문성을 강화하고 진단 효율을 높여, 의료 비용을 낮추고 인력 부족 문제를 해결할 핵심 열쇠가 될 것으로 전망.</li>
-<li><strong>출처:</strong> <a href="https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/et-now-gbs-2026-ai-can-cut-healthcare-costs-and-bridge-talent-gap-say-industry-leaders/articleshow/128435718.cms">The Economic Times</a></li>
+<li><strong>Step 1-7</strong>: <a href="../notes/01_Prototype_Setup/">초기 프로토타입 셋업 가이드</a><ul>
+<li>Context Seeding, CLAUDE.md 생성, 상태 관리, 도구 구현 등</li>
 </ul>
-<h3 id="3-ai">3. 의대생을 위한 AI 리소스 국가 지원 확대<a class="headerlink" href="#3-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 미래 의료 인력인 의대생들이 교육 단계에서부터 고성능 AI 리소스를 활용할 수 있도록 정부 차원의 지원이 추진됨.</li>
-<li><strong>출처:</strong> <a href="https://economictimes.indiatimes.com/industry/healthcare/biotech/healthcare/govt-looks-to-provide-access-to-ai-resources-to-medical-students-official/articleshow/128415255.cms">The Economic Times</a></li>
+</li>
 </ul>
-<hr />
-<h2 id="general-ai-ai">💻 General AI (일반 AI 및 기술 트렌드)<a class="headerlink" href="#general-ai-ai" title="Permanent link">&para;</a></h2>
-<h3 id="1-in-context-scheming">1. [중요] 인컨텍스트 스키밍(In-context Scheming) 위험성<a class="headerlink" href="#1-in-context-scheming" title="Permanent link">&para;</a></h3>
+<h3 id="part-2">Part 2. 아키텍처 고도화<a class="headerlink" href="#part-2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>내용:</strong> 고급 AI 모델들이 '문맥 내 도식화'를 통해 정렬되지 않은 목표를 은밀히 추구할 수 있다는 징후 발견. 엄격한 검증 프레임워크 필요성 강조.</li>
-<li><strong>출처:</strong> <a href="https://www.orfonline.org/expert-speak/india-ai-impact-summit-2026-from-artificial-to-augmented-intelligence">Observer Research Foundation</a></li>
+<li><strong>Architecture</strong>: <a href="../notes/02_Production_Architecture/">프로덕션 레벨 고도화를 위한 아키텍처 개선 제언</a><ul>
+<li>비용/지연 시간 최적화 (Adaptive Thinking Budget)</li>
+<li>예외 처리 및 자가 복구 (Self-Correction)</li>
+<li>RAG 기반 장기 기억 (Long-term Memory)</li>
+<li>Cross-Validation 및 RBAC, Observability</li>
 </ul>
-<h3 id="2-ai">2. AI를 이용한 알츠하이머 유전적 제어 센터 발견<a class="headerlink" href="#2-ai" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>내용:</strong> 방대한 유전 데이터를 분석하여 알츠하이머 유발 숨겨진 조절 지점 발견. 신약 개발 타겟 정밀화.</li>
-<li><strong>출처:</strong> <a href="https://www.sciencedaily.com/">ScienceDaily</a></li>
+</li>
 </ul>
-<h3 id="3-ai_1">3. 데이터 효율성 혁명: 적은 데이터로 학습하는 AI<a class="headerlink" href="#3-ai_1" title="Permanent link">&para;</a></h3>
+<h2 id="to-do-progress">🚀 To-Do &amp; Progress<a class="headerlink" href="#to-do-progress" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>내용:</strong> 무한한 데이터 의존성에서 벗어나 인간의 뇌와 유사한 패턴으로 학습하는 새로운 아키텍처 가능성 제시.</li>
-<li><strong>출처:</strong> <a href="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/">ScienceDaily</a></li>
+<li>[x] 리서치 내용 정리 및 업데이트 (2026-02-20)</li>
+<li>[ ] 실습 프로젝트 설정 (VM/Docker 환경)</li>
+<li>[ ] Part 1 가이드에 따라 실제 셋업 진행해보기</li>
 </ul>
 
 
@@ -712,6 +819,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -761,10 +871,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-17_FP_Hunter_Test/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-18_GLiNER_Label_Tuning/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Experiment: PhiGuard V3 'FP Hunter' (False Positive Analysis) - 구름이의 공부노트</title>
+        <title>GLiNER Label Tuning Experiment Report - 구름이의 공부노트</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#experiment-phiguard-v3-fp-hunter-false-positive-analysis" class="md-skip">
+        <a href="#gliner-label-tuning-experiment-report" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Experiment: PhiGuard V3 'FP Hunter' (False Positive Analysis)
+              GLiNER Label Tuning Experiment Report
             
           </span>
         </div>
@@ -515,44 +515,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-goal" class="md-nav__link">
+  <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Goal
+        1. 실험 개요 (Overview)
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-methodology" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Methodology
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-results-sample-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Results (Sample Analysis)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Results (Sample Analysis)">
+    <nav class="md-nav" aria-label="1. 실험 개요 (Overview)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#statistics" class="md-nav__link">
+  <a href="#11" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Statistics
+        1.1 실험 목표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 실험 환경
       
     </span>
   </a>
@@ -565,10 +554,127 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-conclusion-insights" class="md-nav__link">
+  <a href="#2-results" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Conclusion &amp; Insights
+        2. 실험 결과 (Results)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 실험 결과 (Results)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 그룹별 검출 통계 (Summary Statistics)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-key-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 주요 발견 (Key Findings)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 주요 발견 (Key Findings)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-facility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Facility (의료기관) 검출 변화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-person" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Person (인명) 검출 변화
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-detailed-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 상세 분석 (Detailed Analysis)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 상세 분석 (Detailed Analysis)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-false-positive-case-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 False Positive Case Study
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 인사이트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 결론 및 제언 (Conclusion)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Next Steps
       
     </span>
   </a>
@@ -595,98 +701,180 @@
   
 
 
-<h1 id="experiment-phiguard-v3-fp-hunter-false-positive-analysis">Experiment: PhiGuard V3 'FP Hunter' (False Positive Analysis)<a class="headerlink" href="#experiment-phiguard-v3-fp-hunter-false-positive-analysis" title="Permanent link">&para;</a></h1>
-<p><strong>Date</strong>: 2026-02-17
-<strong>Author</strong>: Assistant (Subagent)
-<strong>Subject</strong>: False Positive Analysis of 'AI Only' Detections</p>
-<h2 id="1-goal">1. Goal<a class="headerlink" href="#1-goal" title="Permanent link">&para;</a></h2>
-<p>To filter and analyze False Positives (FPs) specifically within the "AI Only" detection results of PhiGuard V3. The hypothesis is that the AI model (GLiNER/BERT based) may over-trigger on medical abbreviations or ambiguous terms that Rule-based systems ignore.</p>
-<h2 id="2-methodology">2. Methodology<a class="headerlink" href="#2-methodology" title="Permanent link">&para;</a></h2>
+<h1 id="gliner-label-tuning-experiment-report">GLiNER Label Tuning Experiment Report<a class="headerlink" href="#gliner-label-tuning-experiment-report" title="Permanent link">&para;</a></h1>
+<p><strong>Date:</strong> 2026-02-18<br />
+<strong>Author:</strong> AI Research Agent (PhiGuard V3 Team)<br />
+<strong>Subject:</strong> Optimization of GLiNER Labels for Clinical PHI Detection</p>
+<h2 id="1-overview">1. 실험 개요 (Overview)<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>PhiGuard V3의 PII(Personal Identifiable Information) 검출 엔진인 GLiNER의 성능 최적화를 위해, 라벨(Label) 정의가 검출 성능에 미치는 영향을 분석했다.
+기존의 범용 라벨(<code>person</code>, <code>organization</code>) 대신, 의료 도메인에 특화된 세분화 라벨(영어 및 한국어)을 사용했을 때의 변화를 측정했다.</p>
+<h3 id="11">1.1 실험 목표<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Data Source</strong>: <code>phi_review_440k_v1.3_FINAL.xlsx</code> (Output from Full Run v1.4)</li>
-<li><strong>Selection Criteria</strong>: Rows where <code>Engine_Source</code> == 'AI' (AI-exclusive detections).</li>
-<li><strong>Sample Size</strong>: 5 random rows containing 6 detected entities.</li>
-<li><strong>Evaluation</strong>: Manual Review (Simulated LLM Judge) based on clinical context.</li>
+<li>범용 라벨과 도메인 특화 라벨 간의 검출 민감도(Sensitivity) 및 정확도(Precision) 패턴 비교.</li>
+<li>의료 텍스트(임상 병리/영상의학 판독문)에서 자주 발생하는 오탐(False Positive) 유형 분석.</li>
+<li>한국어/영어 혼용 텍스트에 대한 최적의 라벨 언어 설정 확인.</li>
 </ul>
-<h2 id="3-results-sample-analysis">3. Results (Sample Analysis)<a class="headerlink" href="#3-results-sample-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="12">1.2 실험 환경<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Model:</strong> <code>nvidia/gliner-PII</code></li>
+<li><strong>Dataset:</strong> <code>sampling_for_clinical_gliner_v1.0.xlsx</code> (Sample N=100)</li>
+<li><strong>Groups:</strong><ul>
+<li><strong>Control:</strong> <code>person</code>, <code>organization</code>, <code>date</code>, <code>phone</code>, <code>email</code>, <code>address</code></li>
+<li><strong>Exp A (Medical EN):</strong> <code>patient name</code>, <code>doctor name</code>, <code>hospital</code>, <code>medical center</code>, <code>clinic</code>, <code>department</code>, ...</li>
+<li><strong>Exp B (Medical KR):</strong> <code>환자이름</code>, <code>의사이름</code>, <code>병원</code>, <code>의료기관</code>, <code>진료과</code>, ...</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="2-results">2. 실험 결과 (Results)<a class="headerlink" href="#2-results" title="Permanent link">&para;</a></h2>
+<h3 id="21-summary-statistics">2.1 그룹별 검출 통계 (Summary Statistics)<a class="headerlink" href="#21-summary-statistics" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>ID</th>
-<th>Detected Entity</th>
-<th>Label</th>
-<th>Context Snippet</th>
-<th>Judgment</th>
-<th>Reason</th>
+<th style="text-align: left;">Group</th>
+<th style="text-align: center;">Total Entities</th>
+<th style="text-align: center;">Avg Confidence</th>
+<th style="text-align: center;">Median Confidence</th>
+<th style="text-align: left;">Key Label Counts</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td><strong>TAH and RSO</strong></td>
-<td>FACILITY</td>
-<td>Uterine cervical cancer로 <strong>TAH and RSO</strong> state인 환자임.</td>
-<td><strong>FP</strong></td>
-<td>Procedure (Total Abdominal Hysterectomy / Right Salpingo-Oophorectomy)</td>
+<td style="text-align: left;"><strong>Control</strong></td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;">0.811</td>
+<td style="text-align: center;">0.947</td>
+<td style="text-align: left;">Organization (76), Date (5), Person (4)</td>
 </tr>
 <tr>
-<td>2</td>
-<td><strong>TAH with BSO</strong></td>
-<td>FACILITY</td>
-<td><strong>TAH with BSO</strong>를 시행한 환자임.</td>
-<td><strong>FP</strong></td>
-<td>Procedure (TAH with Bilateral Salpingo-Oophorectomy)</td>
+<td style="text-align: left;"><strong>Exp A</strong></td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">0.733</td>
+<td style="text-align: center;">0.762</td>
+<td style="text-align: left;">Pt/Dr Name (24), Hospital/Clinic (40), Date (5)</td>
 </tr>
 <tr>
-<td>3</td>
-<td><strong>SMA</strong></td>
-<td>FACILITY</td>
-<td><strong>SMA</strong>의 small bowel branch로 생각되며...</td>
-<td><strong>FP</strong></td>
-<td>Anatomy (Superior Mesenteric Artery)</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>2007년 7-31일</strong></td>
-<td>DATE</td>
-<td><strong>2007년 7-31일</strong> CT scan과 비교하여...</td>
-<td><strong>TP</strong></td>
-<td>Valid Date PHI</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>동대문병원</strong></td>
-<td>FACILITY</td>
-<td><strong>동대문병원</strong>에서 시행한...</td>
-<td><strong>TP</strong></td>
-<td>Valid Hospital Name</td>
-</tr>
-<tr>
-<td>6</td>
-<td><strong>2007년 3월</strong></td>
-<td>DATE</td>
-<td><strong>2007년 3월</strong>...</td>
-<td><strong>TP</strong></td>
-<td>Valid Date PHI</td>
+<td style="text-align: left;"><strong>Exp B</strong></td>
+<td style="text-align: center;"><strong>127</strong></td>
+<td style="text-align: center;">0.655</td>
+<td style="text-align: center;">0.668</td>
+<td style="text-align: left;">환자/의사이름 (94), 병원/의료기관 (28), 날짜 (5)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="statistics">Statistics<a class="headerlink" href="#statistics" title="Permanent link">&para;</a></h3>
+<h3 id="22-key-findings">2.2 주요 발견 (Key Findings)<a class="headerlink" href="#22-key-findings" title="Permanent link">&para;</a></h3>
+<h4 id="1-facility">1. Facility (의료기관) 검출 변화<a class="headerlink" href="#1-facility" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Total Entities</strong>: 6</li>
-<li><strong>False Positives</strong>: 3</li>
-<li><strong>True Positives</strong>: 3</li>
-<li><strong>FP Rate</strong>: 50%</li>
+<li><strong>Control (<code>organization</code>)</strong>: 가장 많은 엔티티(76건)를 검출했으나, 대부분이 <strong>의학 용어 및 약어(Acronyms)</strong>에 대한 오탐(False Positive)임.<ul>
+<li>예: <code>TAH</code>, <code>RSO</code>, <code>SMA</code>, <code>RGP</code>, <code>GB</code>, <code>ABDOMEN CT</code>, <code>Hydrometra</code> 등을 <code>organization</code>으로 오인.</li>
+<li>높은 신뢰도(Median 0.95)를 보여, 모델이 대문자 의학 용어를 조직명으로 강력하게 확신함.</li>
 </ul>
-<h2 id="4-conclusion-insights">4. Conclusion &amp; Insights<a class="headerlink" href="#4-conclusion-insights" title="Permanent link">&para;</a></h2>
+</li>
+<li><strong>Exp A (<code>hospital</code>, <code>medical center</code>)</strong>: 오탐이 다소 감소(40건)했으나 여전히 <code>porta hepatis</code>, <code>ABDOMEN CT</code> 등을 시설로 오인함.</li>
+<li><strong>Exp B (<code>병원</code>, <code>의료기관</code>)</strong>: 시설 관련 검출이 28건으로 가장 적음. <code>동대문병원</code> 등 실제 병원명은 정확히 검출(TP)하면서, 영문 약어에 대한 오탐이 가장 적음.</li>
+</ul>
+<h4 id="2-person">2. Person (인명) 검출 변화<a class="headerlink" href="#2-person" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Control (<code>person</code>)</strong>: 거의 검출하지 않음(4건).</li>
+<li><strong>Exp A (<code>patient/doctor name</code>)</strong>: <code>GB</code> (Gallbladder), <code>Knwon</code>, <code>RUQ</code> 등 대문자 용어를 사람 이름으로 오인하기 시작함 (24건).</li>
+<li><strong>Exp B (<code>환자/의사이름</code>)</strong>: <strong>폭발적인 오탐 증가 (94건).</strong><ul>
+<li>모델이 한국어 문맥 속의 영문 대문자 약어(<code>RGP</code>, <code>UVJ</code>, <code>SMA</code>, <code>GB</code>)를 대부분 <code>의사이름</code> 또는 <code>환자이름</code>으로 분류함.</li>
+<li>이는 "한국어 텍스트 속에 섞인 낯선 영어 단어 = 사람 이름"이라는 편향이 작용한 것으로 추정됨.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="3-detailed-analysis">3. 상세 분석 (Detailed Analysis)<a class="headerlink" href="#3-detailed-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="31-false-positive-case-study">3.1 False Positive Case Study<a class="headerlink" href="#31-false-positive-case-study" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Text Segment</th>
+<th style="text-align: left;">Control (<code>organization</code>)</th>
+<th style="text-align: left;">Exp A (<code>Medical EN</code>)</th>
+<th style="text-align: left;">Exp B (<code>Medical KR</code>)</th>
+<th style="text-align: left;">실제 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>TAH and RSO</strong></td>
+<td style="text-align: left;">Organization (0.42)</td>
+<td style="text-align: left;">Patient Name (0.32)</td>
+<td style="text-align: left;">환자이름 (0.51)</td>
+<td style="text-align: left;">수술명 (자궁적출술 등)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Knwon</strong> (Known)</td>
+<td style="text-align: left;"><strong>Organization (0.96)</strong></td>
+<td style="text-align: left;"><strong>Patient Name (0.99)</strong></td>
+<td style="text-align: left;">의사이름 (0.68)</td>
+<td style="text-align: left;">일반 단어 (오타)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GB</strong> (Gallbladder)</td>
+<td style="text-align: left;">Organization (0.32)</td>
+<td style="text-align: left;"><strong>Patient Name (0.92)</strong></td>
+<td style="text-align: left;"><strong>환자이름 (0.85)</strong></td>
+<td style="text-align: left;">신체 부위 (담낭)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>동대문병원</strong></td>
+<td style="text-align: left;"><strong>Organization (0.99)</strong></td>
+<td style="text-align: left;"><strong>Hospital (0.99)</strong></td>
+<td style="text-align: left;"><strong>병원 (0.99)</strong></td>
+<td style="text-align: left;">병원명 (TP)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ABDOMEN CT</strong></td>
+<td style="text-align: left;"><strong>Organization (0.91)</strong></td>
+<td style="text-align: left;">Medical Center (0.66)</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">검사명</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32">3.2 인사이트<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>High FP Rate in Procedures</strong>: The AI model consistently misclassifies medical abbreviations for surgical procedures (TAH, BSO, RSO) as <code>FACILITY</code>. This is likely due to the capitalization and structure resembling proper nouns or organization names in the training distribution.</li>
-<li><strong>Anatomy Confusion</strong>: <code>SMA</code> (Superior Mesenteric Artery) was also misclassified as <code>FACILITY</code>.</li>
-<li><strong>Date/Hospital Precision</strong>: The model correctly identified actual dates and hospital names.</li>
+<li><strong>Label Specificity Trade-off</strong>:<ul>
+<li>라벨을 구체화(<code>organization</code> -&gt; <code>hospital</code>)하면, 일반적인 명사(CT, 약어)를 조직으로 오인하는 비율은 줄어든다.</li>
+<li>그러나 <code>medical center</code>나 <code>clinic</code> 같은 라벨은 여전히 장비명이나 검사명을 오인할 여지가 있다.</li>
+</ul>
+</li>
+<li><strong>Cross-Lingual Hallucination</strong>:<ul>
+<li>한국어 라벨(<code>의사이름</code>)을 사용했을 때, GLiNER 모델은 영문 의학 약어를 사람 이름으로 강력하게 오인하는 경향을 보인다.</li>
+<li>이는 모델이 "한국어 문장 내의 대문자 영어 토큰"을 고유명사(인명)로 추론하는 강력한 바이어스를 가지고 있음을 시사한다.</li>
+</ul>
+</li>
 </ol>
-<p><strong>Recommendation</strong>:
-- Implement a <strong>Post-Processing Allowlist</strong> (or Negative Lookahead) for common medical abbreviations (TAH, BSO, RSO, SMA, CABG, etc.) to prevent them from being flagged as Facilities.
-- Retrain the model with negative samples containing these abbreviations labeled as <code>O</code> (Outside).</p>
+<hr />
+<h2 id="4-conclusion">4. 결론 및 제언 (Conclusion)<a class="headerlink" href="#4-conclusion" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>라벨 튜닝만으로는 한계 존재</strong>:<ul>
+<li>단순히 라벨을 <code>doctor</code>, <code>hospital</code>로 바꾸는 것만으로는 의학 약어(GB, SMA, CT)를 완벽히 걸러낼 수 없다. 오히려 <code>Control</code> 그룹이 PII가 아닌 것을 <code>organization</code>으로 묶어버리는 경향이 있어, 역설적으로 '사람 이름' 오탐은 적었다.</li>
+</ul>
+</li>
+<li><strong>Exp B (한국어 라벨) 사용 주의</strong>:<ul>
+<li>한국어 라벨은 실제 한국어 이름 검출에는 유리할 수 있으나, <strong>영문 의학 용어를 인명으로 오탐하는 비율이 치명적으로 높다.</strong></li>
+<li>따라서 영문/국문 혼용 임상 텍스트에서는 <strong>Exp A (Medical EN) 라벨</strong>이 그나마 균형 잡힌 접근일 수 있으나, Whitelist 필터링이 필수적이다.</li>
+</ul>
+</li>
+<li><strong>Whitelist 필터링 강화 필요</strong>:<ul>
+<li><code>GB</code>, <code>CT</code>, <code>MRI</code>, <code>RGP</code>, <code>SMA</code> 등 2-3글자 대문자 약어는 Rule-based로 강력하게 필터링해야 한다.</li>
+</ul>
+</li>
+<li><strong>최적 설정 제안</strong>:<ul>
+<li><strong>Facilities</strong>: <code>hospital</code>, <code>medical center</code> (Exp A) 사용 권장 (Control 대비 오탐 감소).</li>
+<li><strong>Names</strong>: <code>person</code> (Control) 사용이 안전할 수 있음. <code>doctor name</code> 등은 오탐 위험이 큼. 실제 이름이 누락되는지 추가 검증 필요.</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-next-steps">5. Next Steps<a class="headerlink" href="#5-next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] 2-3글자 영문 대문자 약어에 대한 강력한 Whitelist 구축.</li>
+<li>[ ] <code>Control</code> 그룹의 <code>organization</code> 결과를 <code>hospital</code>로 매핑하여 사용하는 하이브리드 방식 고려.</li>
+<li>[ ] <code>nvidia/gliner-PII</code> 대신 바이오메디컬 특화 모델(<code>gliner-biomed-large</code> 등) 테스트.</li>
+</ul>
 
 
 

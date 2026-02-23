@@ -2,126 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AI_News/AGENT/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AI_News/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AI_News/notes/2026-02-17_Report/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Agentic_Workflow/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Agentic_Workflow/notes/01_Prototype_Setup/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Agentic_Workflow/notes/02_Production_Architecture/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AntigravityKit/Analysis_Report/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AntigravityKit/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AntigravityKit/assets/insight_brief_overview/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/AntigravityKit/resources/readme_summary/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/BorisChernyTips/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/BorisChernyTips/notes/2026-02-03_Surgical_Coding_and_Automation/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Education/Karpathy_HandsOn_Guide/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Karpathy/2026-01-31_moltbook_ai_social/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Karpathy/2026-01-31_moltbook_full_context/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Karpathy/2026-01-31_vibe_coding/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Karpathy/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-17_FP_Hunter_Test/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-17_FP_Hunter_v2/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-18_GLiNER_Label_Tuning/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-20_Medical_Anonymization/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-02-23_AI_Sandbox_Research/</loc>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/MkDocs_Troubleshooting_QA/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/topic/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/01_Concept_and_Architecture/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/02_Tracing_and_Export/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/03_Runtime_and_Providers/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/04_Optimization_and_Quantization/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/05_Advanced_Topics/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
     <url>
          <loc>https://iorikyo79.github.io/goorm-study-notes/OpenClaw_Study/Agent_Types_Comparison/</loc>
-         <lastmod>2026-02-19</lastmod>
+         <lastmod>2026-02-23</lastmod>
     </url>
 </urlset>

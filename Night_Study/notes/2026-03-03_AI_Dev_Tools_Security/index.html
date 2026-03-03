@@ -651,6 +651,28 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#5-gemini-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Gemini CLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-google-antigravity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Google Antigravity
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -778,10 +800,10 @@
 
 <h1 id="ai">AI 개발 도구 보안 가이드 (개인 계정용)<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>작성일</strong>: 2026-03-03
+<p><strong>작성일</strong>: 2026-03-03 (업데이트: 2026-03-03)
 <strong>연구 유형</strong>: Night Study Lab
 <strong>목적</strong>: 개인 계정으로 AI 개발 도구 사용 시 최소한의 보안 설정 가이드
-<strong>대상 도구</strong>: GitHub Copilot, Cursor AI, Claude Code, Google Gemini Code Assist</p>
+<strong>대상 도구</strong>: GitHub Copilot, Cursor AI, Claude Code, Gemini CLI, Google Antigravity</p>
 </blockquote>
 <hr />
 <h2 id="_1">📋 연구 배경<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
@@ -814,6 +836,24 @@
 - Vertex AI (기업용): 데이터 학습 사용 안 함
 - 코드 제외: <code>.gitignore</code> 활용</p>
 <p><strong>레퍼런스</strong>: <a href="https://ai.google.dev/privacy">Google AI Privacy</a></p>
+<h3 id="5-gemini-cli">5. Gemini CLI<a class="headerlink" href="#5-gemini-cli" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 정책</strong>:
+- 인증 방법에 따라 다른 정책 적용
+- <strong>개인 계정/API 무료</strong>: 모델 학습에 사용됨 (Usage Statistics 옵트아웃 필수)
+- <strong>Standard/Enterprise/API 유료/Vertex AI</strong>: 학습에 사용 안 됨
+- 보안 인증: ISO 27001, SOC 1/2/3</p>
+<p><strong>레퍼런스</strong>: <a href="https://google-gemini.github.io/gemini-cli/docs/tos-privacy.html">Gemini CLI ToS &amp; Privacy</a></p>
+<h3 id="6-google-antigravity">6. Google Antigravity<a class="headerlink" href="#6-google-antigravity" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 기능</strong>:
+- Terminal Execution Policy (Off/Auto/Turbo)
+- Review Policy (Always Proceed/Agent Decides/Request Review)
+- JavaScript Execution Policy (Browser 보안)
+- Allow List / Deny List 구성
+- Browser URL Allowlist</p>
+<p><strong>데이터 처리</strong>:
+- Gemini Code Assist for individuals와 동일 정책
+- <strong>기본적으로 모델 학습에 데이터 사용됨</strong></p>
+<p><strong>레퍼런스</strong>: <a href="https://codelabs.developers.google.com/getting-started-google-antigravity">Getting Started with Antigravity</a></p>
 <hr />
 <h2 id="_3">📁 팀별 코드 보호 가이드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h3 id="_4">민감 코드 분류표<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
@@ -864,6 +904,9 @@
 <li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/github_copilot_policies.md">assets/github_copilot_policies.md</a></li>
 <li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/claude_code_security.md">assets/claude_code_security.md</a></li>
 <li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/cursor_privacy_policy.md">assets/cursor_privacy_policy.md</a></li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/gemini_cli_privacy.md">assets/gemini_cli_privacy.md</a></li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/gemini_code_assist_enterprise.md">assets/gemini_code_assist_enterprise.md</a></li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/antigravity_guide.md">assets/antigravity_guide.md</a></li>
 </ul>
 <hr />
 <h2 id="_6">✅ 보안 체크리스트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>

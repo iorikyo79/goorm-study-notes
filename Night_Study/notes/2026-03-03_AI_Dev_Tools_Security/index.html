@@ -6,33 +6,29 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="개인 학습 및 연구 주제 인덱스">
       
       
-      
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/">
-      
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-03-03_AI_Dev_Tools_Security/">
       
       
-        <link rel="next" href="Agentic_Workflow/topic/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
     
     
       
-        <title>구름이의 공부노트</title>
+        <title>AI 개발 도구 보안 가이드 (개인 계정용) - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ai" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -90,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              AI 개발 도구 보안 가이드 (개인 계정용)
             
           </span>
         </div>
@@ -221,11 +217,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Agentic_Workflow/topic/" class="md-tabs__link">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
   
@@ -280,7 +274,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -307,37 +301,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -353,126 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        활성 주제
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        최근 연구 노트
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="최근 연구 노트">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2026-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026년 3월
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026년 2월
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        태그별 분류
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="태그별 분류">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aiml" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AI/ML
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#medical-imaging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Medical Imaging
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -536,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
         
   
   
@@ -571,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ONNX_Study/topic/" class="md-nav__link">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -606,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="AI_News/topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -641,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Night_Study/topic/" class="md-nav__link">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -676,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Prompt_Engineering/topic/" class="md-nav__link">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
         
   
   
@@ -738,13 +585,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        활성 주제
+        📋 연구 배경
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔍 연구 결과 요약
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔍 연구 결과 요약">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-github-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GitHub Copilot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cursor-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Cursor AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Claude Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-google-gemini-code-assist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Google Gemini Code Assist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -752,19 +660,19 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        최근 연구 노트
+        📁 팀별 코드 보호 가이드
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="최근 연구 노트">
+    <nav class="md-nav" aria-label="📁 팀별 코드 보호 가이드">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2026-3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026년 3월
+        민감 코드 분류표
       
     </span>
   </a>
@@ -772,10 +680,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2026-2" class="md-nav__link">
+  <a href="#ignore" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026년 2월
+        공통 ignore 템플릿
       
     </span>
   </a>
@@ -788,22 +696,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        태그별 분류
+        📚 원본 자료
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="태그별 분류">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 보안 체크리스트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 보안 체크리스트">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#aiml" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AI/ML
+        개인 계정 설정
       
     </span>
   </a>
@@ -811,21 +730,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#medical-imaging" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Medical Imaging
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security
+        프로젝트별
       
     </span>
   </a>
@@ -834,6 +742,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 관련 링크
+      
+    </span>
+  </a>
   
 </li>
       
@@ -857,67 +776,121 @@
   
 
 
-<h1 id="_1">📚 개인 학습 주제 인덱스<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">활성 주제<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="ai">AI 개발 도구 보안 가이드 (개인 계정용)<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>작성일</strong>: 2026-03-03
+<strong>연구 유형</strong>: Night Study Lab
+<strong>목적</strong>: 개인 계정으로 AI 개발 도구 사용 시 최소한의 보안 설정 가이드
+<strong>대상 도구</strong>: GitHub Copilot, Cursor AI, Claude Code, Google Gemini Code Assist</p>
+</blockquote>
+<hr />
+<h2 id="_1">📋 연구 배경<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>회사에서 AI를 활용한 개발을 활성화하기 위해 다양한 AI 개발 도구를 지원하려고 함. 보안 문제로 인해 보통 팀 계정이나 엔터프라이즈 계정을 사용하지만, 진입 장벽을 낮추기 위해 <strong>개인 계정을 사용하면서 최소한의 보안을 유지</strong>하는 방안을 연구.</p>
+<hr />
+<h2 id="_2">🔍 연구 결과 요약<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-github-copilot">1. GitHub Copilot<a class="headerlink" href="#1-github-copilot" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 설정</strong>:
+- 모델 학습: <strong>기본 비활성화</strong> (개인 계정에서는 활성화 불가)
+- 코드 스니펫 수집: 설정에서 "Allow GitHub to use my code snippets..." <strong>체크 해제</strong>
+- 공개 코드 매칭: <strong>Block</strong> 권장
+- 코드 제외: <code># @generated</code> 주석, <code>.gitignore</code></p>
+<p><strong>레퍼런스</strong>: <a href="https://docs.github.com/en/copilot/how-tos/manage-your-account/manage-policies">GitHub Copilot Policies</a></p>
+<h3 id="2-cursor-ai">2. Cursor AI<a class="headerlink" href="#2-cursor-ai" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 정책</strong>:
+- 모델 학습: <strong>기본 비활성화</strong>
+- 예외: 보안 플래그, 명시적 피드백, 명시적 동의 시에만
+- 코드 제외: <code>.cursorignore</code> 파일</p>
+<p><strong>레퍼런스</strong>: <a href="https://cursor.com/privacy">Cursor Privacy Policy</a></p>
+<h3 id="3-claude-code">3. Claude Code<a class="headerlink" href="#3-claude-code" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 기능</strong>:
+- 권한 기반 아키텍처 (읽기 전용 기본)
+- 샌드박스 모드 (<code>/sandbox</code>)
+- 코드 제외: <code>.claudeignore</code>
+- SOC 2 Type 2, ISO 27001 인증</p>
+<p><strong>레퍼런스</strong>: <a href="https://code.claude.com/docs/en/security">Claude Code Security</a></p>
+<h3 id="4-google-gemini-code-assist">4. Google Gemini Code Assist<a class="headerlink" href="#4-google-gemini-code-assist" title="Permanent link">&para;</a></h3>
+<p><strong>핵심 보안 설정</strong>:
+- 개인 계정: "Improve Gemini" 옵션 비활성화
+- Vertex AI (기업용): 데이터 학습 사용 안 함
+- 코드 제외: <code>.gitignore</code> 활용</p>
+<p><strong>레퍼런스</strong>: <a href="https://ai.google.dev/privacy">Google AI Privacy</a></p>
+<hr />
+<h2 id="_3">📁 팀별 코드 보호 가이드<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">민감 코드 분류표<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>주제</th>
-<th>설명</th>
-<th>상태</th>
-<th>최근 업데이트</th>
+<th>분류</th>
+<th>예시</th>
+<th>조치</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="Night_Study/topic/">Night Study Lab</a></td>
-<td>야간 자율 연구소 결과 보고서</td>
-<td>🟢 Active</td>
-<td>2026-02-24</td>
+<td><strong>극비</strong></td>
+<td>DB 연결 정보, API 키, 암호화 키</td>
+<td>AI 도구 접근 완전 차단</td>
+</tr>
+<tr>
+<td><strong>기밀</strong></td>
+<td>비즈니스 로직, 알고리즘</td>
+<td>팀장 승인 후 제한적 사용</td>
+</tr>
+<tr>
+<td><strong>내부</strong></td>
+<td>일반 코드, 문서</td>
+<td>자유롭게 사용 가능</td>
+</tr>
+<tr>
+<td><strong>공개</strong></td>
+<td>오픈소스, 공개 문서</td>
+<td>제한 없음</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">최근 연구 노트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="2026-3">2026년 3월<a class="headerlink" href="#2026-3" title="Permanent link">&para;</a></h3>
+<h3 id="ignore">공통 ignore 템플릿<a class="headerlink" href="#ignore" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># .gitignore / .cursorignore / .claudeignore 공통
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>.env
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>.env.*
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>**/secrets/**
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>**/credentials/**
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>**/*.pem
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>**/*.key
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>config/database*.yml
+</code></pre></div>
+<hr />
+<h2 id="_5">📚 원본 자료<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>[2026-03-03]</strong> <a href="Night_Study/notes/2026-03-03_AI_Dev_Tools_Security/">AI Dev Tools Security</a> - AI 개발 도구 보안 가이드</li>
-<li><strong>[2026-03-02]</strong> <a href="Night_Study/notes/2026-03-02_Local_LLM_Tools/">Local LLM Tools</a> - 로컬 LLM 실행 도구 종합 조사</li>
-</ul>
-<h3 id="2026-2">2026년 2월<a class="headerlink" href="#2026-2" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>[2026-02-23]</strong> <a href="Night_Study/notes/2026-02-23_AI_Sandbox_Research/">AI System Sandbox Research</a> - 샌드박스 기술 심층 분석</li>
-<li><strong>[2026-02-20]</strong> <a href="Night_Study/notes/2026-02-20_Medical_Anonymization/">Medical Anonymization</a> - 의료 데이터 비식별화</li>
-<li><strong>[2026-02-18]</strong> <a href="Night_Study/notes/2026-02-18_GLiNER_Label_Tuning/">GLiNER Label Tuning</a> - Clinical PHI Detection</li>
-</ul>
-<h2 id="_4">태그별 분류<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="aiml">AI/ML<a class="headerlink" href="#aiml" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Agentic PACS</li>
-<li>GLiNER Label Tuning</li>
-<li>AI Sandbox</li>
-</ul>
-<h3 id="medical-imaging">Medical Imaging<a class="headerlink" href="#medical-imaging" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Agentic PACS</li>
-<li>FHIR/DICOM Integration</li>
-</ul>
-<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
-<ul>
-<li>AI Dev Tools Security</li>
-<li>Medical Anonymization</li>
-<li>AI Sandbox</li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/github_copilot_policies.md">assets/github_copilot_policies.md</a></li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/claude_code_security.md">assets/claude_code_security.md</a></li>
+<li><a href="../Night_Study_Projects/2026-03-03_AI_Dev_Tools_Security/assets/cursor_privacy_policy.md">assets/cursor_privacy_policy.md</a></li>
 </ul>
 <hr />
-<p><em>Last updated: 2026-03-03</em></p>
+<h2 id="_6">✅ 보안 체크리스트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">개인 계정 설정<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] 모델 학습 비활성화 옵션 확인</li>
+<li>[ ] 공개 코드 매칭 차단 (가능한 경우)</li>
+<li>[ ] .gitignore에 민감한 파일 추가</li>
+<li>[ ] 각 도구별 ignore 파일 생성</li>
+</ul>
+<h3 id="_8">프로젝트별<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] 프로젝트 루트에 ignore 파일 생성</li>
+<li>[ ] 민감한 정보는 환경 변수로 관리</li>
+<li>[ ] API 키, 비밀번호 등 절대 하드코딩하지 않음</li>
+</ul>
+<hr />
+<h2 id="_9">🔗 관련 링크<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../../엄정권/Subject/AI-Development-Tools-Security-Guide.md">전체 가이드 문서</a></li>
+</ul>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -967,10 +940,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/notes/01_Concept_and_Architecture/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-03-05_MedGemma-API-Server/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>01. ONNX의 본질: 중간 표현(IR)과 그래프 (The Core) - 구름이의 공부노트</title>
+        <title>MedGemma 1.5 API 서버 구성 연구 - 구름이의 공부노트</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01-onnx-ir-the-core" class="md-skip">
+        <a href="#medgemma-15-api" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              01. ONNX의 본질: 중간 표현(IR)과 그래프 (The Core)
+              MedGemma 1.5 API 서버 구성 연구
             
           </span>
         </div>
@@ -418,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../topic/" class="md-nav__link">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -488,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Night_Study/topic/" class="md-nav__link">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -585,10 +585,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-onnx-what-why" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. ONNX란 무엇인가? (What &amp; Why)
+        📋 개요
       
     </span>
   </a>
@@ -596,33 +596,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-computation-graph" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 핵심 원리: Computation Graph (계산 그래프)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. 핵심 원리: Computation Graph (계산 그래프)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#anatomy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        구조 (Anatomy)
+        🎯 목적
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        프로그래밍 언어와의 차이
+        🏆 핵심 결론
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏆 핵심 결론">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        추천 구성
       
     </span>
   </a>
@@ -635,10 +635,127 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-protobuf" class="md-nav__link">
+  <a href="#medgemma-15" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 내부 들여다보기: ProtoBuf
+        📊 MedGemma 1.5 모델 정보
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 MedGemma 1.5 모델 정보">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        모델 종류
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        성능 (텍스트)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ API 서버 구축 가이드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ API 서버 구축 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vllm-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        vLLM + Docker 배포
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API 호출 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 GPU 메모리 최적화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 GPU 메모리 최적화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        양자화 옵션
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-bit 양자화 코드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔒 보안 체크리스트
       
     </span>
   </a>
@@ -646,10 +763,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-opset-operator-set-versioning" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Opset (Operator Set) Versioning
+        ⚠️ 주의사항
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 상세 리서치 파일
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 참고 링크
       
     </span>
   </a>
@@ -676,43 +815,206 @@
   
 
 
-<h1 id="01-onnx-ir-the-core">01. ONNX의 본질: 중간 표현(IR)과 그래프 (The Core)<a class="headerlink" href="#01-onnx-ir-the-core" title="Permanent link">&para;</a></h1>
-<h2 id="1-onnx-what-why">1. ONNX란 무엇인가? (What &amp; Why)<a class="headerlink" href="#1-onnx-what-why" title="Permanent link">&para;</a></h2>
-<p><strong>ONNX (Open Neural Network Exchange)</strong>는 AI 모델을 위한 <strong>"오픈 소스 포맷"</strong>입니다.
-쉽게 말해, <strong>"딥러닝 계의 PDF"</strong>라고 생각하면 됩니다.</p>
-<ul>
-<li><strong>문제 상황</strong>: PyTorch로 짠 모델을 C++ 서버에서 돌리거나, TensorFlow 모델을 모바일에서 돌리려면 코드를 다시 짜야 할 때가 많습니다. 프레임워크마다 "언어"가 다르기 때문입니다.</li>
-<li><strong>해결책</strong>: 모든 프레임워크가 <strong>공통된 언어(ONNX)</strong>로 모델을 저장하고, 어떤 환경에서든 <strong>공통된 번역기(ONNX Runtime)</strong>로 실행하게 만듭니다.</li>
-</ul>
-<h2 id="2-computation-graph">2. 핵심 원리: Computation Graph (계산 그래프)<a class="headerlink" href="#2-computation-graph" title="Permanent link">&para;</a></h2>
-<p>ONNX 모델은 코드가 아니라 <strong>"데이터 구조(Data Structure)"</strong>입니다. 이를 <strong>Computation Graph</strong>라고 합니다.</p>
-<h3 id="anatomy">구조 (Anatomy)<a class="headerlink" href="#anatomy" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Node (노드)</strong>: 연산자(Operator)를 의미합니다. (예: <code>Conv</code>, <code>Relu</code>, <code>MatMul</code>, <code>Add</code>)</li>
-<li><strong>Edge (엣지)</strong>: 데이터의 흐름(Tensor)을 의미합니다.</li>
-<li><strong>Attribute (속성)</strong>: 연산자의 고정된 설정값입니다. (예: Convolution의 <code>kernel_size</code>, <code>stride</code>)</li>
-<li><strong>Initializer</strong>: 학습된 가중치(Weight) 데이터가 담긴 텐서입니다.</li>
-</ol>
-<h3 id="_1">프로그래밍 언어와의 차이<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Python (PyTorch)</strong>: <code>if</code>, <code>for</code>, <code>print</code> 등 복잡한 제어 흐름이 있는 <strong>명령형(Imperative)</strong> 코드입니다.</li>
-<li><strong>ONNX</strong>: 입력에서 출력으로 데이터가 흐르는 <strong>선언형(Declarative)</strong> 그래프입니다.<ul>
-<li><em>따라서 PyTorch의 복잡한 <code>if/else</code> 분기문이 ONNX로 변환될 때 종종 문제가 발생하는 이유가 이 "그래프 구조"로의 변환 난이도 때문입니다.</em></li>
-</ul>
-</li>
-</ul>
-<h2 id="3-protobuf">3. 내부 들여다보기: ProtoBuf<a class="headerlink" href="#3-protobuf" title="Permanent link">&para;</a></h2>
-<p>ONNX 파일(<code>model.onnx</code>)은 <strong>Protocol Buffers (ProtoBuf)</strong>라는 직렬화 포맷으로 저장된 이진 파일(Binary)입니다.</p>
-<ul>
-<li>사람이 읽을 수 없는 이진 파일이지만, <strong>Netron</strong> (https://netron.app) 같은 시각화 도구를 쓰면 그래프 구조를 눈으로 볼 수 있습니다.</li>
-<li>구조: <code>ModelProto</code> &gt; <code>GraphProto</code> &gt; <code>NodeProto</code> 순으로 계층화되어 있습니다.</li>
-</ul>
-<h2 id="4-opset-operator-set-versioning">4. Opset (Operator Set) Versioning<a class="headerlink" href="#4-opset-operator-set-versioning" title="Permanent link">&para;</a></h2>
-<p>ONNX는 계속 발전하고 있으며, 연산자(Operator)들의 정의도 바뀝니다. 이를 관리하는 것이 <strong>Opset Version</strong>입니다.
-*   예: <code>Opset 11</code>에는 없던 기능이 <code>Opset 17</code>의 <code>LayerNormalization</code>에는 추가되었을 수 있습니다.
-*   <strong>중요</strong>: 변환할 때 타겟 런타임이 지원하는 Opset 버전을 맞춰주는 것이 호환성 확보의 핵심입니다. (보통 14~17 많이 사용)</p>
+<h1 id="medgemma-15-api">MedGemma 1.5 API 서버 구성 연구<a class="headerlink" href="#medgemma-15-api" title="Permanent link">&para;</a></h1>
+<p><strong>날짜</strong>: 2026년 3월 5일<br />
+<strong>유형</strong>: 심야 연구<br />
+<strong>태그</strong>: #AI #LLM #Medical #API #서버구성</p>
 <hr />
-<p><strong>Next Step</strong>: 다음 노트에서는 PyTorch 모델이 어떻게 이 그래프 형태로 '추적(Tracing)'되어 변환되는지 알아봅니다.</p>
+<h2 id="_1">📋 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>다른 팀에서 요청하여 MedGemma 1.5를 서버에 설치하고, 외부 팀에서 API를 통해 판독문 평가(오탈자, 논리오류 탐지)를 테스트할 수 있도록 구성하는 방법 연구.</p>
+<h2 id="_2">🎯 목적<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>판독문 평가</strong>: 오탈자, 논리오류 등 탐지</li>
+<li><strong>이미지 처리</strong>: 하지 않음 (텍스트 전용)</li>
+<li><strong>API 서버</strong>: 외부 팀에서 쉽게 호출 가능한 구성</li>
+</ul>
+<hr />
+<h2 id="_3">🏆 핵심 결론<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">추천 구성<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>추천</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>모델</strong></td>
+<td><code>google/medgemma-27b-text-it</code> (텍스트 전용)</td>
+</tr>
+<tr>
+<td><strong>서빙</strong></td>
+<td>vLLM + Docker</td>
+</tr>
+<tr>
+<td><strong>API</strong></td>
+<td>OpenAI 호환 (<code>/v1/chat/completions</code>)</td>
+</tr>
+<tr>
+<td><strong>하드웨어</strong></td>
+<td>RTX A6000 × 2 (48GB × 2)</td>
+</tr>
+<tr>
+<td><strong>최소 하드웨어</strong></td>
+<td>RTX 4090 (24GB) + 4-bit 양자화</td>
+</tr>
+<tr>
+<td><strong>라이선스</strong></td>
+<td>무료 (연구/상업적 사용 가능)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="medgemma-15">📊 MedGemma 1.5 모델 정보<a class="headerlink" href="#medgemma-15" title="Permanent link">&para;</a></h2>
+<h3 id="_5">모델 종류<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>모델명</th>
+<th>파라미터</th>
+<th>타입</th>
+<th>GPU 메모리</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>medgemma-1.5-4b-it</code></td>
+<td>4B</td>
+<td>멀티모달</td>
+<td>~8GB</td>
+</tr>
+<tr>
+<td><code>medgemma-27b-text-it</code></td>
+<td>27B</td>
+<td><strong>텍스트 전용</strong></td>
+<td>~54GB</td>
+</tr>
+<tr>
+<td><code>medgemma-27b-it</code></td>
+<td>27B</td>
+<td>멀티모달</td>
+<td>~54GB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">성능 (텍스트)<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li>MedQA: 69.1% (4B), 89.8% (27B)</li>
+<li>EHRQA: 89.6% (1세대 대비 +22%)</li>
+</ul>
+<hr />
+<h2 id="api">🛠️ API 서버 구축 가이드<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<h3 id="vllm-docker">vLLM + Docker 배포<a class="headerlink" href="#vllm-docker" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 모델 다운로드</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>google/medgemma-27b-text-it<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>--local-dir<span class="w"> </span>./models/medgemma-27b-text-it
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Docker 실행</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/models:/models<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span>vllm/vllm-openai:v0.9.0.1<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span>--model<span class="w"> </span>/models/medgemma-27b-text-it<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span>--served-model-name<span class="w"> </span>medgemma<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span>--tensor-parallel-size<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span>--max-model-len<span class="w"> </span><span class="m">8192</span>
+</code></pre></div>
+<h3 id="api_1">API 호출 예시<a class="headerlink" href="#api_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://your-server:8000/v1&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;your-api-key&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;medgemma&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;당신은 의료 판독문 분석 전문가입니다.&quot;</span><span class="p">},</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;다음 판독문에서 오탈자와 논리적 오류를 찾아주세요...&quot;</span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="p">]</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="gpu">💾 GPU 메모리 최적화<a class="headerlink" href="#gpu" title="Permanent link">&para;</a></h2>
+<h3 id="_7">양자화 옵션<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>방식</th>
+<th>VRAM</th>
+<th>품질</th>
+<th>추천</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4-bit</td>
+<td>~16GB</td>
+<td>미미한 저하</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>8-bit</td>
+<td>~29GB</td>
+<td>거의 없음</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td>GGUF Q4_K_M</td>
+<td>~16GB</td>
+<td>낮음</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-bit">4-bit 양자화 코드<a class="headerlink" href="#4-bit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">BitsAndBytesConfig</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">quantization_config</span> <span class="o">=</span> <span class="n">BitsAndBytesConfig</span><span class="p">(</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="n">load_in_4bit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">bnb_4bit_compute_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">float16</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">bnb_4bit_use_double_quant</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">bnb_4bit_quant_type</span><span class="o">=</span><span class="s2">&quot;nf4&quot;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="_8">🔒 보안 체크리스트<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] 외부망 격리 또는 VPN 구성</li>
+<li>[ ] API 인증 (JWT/API Key)</li>
+<li>[ ] 입력 데이터 검증</li>
+<li>[ ] 로그 암호화 저장</li>
+<li>[ ] 개인정보보호법 준수</li>
+</ul>
+<hr />
+<h2 id="_9">⚠️ 주의사항<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>TGI 사용 자제</strong>: 2025년 12월부터 maintenance mode</li>
+<li><strong>임상 직접 사용 금지</strong>: HAI-DEF 라이선스 제한</li>
+<li><strong>Transformers 버전</strong>: 4.50.0 이상 필요</li>
+<li><strong>vLLM 이슈</strong>: 27B 모델 Docker 시작 멈춤 현식 보고됨</li>
+</ol>
+<hr />
+<h2 id="_10">📁 상세 리서치 파일<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="/엄정권/Subject/MedGemma-API-Server/종합보고서.md">종합보고서</a></li>
+<li><a href="/엄정권/Subject/MedGemma-API-Server/research_official.md">공식 정보</a></li>
+<li><a href="/엄정권/Subject/MedGemma-API-Server/research_media.md">미디어/사용 사례</a></li>
+<li><a href="/엄정권/Subject/MedGemma-API-Server/research_community.md">커뮤니티 배포</a></li>
+<li><a href="/엄정권/Subject/MedGemma-API-Server/research_background.md">경쟁 모델 비교</a></li>
+</ul>
+<hr />
+<h2 id="_11">🔗 참고 링크<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://developers.google.com/health-ai-developer-foundations/medgemma">Google Developers - MedGemma</a></li>
+<li><a href="https://huggingface.co/collections/google/medgemma-release-680aade845f90bec6a3f60c4">HuggingFace Collection</a></li>
+<li><a href="https://docs.vllm.ai/">vLLM Documentation</a></li>
+<li><a href="https://github.com/google-health/medgemma">GitHub - Google-Health/medgemma</a></li>
+</ul>
+<hr />
+<p><em>2026년 3월 5일 심야 연구로 완료</em></p>
 
 
 

@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/MedGemma/notes/01_overview/">
       
       
+        <link rel="prev" href="../../topic/">
+      
+      
+        <link rel="next" href="../02_quick_reference/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>MedGemma 개요 및 아키텍처 - 구름이의 공부노트</title>
+        <title>Overview - 구름이의 공부노트</title>
       
     
     
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MedGemma 개요 및 아키텍처
+              Overview
             
           </span>
         </div>
@@ -236,10 +240,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
@@ -328,26 +334,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -365,7 +376,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -415,6 +426,63 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MedGemma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -441,6 +509,557 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 개요
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        모델 버전
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        특징
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ 아키텍처
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ 아키텍처">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 컴포넌트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 배경 지식 (Background Knowledge)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 배경 지식 (Background Knowledge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 멀티모달 LLM이란?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-siglip-sign-language-learning-image-pairs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. SigLIP (Sign Language Learning Image Pairs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fhir-fast-healthcare-interoperability-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FHIR (Fast Healthcare Interoperability Resources)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dicomweb-dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. DICOMweb (DICOM 표준의 웹 기반 버전)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-qlora-quantized-low-rank-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. QLoRA (Quantized Low-Rank Adaptation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-lab-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 실행 전략 (Our Lab Strategy)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 실행 전략 (Our Lab Strategy)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-4090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1단계: 4090 기본 테스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2단계: A100 서빙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3단계: 커스터마이징
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 학습 순서 (Learning Path)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 학습 순서 (Learning Path)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-4090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 1: 기초 (4090 테스트)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-4090-5090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 2: 이미지 분석 (4090 → 5090)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 3: 고급 기능 (A100)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 4: 커스터마이징 (A100)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 관련 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔗 관련 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        공식 문서
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        튜토리얼
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        배경 지식 (참고)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_quick_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_finetuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_dicom_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DICOM Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_ehr_navigator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EHR Navigator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_challenge_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -635,63 +1254,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        핵심 목표
+        모델 버전
       
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🏗️ 아키텍처
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏗️ 아키텍처">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-siglip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. SigLIP 이미지 인코더
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. SigLIP 이미지 인코더">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#siglip" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SigLIP 특징
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-llm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. LLM 컴포넌트
+        특징
       
     </span>
   </a>
@@ -707,30 +1281,47 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📦 리포지토리 구조
+        🏗️ 아키텍처
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🏗️ 아키텍처">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 컴포넌트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#background-knowledge" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔑 핵심 기능
+        🧠 배경 지식 (Background Knowledge)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔑 핵심 기능">
+    <nav class="md-nav" aria-label="🧠 배경 지식 (Background Knowledge)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 의료 이미지 분석
+        1. 멀티모달 LLM이란?
       
     </span>
   </a>
@@ -738,10 +1329,82 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-ehrfhir" class="md-nav__link">
+  <a href="#2-siglip-sign-language-learning-image-pairs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. EHR/FHIR 통합
+        2. SigLIP (Sign Language Learning Image Pairs)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fhir-fast-healthcare-interoperability-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. FHIR (Fast Healthcare Interoperability Resources)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-dicomweb-dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. DICOMweb (DICOM 표준의 웹 기반 버전)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-qlora-quantized-low-rank-adaptation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. QLoRA (Quantized Low-Rank Adaptation)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#our-lab-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 실행 전략 (Our Lab Strategy)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 실행 전략 (Our Lab Strategy)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-4090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1단계: 4090 기본 테스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2단계: A100 서빙
       
     </span>
   </a>
@@ -752,7 +1415,68 @@
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 파인튜닝 및 강화학습
+        3단계: 커스터마이징
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 학습 순서 (Learning Path)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 학습 순서 (Learning Path)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-4090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 1: 기초 (4090 테스트)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-4090-5090" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 2: 이미지 분석 (4090 → 5090)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 3: 고급 기능 (A100)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-a100" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Week 4: 커스터마이징 (A100)
       
     </span>
   </a>
@@ -768,30 +1492,19 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 배포 옵션
+        🔗 관련 자료
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 제한사항 및 고려사항
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ 제한사항 및 고려사항">
+    <nav class="md-nav" aria-label="🔗 관련 자료">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. 도메인 특이성
+        공식 문서
       
     </span>
   </a>
@@ -799,10 +1512,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 임상 검증
+        튜토리얼
       
     </span>
   </a>
@@ -810,10 +1523,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 평가 방법론
+        배경 지식 (참고)
       
     </span>
   </a>
@@ -822,17 +1535,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 참고 자료
-      
-    </span>
-  </a>
   
 </li>
       
@@ -858,141 +1560,368 @@
 
 <h1 id="medgemma">MedGemma 개요 및 아키텍처<a class="headerlink" href="#medgemma" title="Permanent link">&para;</a></h1>
 <h2 id="_1">📌 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p><strong>MedGemma</strong>는 Google Health에서 개발한 의료 특화 AI 모델 컬렉션으로, <a href="https://ai.google.dev/gemma/docs/core">Gemma 3</a>를 기반으로 의료 텍스트 및 이미지 이해를 위해 훈련되었습니다.</p>
-<h3 id="_2">핵심 목표<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<ul>
-<li>의료 AI 애플리케이션 개발 가속화</li>
-<li>다양한 의료 이미지 및 텍스트 처리</li>
-<li>임상 워크플로우 통합 지원</li>
-</ul>
-<hr />
-<h2 id="_3">🏗️ 아키텍처<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1-siglip">1. SigLIP 이미지 인코더<a class="headerlink" href="#1-siglip" title="Permanent link">&para;</a></h3>
-<p>MedGemma 4B 모델은 <strong>SigLIP (Sigmoid Loss for Language Image Pre-training)</strong> 이미지 인코더를 사용합니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                    MedGemma 4B                          │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  ┌──────────────┐    ┌──────────────────────────────┐  │
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  │  SigLIP      │    │         LLM Component         │  │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  │  Image       │───▶│  (Gemma 3 based, Medical     │  │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  │  Encoder     │    │   Text + Multimodal)          │  │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  └──────────────┘    └──────────────────────────────┘  │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│        │                        │                       │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   Medical Images          Medical Text                  │
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   (X-ray, Pathology,      (Radiology Reports,          │
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│    Dermatology, etc.)      Clinical Notes, etc.)       │
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>└─────────────────────────────────────────────────────────┘
-</code></pre></div>
-<h4 id="siglip">SigLIP 특징<a class="headerlink" href="#siglip" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>의료 데이터 사전 훈련</strong>: 비식별화된 의료 데이터로 학습</li>
-<li><strong>다양한 모달리티 지원</strong>: 흉부 X-ray, 피부과, 안과, 병리학 이미지</li>
-<li><strong>Bridge Modality</strong>: 이미지와 텍스트를 연결하는 브리지 역할</li>
-</ul>
-<h3 id="2-llm">2. LLM 컴포넌트<a class="headerlink" href="#2-llm" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>기반</strong>: Gemma 3</li>
-<li><strong>훈련 데이터</strong>: 방사선 이미지, 병리학 패치, 안과 이미지, 피부과 이미지, 의료 텍스트</li>
-<li><strong>특화 기능</strong>: 의료 도메인 이해 및 추론</li>
-</ul>
-<hr />
-<h2 id="_4">📦 리포지토리 구조<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Google-Health/medgemma/
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── README.md
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── CONTRIBUTING.md
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├── LICENSE
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>├── notebooks/                    # 실습 노트북
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   ├── quick_start_with_hugging_face.ipynb
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   ├── quick_start_with_model_garden.ipynb
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   ├── quick_start_with_dicom.ipynb
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│   ├── fine_tune_with_hugging_face.ipynb
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   ├── reinforcement_learning_with_hugging_face.ipynb
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   ├── cxr_anatomy_localization_with_hugging_face.ipynb
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│   ├── cxr_longitudinal_comparison_with_hugging_face.ipynb
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│   ├── ehr_navigator_agent.ipynb
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│   ├── high_dimensional_ct_hugging_face.ipynb
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│   ├── high_dimensional_pathology_hugging_face.ipynb
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│   └── ...
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>└── python/                       # 서빙 코드
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    └── serving/
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        ├── Dockerfile
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>        ├── predictor.py
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        ├── config_init.py
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        └── ...
-</code></pre></div>
-<hr />
-<h2 id="_5">🔑 핵심 기능<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="1">1. 의료 이미지 분석<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>CXR Anatomy Localization</strong>: 흉부 X-ray 해부학적 구조 식별</li>
-<li><strong>CXR Longitudinal Comparison</strong>: 시계열 흉부 영상 비교</li>
-<li><strong>High-Dimensional CT</strong>: 3D CT 볼륨 데이터 분석</li>
-<li><strong>Pathology Analysis</strong>: 병리 슬라이드 분석</li>
-</ul>
-<h3 id="2-ehrfhir">2. EHR/FHIR 통합<a class="headerlink" href="#2-ehrfhir" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>EHR Navigator Agent</strong>: 전자 건강 기록 탐색</li>
-<li><strong>FHIR 데이터 처리</strong>: 구조화된 의료 데이터 처리</li>
-</ul>
-<h3 id="3">3. 파인튜닝 및 강화학습<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Fine-tuning</strong>: 기관 특화 데이터로 미세 조정</li>
-<li><strong>Reinforcement Learning</strong>: 강화학습을 통한 성능 향상</li>
-</ul>
-<hr />
-<h2 id="_6">🚀 배포 옵션<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>MedGemma는 Google-Health가 개발한 4B/27B 멀티모달 LLM으로, <strong>의료 영상 텍스트 분석</strong>을 최적화했다.</p>
+<h3 id="_2">모델 버전<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>옵션</th>
-<th>용도</th>
-<th>인프라</th>
-<th>난이도</th>
+<th>버전</th>
+<th>크기</th>
+<th>유형</th>
+<th>주요 용도</th>
+<th>GPU 요구사항</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Hugging Face</strong></td>
-<td>개발/테스트</td>
-<td>로컬/GPU</td>
-<td>초급</td>
+<td><strong>MedGemma 4B</strong></td>
+<td>4B</td>
+<td>멀티모달 (이미지+텍스트)</td>
+<td>의료 이미지 분석</td>
+<td>4090 int4 / A100 fp16</td>
 </tr>
 <tr>
-<td><strong>Vertex AI Model Garden</strong></td>
-<td>프로덕션</td>
-<td>GCP</td>
-<td>중급~고급</td>
+<td><strong>MedGemma 27B</strong></td>
+<td>27B</td>
+<td>텍스트 전용</td>
+<td>판독문 분석, EHR 탐색</td>
+<td>A100 int4 / 80GB A100 fp16</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">특징<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>✅ <strong>멀티모달</strong>: CT, MRI, 병리 슬라이드 등 다양한 의료 영상 지원</li>
+<li>✅ <strong>임상 통합</strong>: FHIR/EHR 표준, DICOMweb 지원</li>
+<li>✅ <strong>평판 모델</strong>: 식약처 인증 SmartEndo, Auto CTR 등 실제 임상 적용</li>
+<li>✅ <strong>오픈 소스</strong>: Hugging Face, Vertex AI 배포 가능</li>
+</ul>
+<hr />
+<h2 id="_4">🏗️ 아키텍처<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                      MedGemma 전체 아키텍처                    │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├─────────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│                                                             │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  ┌──────────────────┐        ┌──────────────────────┐      │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  │   Vision Encoder │        │    Text Decoder      │      │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  │  (SigLIP)        │        │  (LLaMA-style)       │      │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│  └────────┬─────────┘        └──────────┬───────────┘      │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│           │                              │                  │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│           └──────────┬───────────────────┘                  │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│                      ▼                                     │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│              ┌──────────────┐                              │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│              │   Projection │                              │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│              └──────┬───────┘                              │
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│                     │                                      │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│                     ▼                                      │
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│              ┌──────────────┐                              │
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│              │   Cross-Modal│                              │
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│              │    Attention │                              │
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│              └──────┬───────┘                              │
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>│                     │                                      │
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│                     ▼                                      │
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>│              ┌──────────────┐                              │
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│              │   Output     │                              │
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│              │ (텍스트 생성) │                              │
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│              └──────────────┘                              │
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>│                                                             │
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>└─────────────────────────────────────────────────────────────┘
+</code></pre></div>
+<h3 id="_5">핵심 컴포넌트<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>컴포넌트</th>
+<th>역할</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vision Encoder</strong></td>
+<td>이미지 표현 학습</td>
+<td>SigLIP 모델로 의료 이미지 특징 추출</td>
 </tr>
 <tr>
-<td><strong>DICOM</strong></td>
-<td>임상 워크플로우</td>
-<td>의료 시스템</td>
-<td>고급</td>
+<td><strong>Text Decoder</strong></td>
+<td>텍스트 생성</td>
+<td>LLaMA 기반 디코더로 프롬프트 처리</td>
+</tr>
+<tr>
+<td><strong>Cross-Modal Attention</strong></td>
+<td>멀티모달 통합</td>
+<td>이미지 표현 + 텍스트 프롬프트 결합</td>
+</tr>
+<tr>
+<td><strong>Projection</strong></td>
+<td>공간 변환</td>
+<td>임베딩 차원 매핑</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_7">⚠️ 제한사항 및 고려사항<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="1_1">1. 도메인 특이성<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<h2 id="background-knowledge">🧠 배경 지식 (Background Knowledge)<a class="headerlink" href="#background-knowledge" title="Permanent link">&para;</a></h2>
+<h3 id="1-llm">1. 멀티모달 LLM이란?<a class="headerlink" href="#1-llm" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: 하나의 모델이 <strong>텍스트와 이미지를 동시에 이해하고 처리</strong>할 수 있는 AI 모델</p>
+<p><strong>의료 도메인에서의 중요성</strong>:
+- 의료 영상 (X-ray, CT, MRI) + 판독문 분석
+- 시각적 정보 + 서술적 정보 통합 이해
+- 단일 모델로 멀티모달 작업 수행</p>
+<p><strong>기존 방식 vs 멀티모달</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>기존 방식:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  의료 영상 → AI (독립) → 결과
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  판독문 → LLM (독립) → 결과
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>멀티모달:
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  의료 영상 + 판독문 → MedGemma (통합) → 종합 분석
+</code></pre></div></p>
+<h3 id="2-siglip-sign-language-learning-image-pairs">2. SigLIP (Sign Language Learning Image Pairs)<a class="headerlink" href="#2-siglip-sign-language-learning-image-pairs" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: 이미지와 텍스트 쌍을 학습하여 임베딩 공간에서 최대한 유사한 쌍을 유지하는 모델</p>
+<p><strong>의료 영상에서의 장점</strong>:
+- 비정형 의료 이미지도 잘 표현 가능
+- 관련 이미지 간 유사성 학습
+- 256x256 패치 기반 처리</p>
+<p><strong>작동 방식</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 예시: 의료 이미지 임베딩</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">image1</span> <span class="o">=</span> <span class="s2">&quot;폐결절 있는 흉부 X-ray&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">image2</span> <span class="o">=</span> <span class="s2">&quot;비슷한 크기의 결절 있는 흉부 X-ray&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># 모델은 image1과 image2를 유사하게 임베딩</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">embedding1</span> <span class="err">≈</span> <span class="n">embedding2</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># 반면:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="n">image3</span> <span class="o">=</span> <span class="s2">&quot;정상 흉부 X-ray&quot;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">embedding3</span> <span class="err">→</span> <span class="n">구별됨</span>
+</code></pre></div></p>
+<h3 id="3-fhir-fast-healthcare-interoperability-resources">3. FHIR (Fast Healthcare Interoperability Resources)<a class="headerlink" href="#3-fhir-fast-healthcare-interoperability-resources" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: 의료 데이터를 표준화하여 다른 시스템 간 교환하기 위한 표준</p>
+<p><strong>주요 리소스</strong>:
+- <strong>Patient</strong>: 환자 정보
+- <strong>Observation</strong>: 검사 결과 (혈압, 혈당 등)
+- <strong>Condition</strong>: 진단 정보
+- <strong>Medication</strong>: 약물 처방</p>
+<p><strong>사용 사례</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// Patient: 환자 정보</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">&quot;resourceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Patient&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;family&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;김&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;given&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;철수&quot;</span><span class="p">]}],</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">&quot;birthDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1970-01-01&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nt">&quot;gender&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;male&quot;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1">// Observation: 혈압 검사 결과</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">{</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">  </span><span class="nt">&quot;resourceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Observation&quot;</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;coding&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;8480-6&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;display&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Systolic BP&quot;</span><span class="p">}]},</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">  </span><span class="nt">&quot;valueQuantity&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">120</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;unit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mmHg&quot;</span><span class="p">}</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="p">}</span>
+</code></pre></div></p>
+<h3 id="4-dicomweb-dicom">4. DICOMweb (DICOM 표준의 웹 기반 버전)<a class="headerlink" href="#4-dicomweb-dicom" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: DICOM 의료 영상을 웹 기반으로 접근할 수 있는 프로토콜</p>
+<p><strong>특징</strong>:
+- HTTP 기반 API (GET, POST)
+- RESTful 디자인
+- 웹 브라우저 및 클라이언트 앱에서 접근 가능</p>
+<p><strong>주요 엔드포인트</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/studies/{study_uid}           - 전체 스터디
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>/studies/{study_uid}/instances - 특정 이미지 인스턴스
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>/instances/{instance_uid}/frame - 특정 프레임
+</code></pre></div></p>
+<p><strong>사용 예시</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># DICOMweb API로 이미지 조회</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="s2">&quot;https://pacs.example.com/dicomweb/studies/1.2.3.4/instances/1.2.3.5&quot;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">image_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>  <span class="c1"># DICOM 파일</span>
+</code></pre></div></p>
+<h3 id="5-qlora-quantized-low-rank-adaptation">5. QLoRA (Quantized Low-Rank Adaptation)<a class="headerlink" href="#5-qlora-quantized-low-rank-adaptation" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: <strong>모델 전체를 학습하는 대신, 양자화된 얇은 레이어만 학습</strong>하는 효율적인 파인튜닝 방법</p>
+<p><strong>작동 원리</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>기존 파인튜닝 (파라미터 개수 증가):
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  Base Model (10B) → Fine-tuned Model (12B)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  ⚠️ 전체 가중치 학습 → 메모리 부족
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>QLoRA (가중치 줄이고 학습):
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  Base Model (10B) → LoRA 어댑터 (0.1B) + 양자화된 모델
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  ✅ 어댑터만 학습 → 메모리 효율적
+</code></pre></div></p>
+<p><strong>장점</strong>:
+- A100 40GB로 4B 모델 파인튜닝 가능
+- 학습 시간 3-5배 단축
+- 저장 공간 최소화</p>
+<p><strong>학습 포인트</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># QLoRA 설정 예시</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">peft</span><span class="w"> </span><span class="kn">import</span> <span class="n">LoraConfig</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">lora_config</span> <span class="o">=</span> <span class="n">LoraConfig</span><span class="p">(</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="n">r</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>              <span class="c1"># Rank (양자화 레이어의 차원)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">lora_alpha</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>     <span class="c1"># 학습률 조정</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">target_modules</span><span class="o">=</span><span class="p">[</span>   <span class="c1"># 어댑터 적용 대상</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="s2">&quot;q_proj&quot;</span><span class="p">,</span> <span class="s2">&quot;v_proj&quot;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="p">],</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">lora_dropout</span><span class="o">=</span><span class="mf">0.05</span>  <span class="c1"># Dropout 비율</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">)</span>
+</code></pre></div></p>
+<hr />
+<h2 id="our-lab-strategy">🚀 실행 전략 (Our Lab Strategy)<a class="headerlink" href="#our-lab-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="1-4090">1단계: 4090 기본 테스트<a class="headerlink" href="#1-4090" title="Permanent link">&para;</a></h3>
+<p><strong>목표</strong>: 최소 사양으로 모델 동작 확인</p>
+<table>
+<thead>
+<tr>
+<th>모델</th>
+<th>GPU</th>
+<th>양자화</th>
+<th>예상 메모리</th>
+<th>목표</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MedGemma 4B</td>
+<td>RTX 4090</td>
+<td>int4</td>
+<td>~18GB</td>
+<td>✅ 추론 가능</td>
+</tr>
+<tr>
+<td>MedGemma 27B</td>
+<td>RTX 5090</td>
+<td>int4</td>
+<td>~24GB</td>
+<td>✅ 추론 가능</td>
+</tr>
+</tbody>
+</table>
+<p><strong>실행 플로우</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1. Google-Health GitHub에서 모델 확인
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>   https://github.com/Google-Health/medgemma
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>2. Hugging Face에서 다운로드
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>   https://huggingface.co/google/medgemma-4b-it
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>3. 4090에서 int4 양자화로 실행
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>   - 추론 테스트 (quick_start.ipynb)
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>   - 병리 슬라이드 분석 테스트
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>   - 판독문 비식별화 테스트
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>4. 성능 측정 (소요 시간, 정확도)
+</code></pre></div></p>
+<h3 id="2-a100">2단계: A100 서빙<a class="headerlink" href="#2-a100" title="Permanent link">&para;</a></h3>
+<p><strong>목표</strong>: 다중 사용자 서빙 및 파인튜닝</p>
+<table>
+<thead>
+<tr>
+<th>작업</th>
+<th>GPU</th>
+<th>예상 메모리</th>
+<th>목표</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>추론 (4B)</td>
+<td>A100 40GB</td>
+<td>~16GB (fp16)</td>
+<td>✅ 여러 사용자</td>
+</tr>
+<tr>
+<td>추론 (27B)</td>
+<td>A100 80GB</td>
+<td>~52GB (fp16)</td>
+<td>✅ 여러 사용자</td>
+</tr>
+<tr>
+<td>파인튜닝 (4B)</td>
+<td>A100 40GB</td>
+<td>~35GB (QLoRA)</td>
+<td>✅ 커스터마이징</td>
+</tr>
+<tr>
+<td>파인튜닝 (27B)</td>
+<td>A100 80GB</td>
+<td>~65GB (QLoRA)</td>
+<td>✅ 커스터마이징</td>
+</tr>
+</tbody>
+</table>
+<p><strong>실행 플로우</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1. A100에서 fp16 기본 추론 테스트
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   - 4B 모델: A100 40GB → 서빙 가능
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>   - 27B 모델: A100 80GB → 서빙 가능
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>2. Vertex AI 배포 (엔드포인트 생성)
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>   - 온라인 추론 엔드포인트
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>   - 배치 처리 엔드포인트
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>3. API 개발
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>   - REST API (HF transformers)
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>   - GraphQL (FHIR 리소스)
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>   - DICOMweb Proxy
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>4. 다중 사용자 테스트
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>   - 부하 테스트 (Concurrent requests)
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>   - 비용 모니터링
+</code></pre></div></p>
+<h3 id="3">3단계: 커스터마이징<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>목표</strong>: 우리 연구실 맞춤형 모델 개발</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>1. 데이터셋 준비
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   - 우리 연구실 데이터 (SmartEndo, Auto CTR 등)
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>   - 다른 연구실 데이터 (FHIR/EHR)
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>2. 파인튜닝
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>   - A100에서 QLoRA/SFT
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>   - RLHF/GRPO로 고급 튜닝
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>3. 배포 및 운영
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>   - 엔드포인트 모니터링
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>   - 성능 추적
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>   - 정기 업데이트
+</code></pre></div>
+<hr />
+<h2 id="learning-path">📊 학습 순서 (Learning Path)<a class="headerlink" href="#learning-path" title="Permanent link">&para;</a></h2>
+<h3 id="week-1-4090">Week 1: 기초 (4090 테스트)<a class="headerlink" href="#week-1-4090" title="Permanent link">&para;</a></h3>
 <ul>
-<li>다양한 임상 도메인에서 성능 차이 발생 가능</li>
-<li>기관별 설정에 따른 파인튜닝 필요</li>
+<li>✅ <a href="notes/01_overview.md">01_overview.md</a> - 이 파일</li>
+<li><a href="notes/02_quick_reference.md">02_quick_reference.md</a> - 모델 선택 가이드</li>
+<li><a href="notes/06_notebooks.md">06_notebooks.md</a> - 실습 노트북 목록</li>
 </ul>
-<h3 id="2">2. 임상 검증<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="week-2-4090-5090">Week 2: 이미지 분석 (4090 → 5090)<a class="headerlink" href="#week-2-4090-5090" title="Permanent link">&para;</a></h3>
 <ul>
-<li>프로덕션 배포 전 임상 검증 필수</li>
-<li>벤치마크 성능 이상의 검증 필요</li>
+<li><a href="notes/04_dicom_integration.md">04_dicom_integration.md</a> - DICOM 통합</li>
+<li>[06_notebooks.md#cxr_anatomy_localization] - 흉부 X-ray 해부학</li>
+<li>[06_notebooks.md#high_dimensional_pathology] - 병리 슬라이드 분석</li>
 </ul>
-<h3 id="3_1">3. 평가 방법론<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<h3 id="week-3-a100">Week 3: 고급 기능 (A100)<a class="headerlink" href="#week-3-a100" title="Permanent link">&para;</a></h3>
 <ul>
-<li>재현 가능한 평가 벤치마크 접근 필요</li>
-<li>프롬프트 엔지니어링 요구사항 존재</li>
+<li><a href="notes/05_ehr_navigator.md">05_ehr_navigator.md</a> - EHR 탐색</li>
+<li>[06_notebooks.md#ehr_navigator_agent] - Agentic 워크플로우</li>
+<li>[06_notebooks.md#high_dimensional_ct] - 3D CT 분석</li>
+</ul>
+<h3 id="week-4-a100">Week 4: 커스터마이징 (A100)<a class="headerlink" href="#week-4-a100" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="notes/03_finetuning.md">03_finetuning.md</a> - 파인튜닝 가이드</li>
+<li>[06_notebooks.md#fine_tune_with_hugging_face] - Fine-tuning 실습</li>
+<li>[06_notebooks.md#reinforcement_learning] - RLHF/GRPO</li>
 </ul>
 <hr />
-<h2 id="_8">📚 참고 자료<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_6">🔗 관련 자료<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">공식 문서<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
-<li><a href="https://arxiv.org/abs/2303.15343">SigLIP Paper</a></li>
-<li><a href="https://ai.google.dev/gemma/docs/core">Gemma 3 Documentation</a></li>
-<li><a href="https://developers.google.com/health-ai-developer-foundations">Health AI Developer Foundations</a></li>
+<li><a href="https://github.com/Google-Health/medgemma">Google-Health/medgemma GitHub</a></li>
+<li><a href="https://huggingface.co/collections/google/medgemma-release-680aade845f90bec6a3f60c4">Hugging Face - MedGemma</a></li>
+</ul>
+<h3 id="_8">튜토리얼<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://colab.research.google.com/github/google-health/medgemma/blob/main/notebooks/quick_start_with_hugging_face.ipynb">Quick Start with Hugging Face</a></li>
+<li><a href="https://github.com/Google-Health/medgemma/blob/main/notebooks/fine_tune_with_hugging_face.ipynb">Fine-tuning Guide</a></li>
+</ul>
+<h3 id="_9">배경 지식 (참고)<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.hl7.org/fhir/">FHIR Specification</a></li>
+<li><a href="https://www.dicomstandard.org/using/dicomweb">DICOMweb Protocol</a></li>
+<li><a href="https://arxiv.org/abs/2106.09685">LoRA Paper</a></li>
+<li><a href="https://arxiv.org/abs/2305.14314">QLoRA Paper</a></li>
 </ul>
 
 

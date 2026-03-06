@@ -1,0 +1,2016 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/MedGemma/notes/07_challenge_projects/">
+      
+      
+        <link rel="prev" href="../06_notebooks/">
+      
+      
+        <link rel="next" href="../../../ONNX_Study/topic/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Challenge Projects - 구름이의 공부노트</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#medgemma-impact-challenge" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            구름이의 공부노트
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Challenge Projects
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/iorikyo79/goorm-study-notes" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    goorm-study-notes
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
+          
+  
+  
+  AI Studies
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    구름이의 공부노트
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/iorikyo79/goorm-study-notes" title="저장소로 이동" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    goorm-study-notes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Studies
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Studies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Workflow
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MedGemma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_quick_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_finetuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_dicom_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DICOM Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_ehr_navigator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EHR Navigator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Projects
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개요
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        챌린지 소개
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        챌린지 목표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        평가 기준
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 카테고리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프로젝트 목록
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="프로젝트 목록">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-critical-imaging-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Critical Imaging Copilot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cardioguard-mg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. CardioGuard-MG
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-medsci-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. MedSci Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-selene-menopause-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Selene (Menopause Assistant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-multi-agent-medical-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Multi-Agent Medical System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-triagem-saude-interior-agentic-health-triage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Triagem Saúde Interior (Agentic Health Triage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-multimodal-medgemma-fine-tuned-ai-medical-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Multimodal MedGemma Fine-Tuned AI Medical System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-pharmacy-ai-assistant-viapharma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Pharmacy AI Assistant (ViaPharma)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-family-doc-visit-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Family Doc Visit Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-hearing-dysregulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. HeARing Dysregulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분석 및 인사이트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="분석 및 인사이트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 트렌드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        혁신적 접근
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        우리 연구실 적용 가능성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="우리 연구실 적용 가능성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        높은 적용 가능성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        중간 적용 가능성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        추가 연구 필요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        공식 링크
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프로젝트 저장소
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        데모 영상
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ONNX Study
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI News
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Night_Study/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Night Study
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개요
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        챌린지 소개
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        챌린지 목표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        평가 기준
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 카테고리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프로젝트 목록
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="프로젝트 목록">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-critical-imaging-copilot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Critical Imaging Copilot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cardioguard-mg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. CardioGuard-MG
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-medsci-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. MedSci Agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-selene-menopause-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Selene (Menopause Assistant)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-multi-agent-medical-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Multi-Agent Medical System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-triagem-saude-interior-agentic-health-triage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Triagem Saúde Interior (Agentic Health Triage)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-multimodal-medgemma-fine-tuned-ai-medical-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Multimodal MedGemma Fine-Tuned AI Medical System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-pharmacy-ai-assistant-viapharma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Pharmacy AI Assistant (ViaPharma)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-family-doc-visit-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Family Doc Visit Assistant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-hearing-dysregulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. HeARing Dysregulation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분석 및 인사이트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="분석 및 인사이트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        주요 트렌드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        혁신적 접근
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        우리 연구실 적용 가능성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="우리 연구실 적용 가능성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        높은 적용 가능성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        중간 적용 가능성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        추가 연구 필요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        공식 링크
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프로젝트 저장소
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        데모 영상
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="medgemma-impact-challenge">MedGemma Impact Challenge 프로젝트 분석<a class="headerlink" href="#medgemma-impact-challenge" title="Permanent link">&para;</a></h1>
+<h2 id="_1">개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">챌린지 소개<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>MedGemma Impact Challenge</strong>는 Google Research가 주최하는 Kaggle 해커톤으로, MedGemma와 Health AI Developer Foundations (HAI-DEF) 모델을 활용하여 실제 의료 환경에서 사용 가능한 인간 중심 AI 애플리케이션을 개발하는 것이 목표입니다.</p>
+<ul>
+<li><strong>주최</strong>: Google Research</li>
+<li><strong>플랫폼</strong>: Kaggle</li>
+<li><strong>총 상금</strong>: $100,000</li>
+<li><strong>최종 제출</strong>: 2026년 2월 24일</li>
+<li><strong>결과 발표</strong>: 2026년 3월</li>
+</ul>
+<h3 id="_3">챌린지 목표<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>많은 임상 환경에서는 대규모 클라우드 모델과 상시 인터넷 연결이 실용적이지 않습니다. 이 챌린지는 다음을 목표로 합니다:</p>
+<ol>
+<li><strong>로컬 실행 가능</strong>: 오프라인 환경에서도 작동하는 AI 시스템</li>
+<li><strong>데이터 프라이버시</strong>: 중앙 클라우드 인프라 의존 없이 개인정보 보호</li>
+<li><strong>실제 워크플로우 통합</strong>: 기존 의료 프로세스에 쉽게 적용</li>
+</ol>
+<h3 id="_4">평가 기준<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>HAI-DEF 모델의 효과적 활용</li>
+<li>문제의 중요성</li>
+<li>실제 환경에서의 잠재적 영향력</li>
+<li>기술적 실현 가능성</li>
+<li>실행 및 커뮤니케이션 품질</li>
+</ol>
+<h3 id="_5">주요 카테고리<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Main Competition Track</strong>: $75,000 상금 풀</li>
+<li><strong>Special Awards</strong>:</li>
+<li>Agent-based Workflows</li>
+<li>Novel Fine-tuned Model Adaptations</li>
+<li>Edge AI Deployment (모바일, 스캐너, 실험실 기기)</li>
+</ul>
+<hr />
+<h2 id="_6">프로젝트 목록<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1-critical-imaging-copilot">1. Critical Imaging Copilot<a class="headerlink" href="#1-critical-imaging-copilot" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 의사 승인 게이트 기반 응급 영상 분석 시스템</li>
+<li><strong>키워드</strong>: 응급 트리아지, 다중 에이전트, 의사 승인 게이트, CT/X-ray, 실시간 알림</li>
+<li><strong>기술 스택</strong>: Python, FastAPI, MedGemma 1.5, WebSocket, Kaggle T4 GPU</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>의료 영상 분석 (대동맥 박리, 기흉, 뇌출혈, 폐색전증 등)</li>
+<li>Knowledge Agent가 MedGemma 출력을 구조화된 증거로 변환</li>
+<li>위험도 분류 및 환자 커뮤니케이션 카드 생성</li>
+<li><strong>링크</strong>: </li>
+<li>GitHub: https://github.com/DRZ-hang/med-gemma-critical-imaging-copilot</li>
+<li>Demo: https://youtu.be/Dyr7JXkWzR8</li>
+<li>Kaggle Writeup: https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/medgemma</li>
+<li><strong>요약</strong>: 
+  8개의 AI 에이전트가 협력하여 응급, 외래, 방사선 조정을 동시에 처리하는 시스템. MedGemma가 발견한 소견이 단순한 리포트가 아닌 실제 트리아지, 에스컬레이션, 후속 조치로 직접 연결됨. 모든 환자 알림은 의사의 "승인" 클릭이 있어야만 전송되는 하드 게이트 방식 채택.</li>
+</ul>
+<h3 id="2-cardioguard-mg">2. CardioGuard-MG<a class="headerlink" href="#2-cardioguard-mg" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 실시간 심전도 모니터링 및 이상 탐지 플랫폼</li>
+<li><strong>키워드</strong>: Holter ECG, 실시간 모니터링, 다층 AI 파이프라인, 심혈관 질환, 모바일 헬스</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Backend: FastAPI, Firebase, Celery, Redis, Prometheus</li>
+<li>Frontend: React Native/Expo (모바일), Next.js 16 (웹)</li>
+<li>AI: CNN + Rule Engine + MedGemma LLM</li>
+<li>Hardware: ESP32 Holter 시뮬레이터</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>3계층 AI 아키텍처의 최종 단계에서 임상 리포트 생성</li>
+<li>의사용 기술적 리포트와 환자용 친화적 설명 모두 생성</li>
+<li>ECG 분석 결과를 사람이 읽을 수 있는 형태로 변환</li>
+<li><strong>링크</strong>: https://github.com/firatmio/cardioguard-mg</li>
+<li><strong>요약</strong>: 
+  Holter ECG 기기에서 실시간 심전도 데이터를 수집하고, 3계층 AI 파이프라인(CNN → 규칙 엔진 → MedGemma)을 통해 이상을 탐지. 위험 이벤트 발생 시 응급 연락처 SMS, 의사 FCM 푸시, Firestore 기록이 자동 생성됨.</li>
+</ul>
+<h3 id="3-medsci-agent">3. MedSci Agent<a class="headerlink" href="#3-medsci-agent" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 28개 MCP 도구를 갖춘 생의학 연구 에이전트</li>
+<li><strong>키워드</strong>: 생의학 연구, MCP 도구, 약물 ADMET, 단백질 구조, 단일세포 오믹스</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Runtime: Bun, TypeScript, Python</li>
+<li>Models: MedGemma 4B, TxGemma 2B (via Ollama)</li>
+<li>Tools: OpenCode, RDKit, BioPython, Scanpy, Docker Sandbox</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>도구 출력 해석: API 및 계산 도구의 원시 데이터를 임상 관련 요약으로 변환</li>
+<li>의료 영상 분석 (X-ray, CT, 병리, 피부과)</li>
+<li>모든 MedGemma 호출에 model_used 플래그 반환</li>
+<li><strong>링크</strong>: https://github.com/omar-A-hassan/medsci-agent</li>
+<li><strong>요약</strong>: 
+  약물 ADMET 예측, 단백질 구조 검색, 단일세포 RNA-seq 분석, 의료 영상 해석, 문헌 검색 등 28개 생의학 도구를 MCP(Model Context Protocol)로 제공. 모든 데이터가 로컬에 유지되며, MedGemma와 TxGemma가 Ollama를 통해 로컬 실행됨.</li>
+</ul>
+<h3 id="4-selene-menopause-assistant">4. Selene (Menopause Assistant)<a class="headerlink" href="#4-selene-menopause-assistant" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 프라이버시 우선 갱년기 증상 관리 도우미</li>
+<li><strong>키워드</strong>: 갱년기, 로컬 실행, RAG, 증상 추적, 임상 리포트</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Frontend: Streamlit</li>
+<li>LLM: MedGemma 1.5 4B (via Ollama)</li>
+<li>Vector DB: ChromaDB</li>
+<li>Embeddings: SentenceTransformer (all-MiniLM-L6-v2)</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>Daily Attune: 휴식/내부 날씨/명확도 로깅</li>
+<li>RAG 기반 채팅: 의료 문서 및 이전 대화 검색</li>
+<li>임상 요약 리포트 생성 (PDF 내보내기)</li>
+<li><strong>링크</strong>: https://github.com/innacampo/selene</li>
+<li><strong>요약</strong>: 
+  완전히 온디바이스에서 실행되는 갱년기 증상 관리 앱. 사용자 데이터는 data/user_data/에 로컬 저장되며, LLM 호출은 로컬 Ollama 엔드포인트로 전송. 결정론적 위험 플래그, 보수적 프롬프트, 낮은 온도 설정으로 안전성 확보.</li>
+</ul>
+<h3 id="5-multi-agent-medical-system">5. Multi-Agent Medical System<a class="headerlink" href="#5-multi-agent-medical-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 다중 에이전트 의료 어시스턴트 시스템</li>
+<li><strong>키워드</strong>: ICD-10 추출, SOAP 노트, 의료 영상 분석, LangGraph, FastAPI</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Backend: FastAPI, LangGraph, LangSmith</li>
+<li>Model: MedGemma 4B (MLX 양자화 버전)</li>
+<li>Hardware: Apple M4 Max, 48GB RAM</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>Router Agent: 입력 분석 및 적절한 에이전트로 라우팅</li>
+<li>ICD-10 Agent: 임상 노트에서 ICD-10 코드 추출</li>
+<li>SOAP Agent: 구조화된 SOAP 노트 생성</li>
+<li>Image Agent: 방사선 이미지 분석</li>
+<li><strong>링크</strong>: https://github.com/joyceannie/Multi_Agent_Medical_System</li>
+<li><strong>요약</strong>: 
+  임상 노트 분석, 의료 영상 해석, 구조화된 SOAP 노트 생성을 지원하는 모듈형 FastAPI 애플리케이션. 지연 시간 최소화를 위해 양자화된 MedGemma 모델을 로컬에서 실행하며, LangSmith로 모니터링.</li>
+</ul>
+<h3 id="6-triagem-saude-interior-agentic-health-triage">6. Triagem Saúde Interior (Agentic Health Triage)<a class="headerlink" href="#6-triagem-saude-interior-agentic-health-triage" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 저자원 농촌 의료를 위한 에이전트 트리아지 시스템</li>
+<li><strong>키워드</strong>: 농촌 의료, 트리아지, 위험 분류, 규칙 기반, 포르투갈어</li>
+<li><strong>기술 스택</strong>: Python, Pandas, 규칙 기반 로직, Jupyter Notebook</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>현재는 규칙 기반 시스템이나, 향후 LLM 통합 계획</li>
+<li>임상 입력 데이터(나이, 체온, 증상, 만성질환) 평가</li>
+<li><strong>링크</strong>: https://github.com/AgathaAlmeida7/triagem-saude-interior-agentic</li>
+<li><strong>요약</strong>: 
+  농촌 및 저자원 지역에서 의료 접근이 제한된 환경을 위해 설계된 트리아지 시스템. 다각적 임상 요인을 평가하여 위험 점수를 계산하고, 긴급도 수준(낮음/보통/높음/위급)을 분류. 오프라인 배포 및 모바일 인터페이스로 확장 계획.</li>
+</ul>
+<h3 id="7-multimodal-medgemma-fine-tuned-ai-medical-system">7. Multimodal MedGemma Fine-Tuned AI Medical System<a class="headerlink" href="#7-multimodal-medgemma-fine-tuned-ai-medical-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: LoRA 파인튜닝 기반 의료 영상 캡션 생성</li>
+<li><strong>키워드</strong>: LoRA 파인튜닝, 의료 영상, CT/MRI/X-ray, Gradio, bfloat16</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Base Model: MedGemma 1.5 4B IT</li>
+<li>Fine-tuning: LoRA (rank=16, q_proj/v_proj)</li>
+<li>Precision: bfloat16</li>
+<li>Frontend: Gradio</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>SigLIP 기반 비전 인코더로 의료 스캔 특징 추출</li>
+<li>멀티모달 어댑터로 시각 특징을 언어 모델 임베딩 공간으로 매핑</li>
+<li>의료 용어 및 임상 추론에 최적화된 4B 트랜스포머</li>
+<li><strong>링크</strong>: https://github.com/DURGESH716/Multimodal_MedGemma_FineTuned_AI_Medical_System</li>
+<li><strong>요약</strong>: 
+  MedGemma 1.5 4B를 LoRA로 파인튜닝하여 의료 영상에서 임상 스타일의 캡션을 자동 생성. 16GB+ GPU에서 실행 가능하도록 최적화되었으며, 향후 DICOM 호환, 다국어 리포팅, 4비트 양자화 계획.</li>
+</ul>
+<h3 id="8-pharmacy-ai-assistant-viapharma">8. Pharmacy AI Assistant (ViaPharma)<a class="headerlink" href="#8-pharmacy-ai-assistant-viapharma" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 불가리아어 OTC 의약품 추천 챗봇</li>
+<li><strong>키워드</strong>: OTC 추천, 불가리아어, 안전 우선, ChromaDB, MLX</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Backend: FastAPI</li>
+<li>Model: MedGemma 4B (MLX, Apple Silicon)</li>
+<li>Vector DB: ChromaDB</li>
+<li>Translation: MarianMT</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>단일 LLM 호출로 의도 분류, 안전 스크리닝, 의료 추론, 제품 매칭 처리</li>
+<li>불가리아어 쿼리를 영어로 번역하여 처리</li>
+<li>9,600개 제품 카탈로그에서 벡터 검색 후 LLM 정제</li>
+<li><strong>링크</strong>: https://github.com/kiroviro/pharmacy-ai-assistant</li>
+<li><strong>요약</strong>: 
+  ViaPharma 생태계의 지능형 제품 추천 레이어. 증상 기반 OTC 의약품 추천을 제공하며, 응급 상황은 하드코딩된 안전 레이어에서 차단. OpenAI 호환 API 제공.</li>
+</ul>
+<h3 id="9-family-doc-visit-assistant">9. Family Doc Visit Assistant<a class="headerlink" href="#9-family-doc-visit-assistant" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 가정의학 문서화 어시스턴트</li>
+<li><strong>키워드</strong>: 사전 방문 인테이크, SOAP 노트, 임상 문서화, 폴란드 의사 설문, Streamlit</li>
+<li><strong>기술 스택</strong>: </li>
+<li>Model: MedGemma 1.5 4B IT (Transformers)</li>
+<li>Frontend: Streamlit</li>
+<li>Validation: JSON Schema</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>구조화된 사전 방문 인테이크 데이터 처리</li>
+<li>임상 요약 및 드래프트 노트 생성</li>
+<li>누락 정보 및 후속 질문 식별</li>
+<li><strong>링크</strong>: https://github.com/AlessioSantos/family-doc-visit-assistant</li>
+<li><strong>요약</strong>: 
+  폴란드 실습 의사 설문조사를 기반으로 설계된 MVP. 진단/치료/용량 권장 없이 문서화에만 집중. 환자 타임라인, 체온 그래프, 기침 오디오/발진 사진 선택적 수집 지원.</li>
+</ul>
+<h3 id="10-hearing-dysregulation">10. HeARing Dysregulation<a class="headerlink" href="#10-hearing-dysregulation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>주제</strong>: 청각 기반 질환 조절 이상 탐지</li>
+<li><strong>키워드</strong>: 청각, HeAR 모델, 질환 조절, 의료 AI, Kaggle 제출</li>
+<li><strong>기술 스택</strong>: MedGemma, Google HeAR (Health Acoustic Representations)</li>
+<li><strong>MedGemma 활용</strong>: </li>
+<li>의료 관련 오디오 신호 분석</li>
+<li>임상 결정 지원</li>
+<li><strong>링크</strong>: </li>
+<li>YouTube Demo: https://www.youtube.com/watch?v=KR24tSBgcNk</li>
+<li><strong>요약</strong>: 
+  Google의 HeAR(Health Acoustic Representations) 모델과 MedGemma를 결합하여 청각 신호에서 질환 조절 이상을 탐지하는 시스템. 3분 데모 영상으로 챌린지에 제출됨.</li>
+</ul>
+<hr />
+<h2 id="_7">분석 및 인사이트<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">주요 트렌드<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>에이전트 기반 아키텍처</strong></li>
+<li>단일 모델 호출이 아닌 다중 에이전트 협업 구조가 주류</li>
+<li>
+<p>Critical Imaging Copilot (8개 에이전트), Multi-Agent Medical System (4개 에이전트) 등</p>
+</li>
+<li>
+<p><strong>로컬/엣지 배포</strong></p>
+</li>
+<li>Apple Silicon + MLX/Ollama 활용이 활발</li>
+<li>오프라인 실행, 데이터 프라이버시 강조</li>
+<li>
+<p>양자화 모델로 리소스 제약 환경 지원</p>
+</li>
+<li>
+<p><strong>안전 게이트 메커니즘</strong></p>
+</li>
+<li>모든 시스템이 "진단 없음, 치료 권장 없음" 명시</li>
+<li>의사 승인 게이트 (Critical Imaging Copilot)</li>
+<li>
+<p>하드코딩된 응급 탐지 (Pharmacy AI Assistant)</p>
+</li>
+<li>
+<p><strong>RAG + 멀티모달 결합</strong></p>
+</li>
+<li>ChromaDB + MedGemma 조합이 일반적</li>
+<li>
+<p>텍스트, 이미지, 오디오 다중 모달리티 통합</p>
+</li>
+<li>
+<p><strong>임상 워크플로우 통합</strong></p>
+</li>
+<li>단순 분석이 아닌 실제 임상 프로세스에 통합</li>
+<li>EHR, DICOM, FHIR 등 표준 포맷 지원</li>
+</ol>
+<h3 id="_9">혁신적 접근<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>프로젝트</th>
+<th>혁신 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical Imaging Copilot</td>
+<td>AI → 의사 승인 → 환자 알림의 완전한 플로우 구현</td>
+</tr>
+<tr>
+<td>CardioGuard-MG</td>
+<td>3계층 AI 파이프라인 + 실시간 Holter 모니터링</td>
+</tr>
+<tr>
+<td>MedSci Agent</td>
+<td>28개 MCP 도구로 생의학 연구 전 영역 커버</td>
+</tr>
+<tr>
+<td>Selene</td>
+<td>완전 온디바이스 + 결정론적 안전 플래그</td>
+</tr>
+<tr>
+<td>Pharmacy AI Assistant</td>
+<td>단일 LLM 호출로 전체 파이프라인 처리</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_10">우리 연구실 적용 가능성<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h4 id="_11">높은 적용 가능성<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>의료 영상 분석 파이프라인</strong></li>
+<li>MedGemma 1.5의 CT/MRI/병리 이미지 지원 활용</li>
+<li>
+<p>기존 PACS/DICOM 시스템과 통합</p>
+</li>
+<li>
+<p><strong>임상 문서 자동화</strong></p>
+</li>
+<li>SOAP 노트 생성, ICD-10 코딩 지원</li>
+<li>
+<p>EHR Navigator 아키텍처 참조</p>
+</li>
+<li>
+<p><strong>다중 에이전트 시스템</strong></p>
+</li>
+<li>LangGraph + MedGemma 조합으로 특화 에이전트 구축</li>
+<li>각 임상 도메인별 에이전트 설계</li>
+</ol>
+<h4 id="_12">중간 적용 가능성<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>엣지 배포</strong></li>
+<li>Apple Silicon 환경에서 MLX 활용</li>
+<li>
+<p>오프라인 진단 보조 시스템</p>
+</li>
+<li>
+<p><strong>RAG 기반 임상 결정 지원</strong></p>
+</li>
+<li>ChromaDB + MedGemma로 지침 검색</li>
+<li>병원 내부 문서 기반 Q&amp;A 시스템</li>
+</ol>
+<h4 id="_13">추가 연구 필요<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>약물 ADMET 예측</strong></li>
+<li>TxGemma 모델 활용 가능성 검토</li>
+<li>
+<p>기존 파이프라인과 통합 방안</p>
+</li>
+<li>
+<p><strong>단일세포 오믹스 분석</strong></p>
+</li>
+<li>Scanpy + MedGemma 조합</li>
+<li>생물학적 해석 자동화</li>
+</ol>
+<hr />
+<h2 id="_14">참고 자료<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">공식 링크<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.kaggle.com/competitions/med-gemma-impact-challenge">MedGemma Impact Challenge (Kaggle)</a></li>
+<li><a href="https://research.google/blog/next-generation-medical-image-interpretation-with-medgemma-15-and-medical-speech-to-text-with-medasr/">Google Research Blog</a></li>
+<li><a href="https://github.com/Google-Health/medgemma">MedGemma GitHub</a></li>
+<li><a href="https://developers.google.com/health-ai-developer-foundations/medgemma">HAI-DEF Documentation</a></li>
+</ul>
+<h3 id="_16">프로젝트 저장소<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ol>
+<li>https://github.com/DRZ-hang/med-gemma-critical-imaging-copilot</li>
+<li>https://github.com/firatmio/cardioguard-mg</li>
+<li>https://github.com/omar-A-hassan/medsci-agent</li>
+<li>https://github.com/innacampo/selene</li>
+<li>https://github.com/joyceannie/Multi_Agent_Medical_System</li>
+<li>https://github.com/AgathaAlmeida7/triagem-saude-interior-agentic</li>
+<li>https://github.com/DURGESH716/Multimodal_MedGemma_FineTuned_AI_Medical_System</li>
+<li>https://github.com/kiroviro/pharmacy-ai-assistant</li>
+<li>https://github.com/AlessioSantos/family-doc-visit-assistant</li>
+</ol>
+<h3 id="_17">데모 영상<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KR24tSBgcNk">HeARing Dysregulation Demo</a></li>
+<li><a href="https://youtu.be/Dyr7JXkWzR8">Critical Imaging Copilot Demo</a></li>
+</ul>
+<hr />
+<p><em>작성일: 2026-03-06</em>
+<em>데이터 소스: Kaggle, GitHub, YouTube, Google Research Blog</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

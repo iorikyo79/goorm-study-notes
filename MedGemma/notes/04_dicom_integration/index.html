@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/MedGemma/notes/04_dicom_integration/">
       
       
+        <link rel="prev" href="../03_finetuning/">
+      
+      
+        <link rel="next" href="../05_ehr_navigator/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>MedGemma DICOM 통합 가이드 - 구름이의 공부노트</title>
+        <title>DICOM Integration - 구름이의 공부노트</title>
       
     
     
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MedGemma DICOM 통합 가이드
+              DICOM Integration
             
           </span>
         </div>
@@ -236,10 +240,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
@@ -328,26 +334,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -365,7 +376,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -415,6 +426,63 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MedGemma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -441,6 +509,735 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_quick_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_finetuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DICOM Integration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DICOM Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 개요
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DICOM 지원 방식
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ 아키텍처
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 배경 지식 (Background Knowledge)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 배경 지식 (Background Knowledge)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-dicom-digital-imaging-and-communications-in-medicine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. DICOM (Digital Imaging and Communications in Medicine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dicomweb-dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. DICOMweb (DICOM 표준의 웹 기반 버전)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pacs-picture-archiving-and-communication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. PACS (Picture Archiving and Communication System)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 설정 및 실행
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 설정 및 실행">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vertex-ai-dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1단계: Vertex AI 배포 (DICOM 지원)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2단계: 입력 데이터 구성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2단계: 입력 데이터 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-dicom-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 A: DICOM Store 참조
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-gcs-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 B: GCS URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-http-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 C: HTTP URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3단계: 추론 요청
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-ctmri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📊 3D 볼륨 처리 (CT/MRI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 3D 볼륨 처리 (CT/MRI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        처리 파이프라인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        코드 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        활용 시나리오
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="활용 시나리오">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 출혈 검출
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 종양 위치 추적
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏥 임상 워크플로우 통합
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏥 임상 워크플로우 통합">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pacs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PACS 연동 시나리오
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연동 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API 연결 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 활용 예시
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 활용 예시">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-x-ray" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 흉부 X-ray 자동 판독
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. CT 볼륨 분석
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 시계열 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 주의사항
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ 주의사항">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 데이터 보안
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 성능 최적화
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 임상 검증
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📚 참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        표준 문서
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        라이브러리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        노트북
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        관련 문서
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_ehr_navigator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EHR Navigator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_challenge_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -628,6 +1425,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="📌 개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DICOM 지원 방식
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -639,14 +1453,47 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏗️ 아키텍처">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 배경 지식 (Background Knowledge)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 배경 지식 (Background Knowledge)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#1-dicom-digital-imaging-and-communications-in-medicine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        입력 방식
+        1. DICOM (Digital Imaging and Communications in Medicine)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dicomweb-dicom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. DICOMweb (DICOM 표준의 웹 기반 버전)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pacs-picture-archiving-and-communication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. PACS (Picture Archiving and Communication System)
       
     </span>
   </a>
@@ -659,22 +1506,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔧 설정
+        🔧 설정 및 실행
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 설정">
+    <nav class="md-nav" aria-label="🔧 설정 및 실행">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1-vertex-ai-dicom" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Vertex AI 배포 (DICOM 지원)
+        1단계: Vertex AI 배포 (DICOM 지원)
       
     </span>
   </a>
@@ -685,7 +1532,19 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 입력 데이터 구성
+        2단계: 입력 데이터 구성
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2단계: 입력 데이터 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-dicom-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 A: DICOM Store 참조
       
     </span>
   </a>
@@ -693,10 +1552,37 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#b-gcs-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 B: GCS URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-http-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        방식 C: HTTP URL
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. 추론 요청
+        3단계: 추론 요청
       
     </span>
   </a>
@@ -709,16 +1595,27 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3d" class="md-nav__link">
+  <a href="#3d-ctmri" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 3D 볼륨 처리
+        📊 3D 볼륨 처리 (CT/MRI)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📊 3D 볼륨 처리">
+    <nav class="md-nav" aria-label="📊 3D 볼륨 처리 (CT/MRI)">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
@@ -742,13 +1639,52 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        활용 시나리오
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="활용 시나리오">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 출혈 검출
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 종양 위치 추적
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🏥 임상 워크플로우 통합
@@ -771,10 +1707,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         연동 포인트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API 연결 예시
       
     </span>
   </a>
@@ -787,7 +1734,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
         💡 활용 예시
@@ -837,7 +1784,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의사항
@@ -849,7 +1796,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         1. 데이터 보안
@@ -860,7 +1807,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#2_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         2. 성능 최적화
@@ -887,7 +1834,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 참고 자료
@@ -899,7 +1846,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
       
         표준 문서
@@ -910,7 +1857,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        라이브러리
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       
         노트북
@@ -921,7 +1879,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
       
         관련 문서
@@ -959,19 +1917,7 @@
 <h1 id="medgemma-dicom">MedGemma DICOM 통합 가이드<a class="headerlink" href="#medgemma-dicom" title="Permanent link">&para;</a></h1>
 <h2 id="_1">📌 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>MedGemma는 DICOM 의료 영상 표준을 직접 지원한다. PACS 시스템과의 통합이 가능하다.</p>
-<hr />
-<h2 id="_2">🏗️ 아키텍처<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────┐     ┌─────────────────┐     ┌──────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│   PACS      │────▶│   DICOMweb     │────▶│   MedGemma   │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   System    │     │   API           │     │   Endpoint    │
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└─────────────┘     └─────────────────┘     └──────────────┘
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      │                    │                      │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>      │  DICOM Store       │   GCS Bucket          │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      │  Reference         │   HTTP URL            │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>      │                    │   Raw Bytes           │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>      └────────────────────┴──────────────────────┘
-</code></pre></div>
-<h3 id="_3">입력 방식<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="dicom">DICOM 지원 방식<a class="headerlink" href="#dicom" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -979,6 +1925,7 @@
 <th>파라미터</th>
 <th>데이터 타입</th>
 <th>사용 사례</th>
+<th>GPU 요구사항</th>
 </tr>
 </thead>
 <tbody>
@@ -987,131 +1934,413 @@
 <td><code>image_dicom</code></td>
 <td>DicomGenericData</td>
 <td>PACS 연동, 표준 임상 시스템</td>
+<td>4090 int4 / A100 fp16</td>
 </tr>
 <tr>
 <td><strong>GCS URI</strong></td>
 <td><code>image_gcs</code></td>
 <td>GcsGenericData</td>
 <td>Google Cloud Storage 활용</td>
+<td>4090 int4 / A100 fp16</td>
 </tr>
 <tr>
 <td><strong>HTTP URL</strong></td>
 <td><code>image_url</code></td>
 <td>HttpGenericData</td>
 <td>외부 이미지 접근</td>
+<td>4090 int4 / A100 fp16</td>
 </tr>
 <tr>
 <td><strong>Raw Bytes</strong></td>
 <td><code>image_bytes</code></td>
 <td>BytesGenericData</td>
 <td>직접 파일 업로드</td>
+<td>4090 int4 / A100 fp16</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="_4">🔧 설정<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="1-vertex-ai-dicom">1. Vertex AI 배포 (DICOM 지원)<a class="headerlink" href="#1-vertex-ai-dicom" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># MedGemma DICOM 변형 모델 로드</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.preview.vision_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">MedGemmaModel</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">MedGemmaModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;medgemma-4b-it-dicom&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="2">2. 입력 데이터 구성<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># DICOM Store 참조</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">dicom_input</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="s2">&quot;image_dicom&quot;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="s2">&quot;dicomweb_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://healthcare.googleapis.com/v1/projects/PROJECT/locations/LOCATION/datasets/DATASET/dicomStores/STORE/dicomWeb/studies/STUDY_UID&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="s2">&quot;instance_uid&quot;</span><span class="p">:</span> <span class="s2">&quot;INSTANCE_UID&quot;</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">}</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># GCS URI</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">gcs_input</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    <span class="s2">&quot;image_gcs&quot;</span><span class="p">:</span> <span class="p">{</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="s2">&quot;gcs_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;gs://bucket-name/path/to/image.dcm&quot;</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="p">}</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p">}</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
-<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c1"># HTTP URL</span>
-<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="n">url_input</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>    <span class="s2">&quot;image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://example.com/medical-image.dcm&quot;</span>
-<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="p">}</span>
-</code></pre></div>
-<h3 id="3">3. 추론 요청<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">input</span><span class="o">=</span><span class="n">dicom_input</span><span class="p">,</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;이 흉부 X-ray 이미지를 분석하고 주요 소견을 설명해주세요.&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">max_output_tokens</span><span class="o">=</span><span class="mi">512</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">)</span>
+<h2 id="_2">🏗️ 아키텍처<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                      DICOM 통합 아키텍처                      │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├─────────────────────────────────────────────────────────────┤
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│                                                             │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  ┌──────────────┐                                           │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  │   PACS       │─── DICOMweb API ──▶  DICOM Instance       │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  │   System     │                                           │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│  └──────┬───────┘                                           │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│         │                                                   │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│         ▼                                                   │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│  ┌──────────────┐                                           │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│  │ DICOM Store  │  (DICOMweb URI / Instance UID)            │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│  │ Reference    │                                           │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│  └──────┬───────┘                                           │
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│         │                                                   │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│         ▼                                                   │
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│  ┌──────────────┐                                           │
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│  │   MedGemma   │─── Image + Text Input ──▶ Analysis       │
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>│  │   Model      │                                           │
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>│  └──────┬───────┘                                           │
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>│         │                                                   │
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>│         ▼                                                   │
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>│  ┌──────────────┐                                           │
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>│  │  Analysis    │─── Result ──▶ PACS/RIS                   │
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>│  │  Output      │                                           │
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>│  └──────────────┘                                           │
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>│                                                             │
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>└─────────────────────────────────────────────────────────────┘
 </code></pre></div>
 <hr />
-<h2 id="3d">📊 3D 볼륨 처리<a class="headerlink" href="#3d" title="Permanent link">&para;</a></h2>
-<p>MedGemma는 CT/MRI 같은 다중 슬라이스 데이터를 처리할 수 있다.</p>
+<h2 id="background-knowledge">🧠 배경 지식 (Background Knowledge)<a class="headerlink" href="#background-knowledge" title="Permanent link">&para;</a></h2>
+<h3 id="1-dicom-digital-imaging-and-communications-in-medicine">1. DICOM (Digital Imaging and Communications in Medicine)<a class="headerlink" href="#1-dicom-digital-imaging-and-communications-in-medicine" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: 의료 영상을 표준화하여 다른 시스템 간 교환하기 위한 국제 표준</p>
+<p><strong>주요 특징</strong>:
+- 1983년부터 개발 (ANSI/IEEE/ISO 표준)
+- DICOM Part 10: IOD (Information Object Definitions)
+- DICOM Part 15: Security
+- DICOM Part 16: Web Access to DICOM Objects (WADO)
+- 10,000+ 필드와 태그 정의</p>
+<p><strong>주요 태그 예시</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>(0008,0050) Study Instance UID          # 스터디 고유 식별자
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>(0010,0010) Patient Name               # 환자명
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>(0010,0020) Patient ID                 # 환자 식별자
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>(0008,0060) Modality                    # 이미지 유형 (CT, MR, XRAY)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>(0020,000D) Study Instance UID
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>(0020,0010) Study ID
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>(0020,000E) Series Instance UID
+</code></pre></div></p>
+<p><strong>DICOM 파일 구조</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>DICOM File
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── DICOM Header (100+ tags)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│   ├── Meta Information (File Meta)
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│   ├── Transfer Syntax
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│   ├── VR (Value Representation)
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│   └── File Meta Information Group
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└── DICOM Dataset (Image Data)
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    ├── Pixel Data (실제 이미지)
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    └── Private Tags
+</code></pre></div></p>
+<h3 id="2-dicomweb-dicom">2. DICOMweb (DICOM 표준의 웹 기반 버전)<a class="headerlink" href="#2-dicomweb-dicom" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: DICOM 표준을 웹 프로토콜(HTTP)로 접근 가능하게 만든 것</p>
+<p><strong>특징</strong>:
+- RESTful 디자인 (GET, POST, DELETE)
+- HTTP 기반 인증
+- 웹 브라우저 및 API 클라이언트 지원
+- FHIR 연동 가능</p>
+<p><strong>주요 엔드포인트</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/studies/{study_uid}                    # 스터디 전체
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>/studies/{study_uid}/series             # 시리즈 목록
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>/studies/{study_uid}/instances          # 인스턴스 목록
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>/instances/{instance_uid}               # 특정 인스턴스
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>/instances/{instance_uid}/metadata      # 메타데이터
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>/instances/{instance_uid}/frame         # 특정 프레임
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>/instances/{instance_uid}/thumbnail     # 섬네일
+</code></pre></div></p>
+<p><strong>WADO-RS (RESTful)</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>GET /studies/{study_uid}/instances/{instance_uid}/rendered
+</code></pre></div></p>
+<p><strong>WADO-URI (리소스 로드)</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>GET /studies/{study_uid}/instances/{instance_uid}/file
+</code></pre></div></p>
+<p><strong>C-STORE (서버로 보내기)</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>POST /studies
+</code></pre></div></p>
+<p><strong>사용 예시</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># WADO-URI로 이미지 다운로드</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="s2">&quot;https://pacs.example.com/dicomweb/studies/1.2.3.4/instances/1.2.3.5/file&quot;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">image_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>  <span class="c1"># DICOM 파일</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># WADO-RS로 이미지 렌더링</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="s2">&quot;https://pacs.example.com/dicomweb/studies/1.2.3.4/instances/1.2.3.5/rendered&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span><span class="p">}</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="p">)</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">image_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>  <span class="c1"># JPEG 이미지</span>
+</code></pre></div></p>
+<h3 id="3-pacs-picture-archiving-and-communication-system">3. PACS (Picture Archiving and Communication System)<a class="headerlink" href="#3-pacs-picture-archiving-and-communication-system" title="Permanent link">&para;</a></h3>
+<p><strong>개념</strong>: 의료 영상의 보관, 전송, 표시를 관리하는 시스템</p>
+<p><strong>구성</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>PACS
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>├── DICOM Storage SCP (서버)
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>│   ├── Archive (보관)
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>│   ├── Retrieval (조회)
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>│   └── Quality Control (품질 관리)
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>├── RIS (Radiology Information System)
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>├── HIS (Hospital Information System)
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>└── Worklist (작업 목록)
+</code></pre></div></p>
+<p><strong>PACS와 MedGemma 연동</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>환자 스캔 → PACS에 DICOM 저장
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>      ↓
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>MedGemma 자동 분석 트리거
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>      ├─ 흉부 X-ray: 폐결절, 심비대 검출
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>      ├─ CT: 출혈, 종양 검출
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>      └─ 병리 슬라이드: 암세포 분석
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>      ↓
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>분석 결과 PACS/RIS에 저장
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>      ↓
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>의사 확인 (2차 독수용)
+</code></pre></div></p>
+<hr />
+<h2 id="_3">🔧 설정 및 실행<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-vertex-ai-dicom">1단계: Vertex AI 배포 (DICOM 지원)<a class="headerlink" href="#1-vertex-ai-dicom" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">vertexai.preview.vision_models</span><span class="w"> </span><span class="kn">import</span> <span class="n">MedGemmaModel</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="c1"># MedGemma DICOM 변형 모델 로드</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">model</span> <span class="o">=</span> <span class="n">MedGemmaModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;medgemma-4b-it-dicom&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># 배포 (Vertex AI에서 자동 설정)</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># - 컨테이너 자동 생성</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c1"># - GPU 최적화</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1"># - 로드 밸런싱</span>
+</code></pre></div>
+<h3 id="2">2단계: 입력 데이터 구성<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h4 id="a-dicom-store">방식 A: DICOM Store 참조<a class="headerlink" href="#a-dicom-store" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">dicom_input</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="s2">&quot;image_dicom&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>        <span class="s2">&quot;dicomweb_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;https://healthcare.googleapis.com/v1/projects/PROJECT/locations/LOCATION/datasets/DATASET/dicomStores/STORE/dicomWeb/studies/STUDY_UID&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="s2">&quot;instance_uid&quot;</span><span class="p">:</span> <span class="s2">&quot;1.2.840.113619.2.55.3.12345678.12345678.1.1234567890&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="s2">&quot;frames&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 단일 프레임</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="p">}</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="b-gcs-uri">방식 B: GCS URI<a class="headerlink" href="#b-gcs-uri" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">gcs_input</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="s2">&quot;image_gcs&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        <span class="s2">&quot;gcs_uri&quot;</span><span class="p">:</span> <span class="s2">&quot;gs://bucket-name/path/to/image.dcm&quot;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="p">}</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="p">}</span>
+</code></pre></div>
+<h4 id="c-http-url">방식 C: HTTP URL<a class="headerlink" href="#c-http-url" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">url_input</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="s2">&quot;image_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://pacs.example.com/dicomweb/studies/1.2.3.4/instances/1.2.3.5/file&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="3">3단계: 추론 요청<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 흉부 X-ray 분석</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">response</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="nb">input</span><span class="o">=</span><span class="n">dicom_input</span><span class="p">,</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;이 흉부 X-ray 이미지를 분석하고 주요 소견을 설명해주세요. 특히 폐야의 투명도와 결절 유무를 확인해주세요.&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">max_output_tokens</span><span class="o">=</span><span class="mi">512</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">)</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">response</span><span class="p">)</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="c1"># 예상 출력:</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="c1"># &quot;&quot;&quot;</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1"># 흉부 X-ray 분석 결과:</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="c1">#</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="c1"># 1. 폐야 (Lung Fields):</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="c1">#    - 양쪽 폐야는 전반적으로 투명도가 정상입니다.</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="c1">#    - 폐 하부에 약간의 기저 질환 소견이 보입니다.</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="c1">#</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="c1"># 2. 심장 윤곽 (Cardiac Silhouette):</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="c1">#    - 우심실이 약간 확장되어 있어 심비대 의심입니다.</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="c1">#    - 심장 면적은 약 40%의 평균을 상회합니다.</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a><span class="c1">#</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="c1"># 3. 종격동 (Mediastinum):</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="c1">#    - 크기가 정상 범위 내에 있습니다.</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="c1">#</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="c1"># 4. 뼈 (Bones):</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="c1">#    - 쇄골과 갈비뼈에 이상 소견은 없습니다.</span>
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="c1">#</span>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="c1"># 요약: 주요 소견은 우심실 심비대이며, 폐 결절은 없는 것으로 판단됩니다.</span>
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a><span class="c1"># &quot;&quot;&quot;</span>
+</code></pre></div>
+<hr />
+<h2 id="3d-ctmri">📊 3D 볼륨 처리 (CT/MRI)<a class="headerlink" href="#3d-ctmri" title="Permanent link">&para;</a></h2>
+<h3 id="_4">개념<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><strong>CT/MRI 볼륨 처리</strong>:
+- 하나의 스터디에 수백~수천 개의 슬라이스 포함
+- 각 슬라이스는 서로 연속적 (Z축 방향)
+- 전체 볼륨을 단일 이미지로 처리 어려움
+- 따라서 <strong>선택적 슬라이스 처리</strong> 또는 <strong>병렬 처리</strong></p>
 <h3 id="_5">처리 파이프라인<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>┌──────────────┐     ┌──────────────────┐     ┌────────────────┐
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>│  Raw DICOM    │────▶│  Parallel Slice  │────▶│  Volume        │
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>│  Volume       │     │  Retrieval       │     │  Preprocessing │
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>└──────────────┘     └──────────────────┘     └────────────────┘
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>                             │                        │
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>                             ▼                        ▼
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>                      ┌──────────────────────────────────┐
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>                      │     Model-Ready Input            │
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>                      │  (Ordered slice sequence)        │
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>                      └──────────────────────────────────┘
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>┌─────────────────────────────────────────────────────────────┐
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>│                  3D CT 볼륨 처리 파이프라인                   │
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>├─────────────────────────────────────────────────────────────┤
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>│                                                             │
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>│  Raw DICOM Volume (300+ slices)                              │
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>│         │                                                    │
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>│         ▼                                                    │
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>│  Parallel Slice Retrieval                                    │
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>│  (같은 시간대의 슬라이스 병렬 다운로드)                       │
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>│         │                                                    │
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>│         ▼                                                    │
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>│  Slice Preprocessing                                         │
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>│  - Resize (224x224)                                         │
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>│  - Normalize (0-1)                                           │
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>│  - Color conversion                                          │
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>│         │                                                    │
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>│         ▼                                                    │
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>│  Volume Assembly                                            │
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>│  - 중앙 슬라이스 선택                                        │
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>│  - 또는 중간 슬라이스 선택                                   │
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>│         │                                                    │
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>│         ▼                                                    │
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>│  Model Input                                                │
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>│  (선택된 슬라이스 또는 전체 볼륨)                            │
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>│         │                                                    │
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>│         ▼                                                    │
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>│  3D Analysis Result                                         │
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>│  - 볼륨 내 병변 위치                                         │
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>│  - 크기 및 형태                                              │
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>│  - 전체 슬라이스 시계열 비교                                 │
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>│                                                             │
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>└─────────────────────────────────────────────────────────────┘
 </code></pre></div>
 <h3 id="_6">코드 예시<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">concurrent.futures</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pydicom</span><span class="w"> </span><span class="kn">import</span> <span class="n">dcmread</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">download_dicom_instance</span><span class="p">(</span><span class="n">dicom_instance</span><span class="p">):</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;DICOM 인스턴스 다운로드&quot;&quot;&quot;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="c1"># DICOMweb API 호출</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">dicom_instance</span><span class="p">[</span><span class="s2">&quot;uri&quot;</span><span class="p">])</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">process_dicom_volume</span><span class="p">(</span><span class="n">dicoms</span><span class="p">):</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;DICOM 볼륨 처리&quot;&quot;&quot;</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    <span class="n">slices</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="c1"># 병렬 슬라이스 다운로드</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>        <span class="k">for</span> <span class="n">dcm_instance_bytes</span> <span class="ow">in</span> <span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">download_dicom_instance</span><span class="p">,</span> <span class="n">dicoms</span><span class="p">):</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>            <span class="k">with</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">dcm_instance_bytes</span><span class="p">)</span> <span class="k">as</span> <span class="n">pd</span><span class="p">:</span>
-<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>                <span class="c1"># DICOM 인스턴스 읽기</span>
-<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>                <span class="n">ds</span> <span class="o">=</span> <span class="n">dcmread</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span>
-<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>                <span class="n">slices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">pixel_array</span><span class="p">)</span>
-<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>
-<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>    <span class="c1"># 슬라이스 정렬 (Instance Number 기준)</span>
-<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>    <span class="n">slices</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">InstanceNumber</span><span class="p">)</span>
-<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>
-<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>    <span class="k">return</span> <span class="n">slices</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">concurrent.futures</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">download_dicom_instance</span><span class="p">(</span><span class="n">dicom_instance</span><span class="p">):</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="sd">    DICOM 인스턴스 다운로드</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="sd">    Args:</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="sd">        dicom_instance: {&#39;uri&#39;: str, &#39;instance_uid&#39;: str}</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="sd">        PIL.Image 또는 None</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">dicom_instance</span><span class="p">[</span><span class="s2">&quot;uri&quot;</span><span class="p">],</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a>        <span class="c1"># DICOM 파일에서 이미지 추출 (pydicom 필요)</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a>        <span class="kn">from</span><span class="w"> </span><span class="nn">pydicom</span><span class="w"> </span><span class="kn">import</span> <span class="n">dcmread</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a>
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a>        <span class="k">with</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span> <span class="k">as</span> <span class="n">pd</span><span class="p">:</span>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a>            <span class="n">ds</span> <span class="o">=</span> <span class="n">dcmread</span><span class="p">(</span><span class="n">pd</span><span class="p">)</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>            <span class="n">image</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">pixel_array</span>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a>
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a>        <span class="c1"># DICOM 모드로 변환 (0-255 → 0-1 float)</span>
+<a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a>        <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a>        <span class="k">if</span> <span class="n">image</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">255</span><span class="p">:</span>
+<a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a>            <span class="n">image</span> <span class="o">=</span> <span class="p">(</span><span class="n">image</span> <span class="o">/</span> <span class="mf">65535.0</span><span class="p">)</span> <span class="o">*</span> <span class="mf">255.0</span>
+<a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a>        <span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a>
+<a id="__codelineno-16-34" name="__codelineno-16-34" href="#__codelineno-16-34"></a>        <span class="c1"># PIL Image 변환</span>
+<a id="__codelineno-16-35" name="__codelineno-16-35" href="#__codelineno-16-35"></a>        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">image</span><span class="p">)</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
+<a id="__codelineno-16-36" name="__codelineno-16-36" href="#__codelineno-16-36"></a>        <span class="k">return</span> <span class="n">image</span>
+<a id="__codelineno-16-37" name="__codelineno-16-37" href="#__codelineno-16-37"></a>
+<a id="__codelineno-16-38" name="__codelineno-16-38" href="#__codelineno-16-38"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-16-39" name="__codelineno-16-39" href="#__codelineno-16-39"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;다운로드 실패: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-40" name="__codelineno-16-40" href="#__codelineno-16-40"></a>        <span class="k">return</span> <span class="kc">None</span>
+<a id="__codelineno-16-41" name="__codelineno-16-41" href="#__codelineno-16-41"></a>
+<a id="__codelineno-16-42" name="__codelineno-16-42" href="#__codelineno-16-42"></a><span class="k">def</span><span class="w"> </span><span class="nf">process_dicom_volume</span><span class="p">(</span><span class="n">dicoms</span><span class="p">,</span> <span class="n">selected_slices</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<a id="__codelineno-16-43" name="__codelineno-16-43" href="#__codelineno-16-43"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-16-44" name="__codelineno-16-44" href="#__codelineno-16-44"></a><span class="sd">    DICOM 볼륨 처리</span>
+<a id="__codelineno-16-45" name="__codelineno-16-45" href="#__codelineno-16-45"></a>
+<a id="__codelineno-16-46" name="__codelineno-16-46" href="#__codelineno-16-46"></a><span class="sd">    Args:</span>
+<a id="__codelineno-16-47" name="__codelineno-16-47" href="#__codelineno-16-47"></a><span class="sd">        dicoms: 인스턴스 목록 [{&#39;uri&#39;: str, &#39;instance_uid&#39;: str}]</span>
+<a id="__codelineno-16-48" name="__codelineno-16-48" href="#__codelineno-16-48"></a><span class="sd">        selected_slices: 선택할 슬라이스 인덱스 (None이면 중앙 슬라이스)</span>
+<a id="__codelineno-16-49" name="__codelineno-16-49" href="#__codelineno-16-49"></a>
+<a id="__codelineno-16-50" name="__codelineno-16-50" href="#__codelineno-16-50"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-16-51" name="__codelineno-16-51" href="#__codelineno-16-51"></a><span class="sd">        PIL.Image 또는 List[PIL.Image]</span>
+<a id="__codelineno-16-52" name="__codelineno-16-52" href="#__codelineno-16-52"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-16-53" name="__codelineno-16-53" href="#__codelineno-16-53"></a>    <span class="c1"># 병렬 슬라이스 다운로드</span>
+<a id="__codelineno-16-54" name="__codelineno-16-54" href="#__codelineno-16-54"></a>    <span class="k">with</span> <span class="n">concurrent</span><span class="o">.</span><span class="n">futures</span><span class="o">.</span><span class="n">ThreadPoolExecutor</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="k">as</span> <span class="n">executor</span><span class="p">:</span>
+<a id="__codelineno-16-55" name="__codelineno-16-55" href="#__codelineno-16-55"></a>        <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">executor</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">download_dicom_instance</span><span class="p">,</span> <span class="n">dicoms</span><span class="p">))</span>
+<a id="__codelineno-16-56" name="__codelineno-16-56" href="#__codelineno-16-56"></a>
+<a id="__codelineno-16-57" name="__codelineno-16-57" href="#__codelineno-16-57"></a>    <span class="c1"># 유효한 이미지만 필터링</span>
+<a id="__codelineno-16-58" name="__codelineno-16-58" href="#__codelineno-16-58"></a>    <span class="n">images</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span> <span class="k">if</span> <span class="n">r</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
+<a id="__codelineno-16-59" name="__codelineno-16-59" href="#__codelineno-16-59"></a>
+<a id="__codelineno-16-60" name="__codelineno-16-60" href="#__codelineno-16-60"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-16-61" name="__codelineno-16-61" href="#__codelineno-16-61"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;유효한 이미지가 없습니다.&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-62" name="__codelineno-16-62" href="#__codelineno-16-62"></a>
+<a id="__codelineno-16-63" name="__codelineno-16-63" href="#__codelineno-16-63"></a>    <span class="c1"># 슬라이스 선택</span>
+<a id="__codelineno-16-64" name="__codelineno-16-64" href="#__codelineno-16-64"></a>    <span class="k">if</span> <span class="n">selected_slices</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-16-65" name="__codelineno-16-65" href="#__codelineno-16-65"></a>        <span class="n">selected_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">images</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">selected_slices</span><span class="p">]</span>
+<a id="__codelineno-16-66" name="__codelineno-16-66" href="#__codelineno-16-66"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-16-67" name="__codelineno-16-67" href="#__codelineno-16-67"></a>        <span class="c1"># 중앙 슬라이스 선택</span>
+<a id="__codelineno-16-68" name="__codelineno-16-68" href="#__codelineno-16-68"></a>        <span class="n">center_idx</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+<a id="__codelineno-16-69" name="__codelineno-16-69" href="#__codelineno-16-69"></a>        <span class="n">selected_images</span> <span class="o">=</span> <span class="p">[</span><span class="n">images</span><span class="p">[</span><span class="n">center_idx</span><span class="p">]]</span>
+<a id="__codelineno-16-70" name="__codelineno-16-70" href="#__codelineno-16-70"></a>
+<a id="__codelineno-16-71" name="__codelineno-16-71" href="#__codelineno-16-71"></a>    <span class="k">return</span> <span class="n">selected_images</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected_images</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">selected_images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a id="__codelineno-16-72" name="__codelineno-16-72" href="#__codelineno-16-72"></a>
+<a id="__codelineno-16-73" name="__codelineno-16-73" href="#__codelineno-16-73"></a><span class="c1"># 예시 사용</span>
+<a id="__codelineno-16-74" name="__codelineno-16-74" href="#__codelineno-16-74"></a><span class="c1"># dicoms = [</span>
+<a id="__codelineno-16-75" name="__codelineno-16-75" href="#__codelineno-16-75"></a><span class="c1">#     {&quot;uri&quot;: &quot;https://pacs.example.com/dicomweb/studies/1.2.3.4/instances/.../file&quot;, &quot;instance_uid&quot;: &quot;1.2.3.5&quot;}</span>
+<a id="__codelineno-16-76" name="__codelineno-16-76" href="#__codelineno-16-76"></a><span class="c1"># ]</span>
+<a id="__codelineno-16-77" name="__codelineno-16-77" href="#__codelineno-16-77"></a><span class="c1">#</span>
+<a id="__codelineno-16-78" name="__codelineno-16-78" href="#__codelineno-16-78"></a><span class="c1"># image = process_dicom_volume(dicoms)</span>
+<a id="__codelineno-16-79" name="__codelineno-16-79" href="#__codelineno-16-79"></a><span class="c1">#</span>
+<a id="__codelineno-16-80" name="__codelineno-16-80" href="#__codelineno-16-80"></a><span class="c1"># # 모델에 입력</span>
+<a id="__codelineno-16-81" name="__codelineno-16-81" href="#__codelineno-16-81"></a><span class="c1"># model = AutoModelForImageTextToText.from_pretrained(&quot;google/medgemma-4b-it&quot;)</span>
+<a id="__codelineno-16-82" name="__codelineno-16-82" href="#__codelineno-16-82"></a><span class="c1"># inputs = model(image, text=&quot;이 CT 볼륨을 분석하고 출혈 소견을 확인해주세요.&quot;)</span>
+<a id="__codelineno-16-83" name="__codelineno-16-83" href="#__codelineno-16-83"></a><span class="c1"># outputs = model.generate(**inputs)</span>
+</code></pre></div>
+<h3 id="_7">활용 시나리오<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="1">1. 출혈 검출<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="s2">이 복부 CT 볼륨 데이터를 분석하고 다음을 확인해주세요:</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="s2">1. 간 (liver) - 크기, 밀도, 병변</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="s2">2. 비장 (spleen) - 크기, 밀도</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="s2">3. 신장 (kidneys) - 크기, 낭종, 종양</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="s2">4. 복강 내 출혈 (hemorrhage) - 유무, 위치</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="s2">특히 외상 환자이므로 출혈 소견에 주의해주세요.</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="c1"># 결과</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="c1"># &quot;복강 내 출혈이 관찰됩니다. 크기는 약 15mm의 고밀도 집중이며,</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="c1"># 4번째 intercostal 공간, 좌측 허리 부위에 위치합니다.</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="c1"># 출혈량은 약 30-50ml로 추정됩니다.&quot;</span>
+</code></pre></div>
+<h4 id="2_1">2. 종양 위치 추적<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="s2">이 CT 볼륨에서 종양의 위치, 크기, 형태를 파악하고 시계열 비교를 수행해주세요.</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="c1"># 결과</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="c1"># &quot;초기 CT: 종양 위치 X: 120mm, Y: 85mm, 크기: 8mm</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1"># 추적 CT: 종양 위치 X: 125mm, Y: 88mm, 크기: 10mm</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1">#</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="c1"># 종양은 X, Y축 방향으로 5mm씩 증가하고 있으며,</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1"># 크기는 2mm 증가했습니다. 이는 연속적인 증식으로 판단됩니다.&quot;</span>
 </code></pre></div>
 <hr />
-<h2 id="_7">🏥 임상 워크플로우 통합<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h2 id="_8">🏥 임상 워크플로우 통합<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <h3 id="pacs">PACS 연동 시나리오<a class="headerlink" href="#pacs" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>┌──────────────────────────────────────────────────────────────────┐
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>│                      임상 워크플로우                               │
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>├──────────────────────────────────────────────────────────────────┤
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│                                                                  │
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>│  1. 환자 스캔 완료                                                │
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>│     ↓                                                            │
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>│  2. PACS에 DICOM 저장                                              │
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>│     ↓                                                            │
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>│  3. MedGemma 자동 분석 트리거                                      │
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>│     │                                                            │
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>│     ├── 흉부 X-ray: 폐결절, 심비대, 기관지염 등 자동 감지           │
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>│     ├── CT: 출혈, 종양, 기형 등 식별                               │
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>│     └── 병리 슬라이드: 암세포, 조직 이상 분석                        │
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>│     ↓                                                            │
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>│  4. 분석 결과 PACS/RIS에 저장                                      │
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>│     ↓                                                            │
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>│  5. 의사 확인 (2차 독수용)                                         │
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>│                                                                  │
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>└──────────────────────────────────────────────────────────────────┘
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>┌──────────────────────────────────────────────────────────────────┐
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>│                      임상 워크플로우                              │
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>├──────────────────────────────────────────────────────────────────┤
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>│                                                                  │
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>│  1단계: 환자 스캔 완료                                            │
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>│     - CT, MRI, 흉부 X-ray 등 의료 영상 스캔                       │
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>│     - PACS에 DICOM 파일로 저장                                    │
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>│                                                                  │
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>│  2단계: 자동 분석 트리거                                           │
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>│     - 환자 분류 (CT, MRI, X-ray 등)                               │
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>│     - MedGemma API 호출                                           │
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>│                                                                  │
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>│  3단계: 의료 영상 분석                                            │
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>│     - 흉부 X-ray: 폐결절, 심비대, 기관지염 등                     │
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>│     - CT: 출혈, 종양, 기형 등 식별                                │
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>│     - 병리 슬라이드: 암세포, 조직 이상 분석                       │
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>│                                                                  │
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>│  4단계: 결과 저장                                                  │
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>│     - PACS에 분석 결과 저장 (DICOM Annotations)                   │
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>│     - RIS에 진단 정보 전송                                        │
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>│                                                                  │
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>│  5단계: 의사 확인                                                  │
+<a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>│     - 의사가 AI 분석 결과를 확인                                  │
+<a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>│     - 2차 독수용 (AI 제안에 따른 수정 가능)                       │
+<a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>│                                                                  │
+<a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>│  6단계: 환자 기록                                                 │
+<a id="__codelineno-19-27" name="__codelineno-19-27" href="#__codelineno-19-27"></a>│     - 환자 기록에 분석 결과 저장                                   │
+<a id="__codelineno-19-28" name="__codelineno-19-28" href="#__codelineno-19-28"></a>│     - 추적 검진을 위한 로깅                                        │
+<a id="__codelineno-19-29" name="__codelineno-19-29" href="#__codelineno-19-29"></a>│                                                                  │
+<a id="__codelineno-19-30" name="__codelineno-19-30" href="#__codelineno-19-30"></a>└──────────────────────────────────────────────────────────────────┘
 </code></pre></div>
-<h3 id="_8">연동 포인트<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_9">연동 포인트<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1127,7 +2356,7 @@
 <td>표준 DICOMweb 프로토콜로 이미지 조회</td>
 </tr>
 <tr>
-<td><strong>RIS/HIS</strong></td>
+<td><strong>RIS</strong></td>
 <td>FHIR/REST</td>
 <td>분석 결과를 환자 기록에 자동 저장</td>
 </tr>
@@ -1136,75 +2365,217 @@
 <td>DICOM + metadata</td>
 <td>장기 보관 및 분석 결과 메타데이터 저장</td>
 </tr>
+<tr>
+<td><strong>HIS</strong></td>
+<td>HL7/FHIR</td>
+<td>환자 정보 동기화</td>
+</tr>
 </tbody>
 </table>
+<h3 id="api">API 연결 예시<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 1. PACS에서 스터디 목록 조회</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">pacs_url</span> <span class="o">=</span> <span class="s2">&quot;https://pacs.example.com/dicomweb/studies&quot;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer YOUR_TOKEN&quot;</span><span class="p">}</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pacs_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="n">studies</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="c1"># 2. 의미 있는 스터디 필터링</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="n">meaningful_studies</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>    <span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">studies</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>    <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Modality&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;CT&quot;</span>  <span class="c1"># CT 스터디만</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="p">]</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="c1"># 3. 스터디에서 인스턴스 목록 조회</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="k">for</span> <span class="n">study</span> <span class="ow">in</span> <span class="n">meaningful_studies</span><span class="p">:</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>    <span class="n">study_uid</span> <span class="o">=</span> <span class="n">study</span><span class="p">[</span><span class="s2">&quot;StudyInstanceUID&quot;</span><span class="p">]</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>    <span class="n">instances_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pacs_url</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">study_uid</span><span class="si">}</span><span class="s2">/instances&quot;</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a>    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">instances_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>    <span class="n">instances</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a>
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a>    <span class="c1"># 4. 각 인스턴스에서 이미지 추출</span>
+<a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>    <span class="k">for</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">instances</span><span class="p">:</span>
+<a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a>        <span class="n">instance_uid</span> <span class="o">=</span> <span class="n">instance</span><span class="p">[</span><span class="s2">&quot;SOPInstanceUID&quot;</span><span class="p">]</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>
+<a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a>        <span class="c1"># 5. MedGemma에 전송</span>
+<a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a>        <span class="n">dicom_input</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a>            <span class="s2">&quot;image_dicom&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a>                <span class="s2">&quot;dicomweb_uri&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">pacs_url</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">study_uid</span><span class="si">}</span><span class="s2">/instances/</span><span class="si">{</span><span class="n">instance_uid</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+<a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a>                <span class="s2">&quot;instance_uid&quot;</span><span class="p">:</span> <span class="n">instance_uid</span>
+<a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a>            <span class="p">}</span>
+<a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a>        <span class="p">}</span>
+<a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a>
+<a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+<a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a>            <span class="nb">input</span><span class="o">=</span><span class="n">dicom_input</span><span class="p">,</span>
+<a id="__codelineno-20-36" name="__codelineno-20-36" href="#__codelineno-20-36"></a>            <span class="n">prompt</span><span class="o">=</span><span class="s2">&quot;이 CT 이미지를 분석하고 병변을 식별해주세요.&quot;</span><span class="p">,</span>
+<a id="__codelineno-20-37" name="__codelineno-20-37" href="#__codelineno-20-37"></a>            <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span>
+<a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a>        <span class="p">)</span>
+<a id="__codelineno-20-39" name="__codelineno-20-39" href="#__codelineno-20-39"></a>
+<a id="__codelineno-20-40" name="__codelineno-20-40" href="#__codelineno-20-40"></a>        <span class="c1"># 6. 결과를 PACS에 저장</span>
+<a id="__codelineno-20-41" name="__codelineno-20-41" href="#__codelineno-20-41"></a>        <span class="c1"># (DICOM Annotations 또는 QIDO-RS 결과로 저장)</span>
+<a id="__codelineno-20-42" name="__codelineno-20-42" href="#__codelineno-20-42"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">study_uid</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">instance_uid</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">response</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
 <hr />
-<h2 id="_9">💡 활용 예시<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h2 id="_10">💡 활용 예시<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <h3 id="1-x-ray">1. 흉부 X-ray 자동 판독<a class="headerlink" href="#1-x-ray" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s2">이 흉부 X-ray 이미지를 분석하고 다음 항목을 평가해주세요:</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s2">1. 폐야 필드 (lung fields) - 투명도, 병변 여부</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="s2">2. 심장 윤곽 (cardiac silhouette) - 크기, 형태</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="s2">3. 종격동 (mediastinum) - 확장 여부</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="s2">4. 횡격막 (diaphragm) - 위치, 윤곽</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="s2">5. 뼈 (bones) - 골절, 병변</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="s2">이상 소견이 있으면 구체적으로 기술해주세요.</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="s2">이 흉부 X-ray 이미지를 분석하고 다음 항목을 평가해주세요:</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="s2">1. 폐야 필드 (lung fields) - 투명도, 병변 여부</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="s2">2. 심장 윤곽 (cardiac silhouette) - 크기, 형태</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="s2">3. 종격동 (mediastinum) - 확장 여부</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="s2">4. 횡격막 (diaphragm) - 위치, 윤곽</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="s2">5. 뼈 (bones) - 골절, 병변</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="s2">이상 소견이 있으면 구체적으로 기술해주세요.</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="c1"># 결과</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="c1"># &quot;&quot;&quot;</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="c1"># 흉부 X-ray 분석 결과:</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="c1">#</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="c1"># 1. 폐야 (Lung Fields):</span>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a><span class="c1">#    - 양쪽 폐야는 전반적으로 투명도가 정상입니다.</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a><span class="c1">#    - 우측 폐 하부에 작은 결절 소견이 보입니다 (약 3mm).</span>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a><span class="c1">#    - 좌측 폐야에는 기저 질환 소견이 있습니다.</span>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a><span class="c1">#</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a><span class="c1"># 2. 심장 윤곽 (Cardiac Silhouette):</span>
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a><span class="c1">#    - 심장이 약간 확장되어 있어 심비대 의심입니다.</span>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a><span class="c1">#    - 심장 면적은 약 45%의 평균을 상회합니다.</span>
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a><span class="c1">#</span>
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a><span class="c1"># 3. 종격동 (Mediastinum):</span>
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a><span class="c1">#    - 크기가 정상 범위 내에 있습니다.</span>
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a><span class="c1">#</span>
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a><span class="c1"># 4. 횡격막 (Diaphragm):</span>
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a><span class="c1">#    - 위치가 정상 범위 내에 있습니다.</span>
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a><span class="c1">#</span>
+<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a><span class="c1"># 5. 뼈 (Bones):</span>
+<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a><span class="c1">#    - 쇄골에 미세한 골절 소견이 있을 수 있습니다.</span>
+<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a><span class="c1">#</span>
+<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a><span class="c1"># 요약: 주요 소견은 우측 폐 하부 결절, 심비대, 그리고 쇄골 골절입니다.</span>
+<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a><span class="c1"># &quot;&quot;&quot;</span>
 </code></pre></div>
 <h3 id="2-ct">2. CT 볼륨 분석<a class="headerlink" href="#2-ct" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="s2">이 복부 CT 볼륨 데이터를 분석하고 다음을 확인해주세요:</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="s2">1. 간 (liver) - 크기, 밀도, 병변</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="s2">2. 비장 (spleen) - 크기, 밀도</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="s2">3. 신장 (kidneys) - 크기, 낭종, 종양</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="s2">4. 복강 내 출혈 (hemorrhage) - 유무, 위치</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="s2">특히 외상 환자이므로 출혈 소견에 주의해주세요.</span>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="s2">이 복부 CT 볼륨 데이터를 분석하고 다음을 확인해주세요:</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="s2">1. 간 (liver) - 크기, 밀도, 병변</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="s2">2. 비장 (spleen) - 크기, 밀도</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="s2">3. 신장 (kidneys) - 크기, 낭종, 종양</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="s2">4. 복강 내 출혈 (hemorrhage) - 유무, 위치</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="s2">5. 림프절 (lymph nodes) - 확대 여부</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="s2">특히 외상 환자이므로 출혈 소견에 주의해주세요.</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="c1"># 결과</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="c1"># &quot;&quot;&quot;</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="c1"># 복부 CT 분석 결과:</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="c1">#</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="c1"># 1. 간 (Liver):</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="c1">#    - 크기가 약간 커진 경향이 있습니다.</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="c1">#    - 밀도는 정상 범위 내입니다.</span>
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="c1">#</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a><span class="c1"># 2. 비장 (Spleen):</span>
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a><span class="c1">#    - 크기가 정상 범위 내입니다.</span>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a><span class="c1">#    - 밀도는 정상 범위 내입니다.</span>
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a><span class="c1">#</span>
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a><span class="c1"># 3. 신장 (Kidneys):</span>
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a><span class="c1">#    - 좌측 신장에 8mm의 낭종 소견이 있습니다.</span>
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a><span class="c1">#    - 우측 신장은 정상 범위 내입니다.</span>
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a><span class="c1">#</span>
+<a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a><span class="c1"># 4. 복강 내 출혈 (Hemorrhage):</span>
+<a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a><span class="c1">#    - 크기는 약 15mm의 고밀도 집중이 있습니다.</span>
+<a id="__codelineno-22-30" name="__codelineno-22-30" href="#__codelineno-22-30"></a><span class="c1">#    - 4번째 intercostal 공간, 좌측 허리 부위에 위치합니다.</span>
+<a id="__codelineno-22-31" name="__codelineno-22-31" href="#__codelineno-22-31"></a><span class="c1">#    - 출혈량은 약 30-50ml로 추정됩니다.</span>
+<a id="__codelineno-22-32" name="__codelineno-22-32" href="#__codelineno-22-32"></a><span class="c1">#</span>
+<a id="__codelineno-22-33" name="__codelineno-22-33" href="#__codelineno-22-33"></a><span class="c1"># 5. 림프절 (Lymph Nodes):</span>
+<a id="__codelineno-22-34" name="__codelineno-22-34" href="#__codelineno-22-34"></a><span class="c1">#    - 전반적으로 정상 범위 내입니다.</span>
+<a id="__codelineno-22-35" name="__codelineno-22-35" href="#__codelineno-22-35"></a><span class="c1">#</span>
+<a id="__codelineno-22-36" name="__codelineno-22-36" href="#__codelineno-22-36"></a><span class="c1"># 요약: 주요 소견은 좌측 신장 낭종과 복강 내 출혈입니다.</span>
+<a id="__codelineno-22-37" name="__codelineno-22-37" href="#__codelineno-22-37"></a><span class="c1"># &quot;&quot;&quot;</span>
 </code></pre></div>
 <h3 id="3_1">3. 시계열 비교<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="s2">이 두 흉부 X-ray 이미지를 비교 분석해주세요:</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="s2">- 첫 번째: 2024년 1월 촬영</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="s2">- 두 번째: 2024년 6월 촬영</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="s2">시간에 따른 변화가 있는지, 새로운 병변이 발생했는지 확인해주세요.</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="s2">&quot;&quot;&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="s2">이 두 흉부 X-ray 이미지를 비교 분석해주세요:</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="s2">- 첫 번째: 2024년 1월 촬영</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="s2">- 두 번째: 2024년 6월 촬영</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="s2">시간에 따른 변화가 있는지, 새로운 병변이 발생했는지 확인해주세요.</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="c1"># 결과</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="c1"># &quot;&quot;&quot;</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="c1"># 시계열 비교 분석:</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="c1">#</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="c1"># 첫 번째 이미지 (2024년 1월):</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="c1"># - 폐 결절 크기: 약 2mm</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="c1"># - 심비대: 없음</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="c1">#</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="c1"># 두 번째 이미지 (2024년 6월):</span>
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="c1"># - 폐 결절 크기: 약 5mm (증가 +3mm)</span>
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a><span class="c1"># - 심비대: 없음</span>
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="c1">#</span>
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a><span class="c1"># 결론:</span>
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a><span class="c1"># - 결절이 3mm 증가하여 크기 변화가 있음</span>
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a><span class="c1"># - 심비대는 관찰되지 않음</span>
+<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a><span class="c1"># - 정기 추적이 필요합니다.</span>
+<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a><span class="c1"># &quot;&quot;&quot;</span>
 </code></pre></div>
 <hr />
-<h2 id="_10">⚠️ 주의사항<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<h3 id="1">1. 데이터 보안<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<ul>
-<li>DICOM 전송 시 반드시 암호화 (TLS)</li>
-<li>환자 식별 정보(PHI) 로깅 최소화</li>
-<li>접근 권한 관리 필수</li>
-</ul>
-<h3 id="2_1">2. 성능 최적화<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
-<ul>
-<li>대용량 CT/MRI는 슬라이스 개수 제한 고려</li>
-<li>배치 처리로 처리량 최적화</li>
-<li>캐싱 전략 수립</li>
-</ul>
+<h2 id="_11">⚠️ 주의사항<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 데이터 보안<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># DICOM 전송 시 반드시 암호화 (TLS)</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="c1"># - HTTPS/TLS 1.2 이상 사용</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="c1"># - 무료 SSL 인증서: Let&#39;s Encrypt</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># - VPN 사용</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="c1"># 환자 식별 정보(PHI) 로깅 최소화</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="c1"># - 로그 파일에 MRN, 이름, 주민등록번호 제외</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="c1"># - 정책에 따라 암호화 로깅</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="c1"># 접근 권한 관리</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="c1"># - OAuth2 또는 JWT 사용</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="c1"># - RBAC (Role-Based Access Control)</span>
+</code></pre></div>
+<h3 id="2_2">2. 성능 최적화<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># 대용량 CT/MRI는 슬라이스 개수 제한 고려</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="c1"># - 256 슬라이스: 병렬 처리 가능</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="c1"># - 512+ 슬라이스: 중앙 슬라이스만 선택</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="c1"># 배치 처리로 처리량 최적화</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># 4090</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">8</span>  <span class="c1"># A100 40GB</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="c1"># 캐싱 전략</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="c1"># - 자주 묻는 이미지를 캐싱</span>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="c1"># - CDN 또는 메모리 캐싱</span>
+</code></pre></div>
 <h3 id="3_2">3. 임상 검증<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
 <ul>
-<li>모든 AI 분석 결과는 의사 확인 필수</li>
+<li>모든 AI 분석 결과는 의사 확인 필요</li>
 <li>False Positive/Negative 비율 모니터링</li>
 <li>정기 정확도 평가</li>
+<li>Edge case 테스트 필수</li>
 </ul>
 <hr />
-<h2 id="_11">📚 참고 자료<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<h3 id="_12">표준 문서<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h2 id="_12">📚 참고 자료<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">표준 문서<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.dicomstandard.org/using/dicomweb">DICOMweb 표준</a></li>
 <li><a href="https://cloud.google.com/healthcare-api/docs/how-tos/dicom">Google Cloud Healthcare API</a></li>
+<li><a href="https://www.hl7.org/fhir/">FHIR Specification</a></li>
 </ul>
-<h3 id="_13">노트북<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h3 id="_14">라이브러리<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>quick_start_with_dicom.ipynb</code> - DICOM 기본 사용법</li>
-<li><code>high_dimensional_ct_hugging_face.ipynb</code> - CT 볼륨 처리</li>
+<li><a href="https://pydicom.github.io/pydicom/stable/">pydicom</a> - DICOM 파일 처리</li>
+<li><a href="https://github.com/rochesterresearch/gdcm-pywrapper">python-gdcm</a> - DICOM 이미지 변환</li>
 </ul>
-<h3 id="_14">관련 문서<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h3 id="_15">노트북<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/Google-Health/medgemma/blob/main/notebooks/quick_start_with_dicom.ipynb">Quick Start with DICOM</a></li>
+<li><a href="https://github.com/Google-Health/medgemma/blob/main/notebooks/high_dimensional_ct_hugging_face.ipynb">High-Dimensional CT</a></li>
+</ul>
+<h3 id="_16">관련 문서<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../03_finetuning/">파인튜닝 가이드</a></li>
 <li><a href="../05_ehr_navigator/">EHR Navigator</a></li>

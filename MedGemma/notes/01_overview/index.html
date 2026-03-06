@@ -6,33 +6,29 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="개인 학습 및 연구 주제 인덱스">
       
       
-      
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/">
-      
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/MedGemma/notes/01_overview/">
       
       
-        <link rel="next" href="Agentic_Workflow/topic/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
-        <title>구름이의 공부노트</title>
+        <title>MedGemma 개요 및 아키텍처 - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#medgemma" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -90,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              MedGemma 개요 및 아키텍처
             
           </span>
         </div>
@@ -221,11 +217,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="Agentic_Workflow/topic/" class="md-tabs__link">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
   
@@ -280,7 +274,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -307,37 +301,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -353,126 +320,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        활성 주제
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        최근 연구 노트
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="최근 연구 노트">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2026-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026년 3월
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2026-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2026년 2월
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        태그별 분류
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="태그별 분류">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aiml" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AI/ML
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#medical-imaging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Medical Imaging
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -536,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
         
   
   
@@ -571,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="MedGemma/topic/" class="md-nav__link">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -606,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="ONNX_Study/topic/" class="md-nav__link">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -641,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="AI_News/topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -676,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Night_Study/topic/" class="md-nav__link">
+      <a href="../../../Night_Study/topic/" class="md-nav__link">
         
   
   
@@ -711,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Prompt_Engineering/topic/" class="md-nav__link">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
         
   
   
@@ -773,13 +620,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        활성 주제
+        📌 개요
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="📌 개요">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 목표
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -787,30 +651,47 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        최근 연구 노트
+        🏗️ 아키텍처
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="최근 연구 노트">
+    <nav class="md-nav" aria-label="🏗️ 아키텍처">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#2026-3" class="md-nav__link">
+  <a href="#1-siglip" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026년 3월
+        1. SigLIP 이미지 인코더
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. SigLIP 이미지 인코더">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#siglip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SigLIP 특징
       
     </span>
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
-  <a href="#2026-2" class="md-nav__link">
+  <a href="#2-llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2026년 2월
+        2. LLM 컴포넌트
       
     </span>
   </a>
@@ -826,19 +707,30 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        태그별 분류
+        📦 리포지토리 구조
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="태그별 분류">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔑 핵심 기능
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔑 핵심 기능">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#aiml" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AI/ML
+        1. 의료 이미지 분석
       
     </span>
   </a>
@@ -846,10 +738,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#medical-imaging" class="md-nav__link">
+  <a href="#2-ehrfhir" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Medical Imaging
+        2. EHR/FHIR 통합
       
     </span>
   </a>
@@ -857,10 +749,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#security" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security
+        3. 파인튜닝 및 강화학습
       
     </span>
   </a>
@@ -869,6 +761,78 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 배포 옵션
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 제한사항 및 고려사항
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ 제한사항 및 고려사항">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 도메인 특이성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 임상 검증
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 평가 방법론
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 참고 자료
+      
+    </span>
+  </a>
   
 </li>
       
@@ -892,67 +856,150 @@
   
 
 
-<h1 id="_1">📚 개인 학습 주제 인덱스<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">활성 주제<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="medgemma">MedGemma 개요 및 아키텍처<a class="headerlink" href="#medgemma" title="Permanent link">&para;</a></h1>
+<h2 id="_1">📌 개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><strong>MedGemma</strong>는 Google Health에서 개발한 의료 특화 AI 모델 컬렉션으로, <a href="https://ai.google.dev/gemma/docs/core">Gemma 3</a>를 기반으로 의료 텍스트 및 이미지 이해를 위해 훈련되었습니다.</p>
+<h3 id="_2">핵심 목표<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>의료 AI 애플리케이션 개발 가속화</li>
+<li>다양한 의료 이미지 및 텍스트 처리</li>
+<li>임상 워크플로우 통합 지원</li>
+</ul>
+<hr />
+<h2 id="_3">🏗️ 아키텍처<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-siglip">1. SigLIP 이미지 인코더<a class="headerlink" href="#1-siglip" title="Permanent link">&para;</a></h3>
+<p>MedGemma 4B 모델은 <strong>SigLIP (Sigmoid Loss for Language Image Pre-training)</strong> 이미지 인코더를 사용합니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│                    MedGemma 4B                          │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  ┌──────────────┐    ┌──────────────────────────────┐  │
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  │  SigLIP      │    │         LLM Component         │  │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  │  Image       │───▶│  (Gemma 3 based, Medical     │  │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  │  Encoder     │    │   Text + Multimodal)          │  │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  └──────────────┘    └──────────────────────────────┘  │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│        │                        │                       │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   Medical Images          Medical Text                  │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   (X-ray, Pathology,      (Radiology Reports,          │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│    Dermatology, etc.)      Clinical Notes, etc.)       │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>└─────────────────────────────────────────────────────────┘
+</code></pre></div>
+<h4 id="siglip">SigLIP 특징<a class="headerlink" href="#siglip" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>의료 데이터 사전 훈련</strong>: 비식별화된 의료 데이터로 학습</li>
+<li><strong>다양한 모달리티 지원</strong>: 흉부 X-ray, 피부과, 안과, 병리학 이미지</li>
+<li><strong>Bridge Modality</strong>: 이미지와 텍스트를 연결하는 브리지 역할</li>
+</ul>
+<h3 id="2-llm">2. LLM 컴포넌트<a class="headerlink" href="#2-llm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>기반</strong>: Gemma 3</li>
+<li><strong>훈련 데이터</strong>: 방사선 이미지, 병리학 패치, 안과 이미지, 피부과 이미지, 의료 텍스트</li>
+<li><strong>특화 기능</strong>: 의료 도메인 이해 및 추론</li>
+</ul>
+<hr />
+<h2 id="_4">📦 리포지토리 구조<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Google-Health/medgemma/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── README.md
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>├── CONTRIBUTING.md
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>├── LICENSE
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>├── notebooks/                    # 실습 노트북
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   ├── quick_start_with_hugging_face.ipynb
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   ├── quick_start_with_model_garden.ipynb
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   ├── quick_start_with_dicom.ipynb
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>│   ├── fine_tune_with_hugging_face.ipynb
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   ├── reinforcement_learning_with_hugging_face.ipynb
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│   ├── cxr_anatomy_localization_with_hugging_face.ipynb
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│   ├── cxr_longitudinal_comparison_with_hugging_face.ipynb
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│   ├── ehr_navigator_agent.ipynb
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│   ├── high_dimensional_ct_hugging_face.ipynb
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│   ├── high_dimensional_pathology_hugging_face.ipynb
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│   └── ...
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>└── python/                       # 서빙 코드
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    └── serving/
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>        ├── Dockerfile
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>        ├── predictor.py
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>        ├── config_init.py
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>        └── ...
+</code></pre></div>
+<hr />
+<h2 id="_5">🔑 핵심 기능<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 의료 이미지 분석<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>CXR Anatomy Localization</strong>: 흉부 X-ray 해부학적 구조 식별</li>
+<li><strong>CXR Longitudinal Comparison</strong>: 시계열 흉부 영상 비교</li>
+<li><strong>High-Dimensional CT</strong>: 3D CT 볼륨 데이터 분석</li>
+<li><strong>Pathology Analysis</strong>: 병리 슬라이드 분석</li>
+</ul>
+<h3 id="2-ehrfhir">2. EHR/FHIR 통합<a class="headerlink" href="#2-ehrfhir" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>EHR Navigator Agent</strong>: 전자 건강 기록 탐색</li>
+<li><strong>FHIR 데이터 처리</strong>: 구조화된 의료 데이터 처리</li>
+</ul>
+<h3 id="3">3. 파인튜닝 및 강화학습<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Fine-tuning</strong>: 기관 특화 데이터로 미세 조정</li>
+<li><strong>Reinforcement Learning</strong>: 강화학습을 통한 성능 향상</li>
+</ul>
+<hr />
+<h2 id="_6">🚀 배포 옵션<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>주제</th>
-<th>설명</th>
-<th>상태</th>
-<th>최근 업데이트</th>
+<th>옵션</th>
+<th>용도</th>
+<th>인프라</th>
+<th>난이도</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="Night_Study/topic/">Night Study Lab</a></td>
-<td>야간 자율 연구소 결과 보고서</td>
-<td>🟢 Active</td>
-<td>2026-02-24</td>
+<td><strong>Hugging Face</strong></td>
+<td>개발/테스트</td>
+<td>로컬/GPU</td>
+<td>초급</td>
+</tr>
+<tr>
+<td><strong>Vertex AI Model Garden</strong></td>
+<td>프로덕션</td>
+<td>GCP</td>
+<td>중급~고급</td>
+</tr>
+<tr>
+<td><strong>DICOM</strong></td>
+<td>임상 워크플로우</td>
+<td>의료 시스템</td>
+<td>고급</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">최근 연구 노트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="2026-3">2026년 3월<a class="headerlink" href="#2026-3" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="_7">⚠️ 제한사항 및 고려사항<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 도메인 특이성<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[2026-03-03]</strong> <a href="Night_Study/notes/2026-03-03_AI_Dev_Tools_Security/">AI Dev Tools Security</a> - AI 개발 도구 보안 가이드</li>
-<li><strong>[2026-03-02]</strong> <a href="Night_Study/notes/2026-03-02_Local_LLM_Tools/">Local LLM Tools</a> - 로컬 LLM 실행 도구 종합 조사</li>
+<li>다양한 임상 도메인에서 성능 차이 발생 가능</li>
+<li>기관별 설정에 따른 파인튜닝 필요</li>
 </ul>
-<h3 id="2026-2">2026년 2월<a class="headerlink" href="#2026-2" title="Permanent link">&para;</a></h3>
+<h3 id="2">2. 임상 검증<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[2026-02-23]</strong> <a href="Night_Study/notes/2026-02-23_AI_Sandbox_Research/">AI System Sandbox Research</a> - 샌드박스 기술 심층 분석</li>
-<li><strong>[2026-02-20]</strong> <a href="Night_Study/notes/2026-02-20_Medical_Anonymization/">Medical Anonymization</a> - 의료 데이터 비식별화</li>
-<li><strong>[2026-02-18]</strong> <a href="Night_Study/notes/2026-02-18_GLiNER_Label_Tuning/">GLiNER Label Tuning</a> - Clinical PHI Detection</li>
+<li>프로덕션 배포 전 임상 검증 필수</li>
+<li>벤치마크 성능 이상의 검증 필요</li>
 </ul>
-<h2 id="_4">태그별 분류<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="aiml">AI/ML<a class="headerlink" href="#aiml" title="Permanent link">&para;</a></h3>
+<h3 id="3_1">3. 평가 방법론<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Agentic PACS</li>
-<li>GLiNER Label Tuning</li>
-<li>AI Sandbox</li>
-</ul>
-<h3 id="medical-imaging">Medical Imaging<a class="headerlink" href="#medical-imaging" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Agentic PACS</li>
-<li>FHIR/DICOM Integration</li>
-</ul>
-<h3 id="security">Security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
-<ul>
-<li>AI Dev Tools Security</li>
-<li>Medical Anonymization</li>
-<li>AI Sandbox</li>
+<li>재현 가능한 평가 벤치마크 접근 필요</li>
+<li>프롬프트 엔지니어링 요구사항 존재</li>
 </ul>
 <hr />
-<p><em>Last updated: 2026-03-03</em></p>
+<h2 id="_8">📚 참고 자료<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://arxiv.org/abs/2303.15343">SigLIP Paper</a></li>
+<li><a href="https://ai.google.dev/gemma/docs/core">Gemma 3 Documentation</a></li>
+<li><a href="https://developers.google.com/health-ai-developer-foundations">Health AI Developer Foundations</a></li>
+</ul>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1002,10 +1049,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

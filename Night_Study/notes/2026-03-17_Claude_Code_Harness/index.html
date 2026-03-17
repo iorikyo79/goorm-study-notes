@@ -6,35 +6,29 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="야간 자율 연구소 (Night Study Lab) 결과 보고서">
       
       
-      
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/topic/">
-      
-      
-        <link rel="prev" href="../../AI_News/topic/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Night_Study/notes/2026-03-17_Claude_Code_Harness/">
       
       
-        <link rel="next" href="../../AI_Hub_Datasets/topic/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Night Study Lab - 구름이의 공부노트</title>
+        <title>Claude Code Harness 분석 및 Medical Report Converter 적용 - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#night-study-lab" class="md-skip">
+        <a href="#claude-code-harness-medical-report-converter" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -92,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Night Study Lab
+              Claude Code Harness 분석 및 Medical Report Converter 적용
             
           </span>
         </div>
@@ -225,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Agentic_Workflow/topic/" class="md-tabs__link">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
   
@@ -266,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Karpathy/topic/" class="md-tabs__link">
+        <a href="../../../Karpathy/topic/" class="md-tabs__link">
           
   
   
@@ -282,13 +276,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../AI_News/topic/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../AI_News/topic/" class="md-tabs__link">
           
   
   
@@ -315,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AI_Hub_Datasets/topic/" class="md-tabs__link">
+        <a href="../../../AI_Hub_Datasets/topic/" class="md-tabs__link">
           
   
   
@@ -352,7 +344,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -382,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -461,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
         
   
   
@@ -548,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/topic/" class="md-nav__link">
+      <a href="../../../MedGemma/topic/" class="md-nav__link">
         
   
   
@@ -583,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/01_overview/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/01_overview/" class="md-nav__link">
         
   
   
@@ -611,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
         
   
   
@@ -639,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/03_finetuning/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/03_finetuning/" class="md-nav__link">
         
   
   
@@ -667,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
         
   
   
@@ -695,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
         
   
   
@@ -723,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/06_notebooks/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/06_notebooks/" class="md-nav__link">
         
   
   
@@ -751,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
         
   
   
@@ -787,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ONNX_Study/topic/" class="md-nav__link">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -822,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Prompt_Engineering/topic/" class="md-nav__link">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
         
   
   
@@ -916,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Karpathy/topic/" class="md-nav__link">
+      <a href="../../../Karpathy/topic/" class="md-nav__link">
         
   
   
@@ -951,7 +943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../BorisChernyTips/topic/" class="md-nav__link">
+      <a href="../../../BorisChernyTips/topic/" class="md-nav__link">
         
   
   
@@ -986,7 +978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AntigravityKit/topic/" class="md-nav__link">
+      <a href="../../../AntigravityKit/topic/" class="md-nav__link">
         
   
   
@@ -1025,31 +1017,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -1067,7 +1054,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1085,7 +1072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_News/topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -1117,44 +1104,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Night Study Lab
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -1177,59 +1130,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗺️ 커리큘럼 &amp; 목차
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-do-progress" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 To-Do &amp; Progress
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#research-topics-overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📊 Research Topics Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1353,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/topic/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/topic/" class="md-nav__link">
         
   
   
@@ -1388,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
         
   
   
@@ -1416,7 +1316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
         
   
   
@@ -1482,7 +1382,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🗺️ 커리큘럼 &amp; 목차
+        개요
       
     </span>
   </a>
@@ -1490,21 +1390,316 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#to-do-progress" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 To-Do &amp; Progress
+        연구 배경
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="연구 배경">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        문제 정의
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#research-topics-overview" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#harness" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📊 Research Topics Overview
+        Harness의 해결책
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        연구 방법론
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="연구 방법론">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분석 대상
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분석 항목
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 발견
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="핵심 발견">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 압도적 품질 향상
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 복잡도-효과 상관관계
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-top-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 차원별 분석 (Top 4)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#medical-report-converter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medical Report Converter 적용
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Medical Report Converter 적용">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        프로젝트 개요
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#harness_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Harness 구성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        기대 효과
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        생성된 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="생성된 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        분석 문서 (6개)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        최종 문서 (2개)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#harness_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Harness 구성 (완전한 구현)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        결론
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="결론">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 인사이트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#medical-report-converter_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Medical Report Converter 로드맵
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        참고 자료
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="참고 자료">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        원본 자료
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        로컬 자료 위치
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        인용
       
     </span>
   </a>
@@ -1531,99 +1726,233 @@
   
 
 
-<h1 id="night-study-lab">🌙 Night Study Lab (야간 자율 연구소)<a class="headerlink" href="#night-study-lab" title="Permanent link">&para;</a></h1>
-<p>집사가 잠든 사이에 수행된 자율 연구 및 실험 결과들을 모아두는 곳이다냥. 🐾</p>
-<h2 id="_1">🗺️ 커리큘럼 &amp; 목차<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="claude-code-harness-medical-report-converter">Claude Code Harness 분석 및 Medical Report Converter 적용<a class="headerlink" href="#claude-code-harness-medical-report-converter" title="Permanent link">&para;</a></h1>
+<h2 id="_1">개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Claude Code Harness 프레임워크를 심층 분석하고, 이를 Medical Report Converter 프로젝트에 적용하여 LLM Code Agent의 출력 품질을 60% 향상시키는 방법을 연구했습니다.</p>
+<h2 id="_2">연구 배경<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">문제 정의<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>LLM Code Agent (Claude Code 등)는 자연어로부터 기능적인 소프트웨어를 생성할 수 있지만, 다음과 같은 구조적 한계가 있습니다:</p>
+<ol>
+<li><strong>Architecture</strong> - 모놀리스 단일 파일 구현, 모듈화 부족</li>
+<li><strong>Test Coverage</strong> - 명시적 지시 없이는 테스트를 거의 생성하지 않음</li>
+<li><strong>Error Handling</strong> - Happy Path에 집중, Edge Case 커버리지 부족</li>
+</ol>
+<h3 id="harness">Harness의 해결책<a class="headerlink" href="#harness" title="Permanent link">&para;</a></h3>
+<p><strong>Harness</strong>는 에이전트가 한 줄의 코드를 작성하기 전에, 경험 많은 엔지니어가 프로젝트에 가져오는 것과 동일한 종류의 <strong>구조적 컨텍스트</strong>를 제공합니다.</p>
+<h2 id="_4">연구 방법론<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">분석 대상<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>2026년 3월</strong><ul>
-<li>[2026-03-17] <a href="../notes/2026-03-17_Claude_Code_Harness/">Claude Code Harness 분석 및 Medical Report Converter 적용</a> ⭐ <strong>NEW</strong></li>
-<li>[2026-03-05] <a href="../notes/2026-03-05_MedGemma-API-Server/">MedGemma 1.5 API 서버 구성 연구</a></li>
-<li>[2026-03-03] <a href="../notes/2026-03-03_AI_Dev_Tools_Security/">AI 개발 도구 보안 가이드 (개인 계정용)</a></li>
-<li>[2026-03-02] <a href="../notes/2026-03-02_Local_LLM_Tools/">로컬 LLM 실행 도구 종합 조사 (llama.cpp, Ollama, LM Studio)</a></li>
+<li><strong>GitHub Repository</strong>: revfactory/claude-code-harness</li>
+<li><strong>논문</strong>: "Harness: Structured Pre-Configuration for Enhancing LLM Code Agent Output Quality" (Hwang, M. 2026)</li>
+<li><strong>실험 결과</strong>: 15개 소프트웨어 엔지니어링 과제 (Basic 5, Advanced 5, Expert 5)</li>
 </ul>
-</li>
-<li><strong>2026년 2월</strong><ul>
-<li>[2026-02-25] <a href="../notes/2026-02-24_Agentic_PACS_Analysis_KR/">Agentic PACS 구현을 위한 SIIM 2025 Hackathon 분석</a> ⭐ <strong>NEW</strong></li>
-<li>[2026-02-23] <a href="../notes/2026-02-23_AI_Sandbox_Research/">AI System Sandbox 기술 심층 분석</a></li>
-<li>[2026-02-20] <a href="../notes/2026-02-20_Medical_Anonymization/">Medical Report Anonymization Deep-Dive</a></li>
-<li>[2026-02-18] <a href="../notes/2026-02-18_GLiNER_Label_Tuning/">GLiNER Label Tuning (Clinical PHI Detection)</a></li>
-<li>[2026-02-17] <a href="../notes/2026-02-17_FP_Hunter_Test/">PhiGuard V3 'FP Hunter' (False Positive Analysis)</a></li>
-<li>[2026-02-17] <a href="../notes/2026-02-17_FP_Hunter_v2/">PhiGuard V3 'FP Hunter v2' (KB Augmented)</a></li>
-<li>[Refl] <a href="../notes/MkDocs_Troubleshooting_QA/">MkDocs 트러블슈팅 및 토픽 생성 Q&amp;A 가이드</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="to-do-progress">🚀 To-Do &amp; Progress<a class="headerlink" href="#to-do-progress" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[x] Claude Code Harness 분석 및 Medical Report Converter 적용 (60% 품질 향상, 100% 승률) ⭐ <strong>NEW</strong></li>
-<li>[x] MedGemma 1.5 API 서버 구성 연구 (판독문 평가용)</li>
-<li>[x] AI 개발 도구 보안 가이드 (GitHub Copilot, Cursor, Claude Code, Gemini)</li>
-<li>[x] 로컬 LLM 실행 도구 종합 조사 (llama.cpp, Ollama, LM Studio, GGUF 양자화)</li>
-<li>[x] Agentic PACS Benchmarks (SIIM Hackathon 2025)</li>
-<li>[x] AI System Sandbox 기술 심층 분석</li>
-<li>[x] Medical Report Anonymization Deep-Dive 연구</li>
-<li>[x] GLiNER Label Tuning 실험</li>
-<li>[x] PhiGuard V3 FP Hunter (LLM Judge) 실험</li>
-<li>[x] PhiGuard V3 FP Hunter v2 (KB Augmented) 실험</li>
-<li>[x] GLiNER Label Tuning (Clinical PHI) 실험</li>
-</ul>
-<h2 id="research-topics-overview">📊 Research Topics Overview<a class="headerlink" href="#research-topics-overview" title="Permanent link">&para;</a></h2>
+<h3 id="_6">분석 항목<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Harness 구조</strong>: CLAUDE.md, Skills, Agents, Commands</li>
+<li><strong>실험 결과</strong>: A/B 테스트 (Baseline vs Harness)</li>
+<li><strong>실제 적용</strong>: Medical Report Converter PRD에 적용</li>
+</ol>
+<h2 id="_7">핵심 발견<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 압도적 품질 향상<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>Topic</th>
-<th>Date</th>
-<th>Focus Area</th>
+<th>Metric</th>
+<th>Baseline</th>
+<th>Harness</th>
+<th>Delta</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Claude Code Harness</td>
-<td>2026-03-17</td>
-<td>Claude Code, Harness, LLM Code Agent, Medical Report Converter, 60% 품질 향상</td>
+<td>평균 점수</td>
+<td>49.5</td>
+<td>79.3</td>
+<td>+29.9 (+60%)</td>
 </tr>
 <tr>
-<td>MedGemma API Server</td>
-<td>2026-03-05</td>
-<td>MedGemma 1.5, vLLM, OpenAI API, 판독문 평가, 의료 LLM</td>
+<td>승률</td>
+<td>—</td>
+<td>—</td>
+<td>15/15 (100%)</td>
 </tr>
 <tr>
-<td>AI Dev Tools Security</td>
-<td>2026-03-03</td>
-<td>GitHub Copilot, Cursor, Claude Code, Gemini, Privacy, Security</td>
-</tr>
-<tr>
-<td>Local LLM Tools</td>
-<td>2026-03-02</td>
-<td>llama.cpp, Ollama, LM Studio, GGUF, 양자화, Qwen3.5</td>
-</tr>
-<tr>
-<td>Agentic PACS</td>
-<td>2026-02-24</td>
-<td>SIIM Hackathon, FHIR, MCP, AI Agents, Radiology</td>
-</tr>
-<tr>
-<td>AI Sandbox</td>
-<td>2026-02-23</td>
-<td>VM/Container/Sandbox 비교, 탈출 공격, 성능 분석</td>
-</tr>
-<tr>
-<td>Medical Anonymization</td>
-<td>2026-02-20</td>
-<td>HIPAA/GDPR/K-PIPA, LLM De-id, Date Shifting</td>
-</tr>
-<tr>
-<td>GLiNER Tuning</td>
-<td>2026-02-18</td>
-<td>Clinical PHI Detection, Label Optimization</td>
-</tr>
-<tr>
-<td>FP Hunter</td>
-<td>2026-02-17</td>
-<td>False Positive Analysis, LLM Judge</td>
+<td>표준편차</td>
+<td>5.3</td>
+<td>3.6</td>
+<td>-32% variance</td>
 </tr>
 </tbody>
 </table>
+<h3 id="2-">2. 복잡도-효과 상관관계<a class="headerlink" href="#2-" title="Permanent link">&para;</a></h3>
+<p>난이도가 높을수록 Harness의 효과가 증폭됩니다:</p>
+<ul>
+<li><strong>Basic</strong>: +23.8점</li>
+<li><strong>Advanced</strong>: +29.6점</li>
+<li><strong>Expert</strong>: +36.2점</li>
+</ul>
+<p><strong>Delta가 Basic에서 Expert까지 52% 증가</strong> — Harness는 가장 필요한 곳에서 가장 큰 가치를 제공합니다.</p>
+<h3 id="3-top-4">3. 차원별 분석 (Top 4)<a class="headerlink" href="#3-top-4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Test Coverage</strong> (+4.9) — Baseline 평균 2.5점 (거의 테스트 없음)</li>
+<li><strong>Architecture</strong> (+4.4) — Baseline 평균 3.9점 (모놀리스 성향)</li>
+<li><strong>Error Handling</strong> (+3.0)</li>
+<li><strong>Extensibility</strong> (+3.0)</li>
+</ol>
+<h2 id="medical-report-converter">Medical Report Converter 적용<a class="headerlink" href="#medical-report-converter" title="Permanent link">&para;</a></h2>
+<h3 id="_8">프로젝트 개요<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>목표</strong>: 판독문 이미지를 HTML로 자동 변환하는 시스템</li>
+<li><strong>핵심 요구사항</strong>: 100% 정확성, Human-in-the-Loop 검수</li>
+<li><strong>PRD 위치</strong>: <code>/home/jkuhm/clawd/projects/medical-report-converter/PRD.md</code></li>
+</ul>
+<h3 id="harness_1">Harness 구성<a class="headerlink" href="#harness_1" title="Permanent link">&para;</a></h3>
+<p>Medical Report Converter를 위해 다음 Harness를 구성했습니다:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>medical-report-converter-harness/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>└── .claude/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ├── CLAUDE.md                    # 5단계 파이프라인 아키텍처
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ├── skills/
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    │   ├── pdf-parsing/SKILL.md     # PDF 파싱
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    │   ├── ocr-processing/SKILL.md  # OCR 처리
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    │   └── medical-terminology/SKILL.md  # 의료 용어
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ├── agents/
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    │   ├── parser.md                # PDF/이미지 파싱
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    │   ├── ocr-integrator.md        # OCR 통합
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    │   ├── extractor.md             # 데이터 추출
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    │   ├── converter.md             # HTML 변환
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    │   ├── validator.md             # 검증
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    │   └── tester.md                # 테스트
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    └── commands/
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        ├── convert.md               # /convert
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        └── validate.md              # /validate
+</code></pre></div>
+<h3 id="_9">기대 효과<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>Baseline 예상</th>
+<th>Harness 적용 후 예상</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>품질 점수</td>
+<td>45-50점</td>
+<td>80-85점</td>
+</tr>
+<tr>
+<td>개선 폭</td>
+<td>—</td>
+<td>+35-40점 (70-80% 향상)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">생성된 자료<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="6">분석 문서 (6개)<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>GitHub README 분석</strong> (7,086 bytes)</li>
+<li><strong>논문 분석</strong> (19,532 bytes) - Abstract, Introduction, Methodology, Results, Discussion, Conclusion</li>
+<li><strong>실험 결과 분석</strong> (15,670 bytes) - 15개 케이스별 상세 분석</li>
+<li><strong>CLAUDE.md 예시 분석</strong> (12,970 bytes) - Raft Consensus, Event Sourcing CQRS</li>
+<li><strong>Skills/Agents/Commands 분석</strong> (24,915 bytes)</li>
+<li><strong>참고 자료 인덱스</strong> (refs.md)</li>
+</ol>
+<h3 id="2">최종 문서 (2개)<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>실전 가이드</strong> (8,206 bytes) - 개발자용 (Standard Mode)</li>
+<li><strong>교육 자료 Deep Dive</strong> (15,778 bytes) - 연구자/전문가용 (Deep Dive Mode)</li>
+</ol>
+<h3 id="harness_2">Harness 구성 (완전한 구현)<a class="headerlink" href="#harness_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>CLAUDE.md</strong>: 5단계 파이프라인 (Input → Image Analysis → Human Review → HTML Generation → Output)</li>
+<li><strong>3개 Skills</strong>: PDF Parsing, OCR Processing, Medical Terminology</li>
+<li><strong>6개 Agents</strong>: Parser → OCR Integrator → Extractor → Converter → Validator → Tester</li>
+<li><strong>2개 Commands</strong>: /convert, /validate</li>
+</ul>
+<h2 id="_11">결론<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">핵심 인사이트<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>구조가 능력을 결정한다</strong> — LLM의 지식은 충분합니다. 부족한 것은 프로젝트별 구조적 가이드입니다.</li>
+<li><strong>테스트 커버리지가 가장 크게 개선됨</strong> (+4.9) — 가이드 없는 에이전트는 거의 테스트를 작성하지 않습니다.</li>
+<li><strong>복잡도가 효과를 증폭시킴</strong> — 단순한 과제는 적당한 개선, 복잡한 시스템은 극적인 향상.</li>
+<li><strong>자동 생성이 가능</strong> — Harness meta-skill이 자연어 설명으로부터 구성을 자동 생성할 수 있습니다.</li>
+</ol>
+<h3 id="medical-report-converter_1">Medical Report Converter 로드맵<a class="headerlink" href="#medical-report-converter_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>기간</th>
+<th>작업 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>1-2일</td>
+<td>CLAUDE.md 작성</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>2-3일</td>
+<td>Skills 작성 (PDF, OCR, Medical)</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>3-4일</td>
+<td>Agents 작성 (6개)</td>
+</tr>
+<tr>
+<td>Phase 4</td>
+<td>1일</td>
+<td>Commands 작성 (/convert, /validate)</td>
+</tr>
+<tr>
+<td>Phase 5</td>
+<td>5-7일</td>
+<td>구현 및 테스트</td>
+</tr>
+</tbody>
+</table>
+<p><strong>총 예상 기간</strong>: 12-17일</p>
+<h2 id="_13">참고 자료<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">원본 자료<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>GitHub Repository</strong>: https://github.com/revfactory/claude-code-harness</li>
+<li><strong>논문 (영문)</strong>: paper/harness-paper.pdf</li>
+<li><strong>논문 (국문)</strong>: paper/harness-paper-ko.pdf</li>
+</ul>
+<h3 id="_15">로컬 자료 위치<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/home/jkuhm/src/Team/TeamManage/개인/Night_Study_Projects/2026-03-17-Claude-Code-Harness/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├── assets/                           # 분석 자료 (6개)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│   ├── 2026-03-17_GitHub_README.md
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│   ├── 2026-03-17_Paper_Analysis.md
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>│   ├── 2026-03-17_Experiment_Results.md
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│   ├── 2026-03-17_CLAUDE_md_Examples.md
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│   ├── 2026-03-17_Skills_Agents_Commands_Analysis.md
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│   └── refs.md
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>├── medical-report-converter-harness/ # Harness 구성
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│   └── .claude/
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│       ├── CLAUDE.md
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│       ├── skills/
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│       ├── agents/
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│       └── commands/
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>└── outputs/                          # 최종 문서 (2개)
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    ├── 2026-03-17_Harness_실전_가이드.md
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    └── 2026-03-17_Harness_교육_자료_Deep_Dive.md
+</code></pre></div>
+<h2 id="_16">인용<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nc">@article</span><span class="p">{</span><span class="nl">hwang2026harness</span><span class="p">,</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="na">title</span><span class="p">=</span><span class="s">{Harness: Structured Pre-Configuration for Enhancing LLM Code Agent Output Quality. A Controlled Experiment with 15 Software Engineering Tasks}</span><span class="p">,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="na">author</span><span class="p">=</span><span class="s">{Hwang, Minho}</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="na">year</span><span class="p">=</span><span class="s">{2026}</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+</code></pre></div>
+<hr />
+<p><strong>작성일</strong>: 2026-03-17
+<strong>소요 시간</strong>: 약 1시간 19분 (19:16 - 20:35)
+<strong>상태</strong>: 🟢 Complete</p>
 
 
 
@@ -1682,10 +2011,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

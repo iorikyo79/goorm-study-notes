@@ -6,35 +6,35 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Boris Cherny (Claude Code 제작자)의 고생산성 워크플로우 분석 및 체득">
+        <meta name="description" content="텍스트 설명으로부터 논문용 학술 다이어그램과 통계 그래프를 자동 생성하는 AI 도구">
       
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/BorisChernyTips/topic/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/OpenClaw_Skills/paper-banana/topic/">
       
       
-        <link rel="prev" href="../../Karpathy/topic/">
+        <link rel="prev" href="../../research-to-practice/topic/">
       
       
-        <link rel="next" href="../../AntigravityKit/topic/">
+        <link rel="next" href="../../../MedGemma/topic/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Boris Cherny Tips - 구름이의 공부노트</title>
+        <title>Paper Banana - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#boris-cherny-13-ai" class="md-skip">
+        <a href="#paper-banana" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boris Cherny Tips
+              Paper Banana
             
           </span>
         </div>
@@ -225,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -242,11 +242,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Agentic_Workflow/topic/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
   
@@ -262,13 +264,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Karpathy/topic/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Karpathy/topic/" class="md-tabs__link">
           
   
   
@@ -288,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AI_News/topic/" class="md-tabs__link">
+        <a href="../../../AI_News/topic/" class="md-tabs__link">
           
   
   
@@ -315,7 +315,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AI_Hub_Datasets/topic/" class="md-tabs__link">
+        <a href="../../../AI_Hub_Datasets/topic/" class="md-tabs__link">
           
   
   
@@ -352,7 +352,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -382,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -406,26 +406,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -443,7 +448,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -461,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
         
   
   
@@ -493,26 +498,31 @@
                 
   
   
+    
   
   
+  
     
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   
@@ -530,7 +540,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -548,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OpenClaw_Skills/research-to-practice/topic/" class="md-nav__link">
+      <a href="../../research-to-practice/topic/" class="md-nav__link">
         
   
   
@@ -556,509 +566,6 @@
     
   
     Research to Practice
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../OpenClaw_Skills/paper-banana/topic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Paper Banana
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MedGemma
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    MedGemma
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/topic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    MedGemma
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/01_overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Quick Reference
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/03_finetuning/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fine-tuning Guide
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    DICOM Integration
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EHR Navigator
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/06_notebooks/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Notebooks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Challenge Projects
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ONNX_Study/topic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ONNX Study
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Prompt_Engineering/topic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Prompt Engineering
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    📚 Learning Resources
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    📚 Learning Resources
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Karpathy/topic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Karpathy
   
 
     
@@ -1102,7 +609,7 @@
   <span class="md-ellipsis">
     
   
-    Boris Cherny Tips
+    Paper Banana
   
 
     
@@ -1112,7 +619,7 @@
     
   
   
-    <span class="md-status md-status--🟠 In-Progress"></span>
+    <span class="md-status md-status--🟢 Active"></span>
   
 
   
@@ -1127,7 +634,7 @@
   <span class="md-ellipsis">
     
   
-    Boris Cherny Tips
+    Paper Banana
   
 
     
@@ -1137,7 +644,7 @@
     
   
   
-    <span class="md-status md-status--🟠 In-Progress"></span>
+    <span class="md-status md-status--🟢 Active"></span>
   
 
   
@@ -1160,86 +667,354 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#body" class="md-nav__link">
+  <a href="#learning-objectives" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 상세 내용 (Body)
+        📚 학습 목표 (Learning Objectives)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📝 상세 내용 (Body)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curriculum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-do-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 To-Do &amp; Progress
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📅 실습/공부 이력
+        📖 참고 자료
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-do-list-progress-tracker" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 To-Do List (Progress Tracker)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#knowledge-map" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📂 지식 맵 (Knowledge Map)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📂 지식 맵 (Knowledge Map)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 원본 소스 (Sources)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#study-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 학습 자료 (Study Assets)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    MedGemma
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MedGemma
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/01_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/03_finetuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine-tuning Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DICOM Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EHR Navigator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/06_notebooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Challenge Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1253,7 +1028,206 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AntigravityKit/topic/" class="md-nav__link">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ONNX Study
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompt Engineering
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Learning Resources
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📚 Learning Resources
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Karpathy/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Karpathy
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟢 Active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../BorisChernyTips/topic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boris Cherny Tips
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--🟠 In-Progress"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AntigravityKit/topic/" class="md-nav__link">
         
   
   
@@ -1347,7 +1321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_News/topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -1382,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Night_Study/topic/" class="md-nav__link">
+      <a href="../../../Night_Study/topic/" class="md-nav__link">
         
   
   
@@ -1528,7 +1502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/topic/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/topic/" class="md-nav__link">
         
   
   
@@ -1563,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
         
   
   
@@ -1591,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
         
   
   
@@ -1654,80 +1628,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#body" class="md-nav__link">
+  <a href="#learning-objectives" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 상세 내용 (Body)
+        📚 학습 목표 (Learning Objectives)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📝 상세 내용 (Body)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curriculum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-do-progress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 To-Do &amp; Progress
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📅 실습/공부 이력
+        📖 참고 자료
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-do-list-progress-tracker" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 To-Do List (Progress Tracker)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#knowledge-map" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📂 지식 맵 (Knowledge Map)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="📂 지식 맵 (Knowledge Map)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 원본 소스 (Sources)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#study-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📖 학습 자료 (Study Assets)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1751,31 +1691,39 @@
   
 
 
-<h1 id="boris-cherny-13-ai">Boris Cherny의 13가지 AI 엔지니어링 팁 상세 가이드<a class="headerlink" href="#boris-cherny-13-ai" title="Permanent link">&para;</a></h1>
-<h2 id="body">📝 상세 내용 (Body)<a class="headerlink" href="#body" title="Permanent link">&para;</a></h2>
-<p>Boris Cherny는 Anthropic에서 Claude Code를 개발하며 주당 100개 이상의 PR을 처리하는 경이로운 생산성을 보여줌. 그의 워크플로우 핵심은 '에이전트를 지휘하는 지휘자'로서의 관점임.</p>
-<h3 id="_1">📅 실습/공부 이력<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h1 id="paper-banana">Paper Banana<a class="headerlink" href="#paper-banana" title="Permanent link">&para;</a></h1>
+<h2 id="learning-objectives">📚 학습 목표 (Learning Objectives)<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>PaperBanana 이해</strong>: VLM + Image Generation 기반 다이어그램 생성 원리</li>
+<li><strong>CLI 사용법</strong>: generate, plot, evaluate 명령어 활용</li>
+<li><strong>실전 적용</strong>: Medical Report Converter, PhiGuard V3 파이프라인 시각화</li>
+<li><strong>API 키 관리</strong>: Google Gemini Pro 설정 및 할당량 관리</li>
+</ol>
+<h2 id="curriculum">🗺️ 커리큘럼 &amp; 목차 (Curriculum)<a class="headerlink" href="#curriculum" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>2026-02-02</strong>: Session 1 진행. 에이전트의 '오지랖' 관찰 및 <code>CLAUDE.md</code>를 통한 제어 실습. (참고: <code>개인/Subject/Education/Karpathy_HandsOn_Guide.md</code>)</li>
-<li><strong>2026-02-03</strong>: Session 2 완료. Surgical Coding 기법 실습 및 마스터 AGENT.md 자동 주입 시스템 구축. (<a href="../notes/2026-02-03_Surgical_Coding_and_Automation/">공부노트</a>)</li>
+<li><strong>Phase 1</strong>: <a href="../notes/education-guide/#1-개요">개요 및 작동 원리</a></li>
+<li><strong>Phase 2</strong>: <a href="../notes/education-guide/#3-스킬-사용법">설치 및 설정</a></li>
+<li><strong>Phase 3</strong>: <a href="../notes/education-guide/#4-실제-예시">실제 예시 - 다이어그램 생성</a></li>
+<li><strong>Phase 4</strong>: <a href="../notes/education-guide/#5-트러블슈팅">트러블슈팅 - API 키 할당량</a></li>
+<li><strong>Phase 5</strong>: <a href="../notes/education-guide/#6-확장-아이디어">확장 아이디어</a></li>
 </ul>
-<h2 id="to-do-list-progress-tracker">🚀 To-Do List (Progress Tracker)<a class="headerlink" href="#to-do-list-progress-tracker" title="Permanent link">&para;</a></h2>
+<h2 id="to-do-progress">🚀 To-Do &amp; Progress<a class="headerlink" href="#to-do-progress" title="Permanent link">&para;</a></h2>
 <ul>
-<li>[x] Session 1: 에이전트 오지랖 관찰 및 가이드라인 주입 실습</li>
-<li>[x] Session 2: Surgical Coding (외과 수술식 수정) 기법 숙달 (2026-02-03)</li>
-<li>[ ] Session 3: 5-10개 병렬 에이전트 운영 전략 분석</li>
-<li>[ ] Session 4: Git Worktree를 활용한 컨텍스트 스위칭 최적화</li>
-<li>[ ] 나머지 9가지 팁(음성 입력, 테스크 핸드오프 등) 정리 및 실습</li>
+<li>[x] paper-banana 스킬 생성 (2026-03-23)</li>
+<li>[x] Medical Report Converter 다이어그램 생성 (2026-03-23)</li>
+<li>[x] PhiGuard V3 파이프라인 다이어그램 생성 (2026-03-23)</li>
+<li>[x] 교육자료 작성 (2026-03-23)</li>
+<li>[ ] 다른 프로젝트 파이프라인 시각화</li>
+<li>[ ] KIMES 2026 발표 자료용 그림 생성</li>
 </ul>
-<h2 id="knowledge-map">📂 지식 맵 (Knowledge Map)<a class="headerlink" href="#knowledge-map" title="Permanent link">&para;</a></h2>
-<h3 id="sources">🔗 원본 소스 (Sources)<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h3>
+<h2 id="_1">📖 참고 자료<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://venturebeat.com/technology/the-creator-of-claude-code-just-revealed-his-workflow-and-developers-are">VentureBeat: Claude Code Creator Workflow</a></li>
-<li><a href="https://medium.com/vibe-coding/claude-codes-creator-100-prs-a-week-his-setup-will-surprise-you-7d6939c99f2b">Medium: 13 step breakdown by Boris Cherny</a></li>
-</ul>
-<h3 id="study-assets">📖 학습 자료 (Study Assets)<a class="headerlink" href="#study-assets" title="Permanent link">&para;</a></h3>
-<ul>
-<li><a href="../notes/2026-02-03_Surgical_Coding_and_Automation/">Surgical Coding and Automation</a></li>
+<li>GitHub: https://github.com/llmsresearch/paperbanana</li>
+<li>스킬 경로: <code>/home/jkuhm/clawd/skills/paper-banana/</code></li>
+<li>교육자료: <a href="../notes/education-guide/">education-guide.md</a></li>
+<li>생성된 다이어그램:</li>
+<li><a href="../../skills/paper-banana/test-output/run_20260323_165602_37dc61/final_output.png">Medical Report Converter Pipeline</a></li>
+<li><a href="../../skills/paper-banana/test-output/run_20260323_170059_bb067d/final_output.png">PhiGuard V3 Pipeline</a></li>
 </ul>
 
 
@@ -1835,10 +1783,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

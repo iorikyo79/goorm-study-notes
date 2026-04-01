@@ -6,35 +6,29 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="딥러닝 모델의 경량화, 가속화, 호환성을 위한 ONNX(Open Neural Network Exchange)의 원리부터 심화 최적화 기법(양자화)까지 체계적으로 학습함.">
       
       
-      
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/topic/">
-      
-      
-        <link rel="prev" href="../../MedGemma/notes/07_challenge_projects/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Ki67_SeedMap_Caching/notes/03_gpu_seed_map/">
       
       
-        <link rel="next" href="../../Prompt_Engineering/topic/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>ONNX Study - 구름이의 공부노트</title>
+        <title>GPU Seed Map 연산 - 구름이의 공부노트</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +47,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#onnx-deep-dive-from-concept-to-optimization" class="md-skip">
+        <a href="#gpu-seed-map" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -92,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="상단/헤더">
-    <a href="../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-header__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ONNX Study
+              GPU Seed Map 연산
             
           </span>
         </div>
@@ -225,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -242,13 +236,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Agentic_Workflow/topic/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
   
@@ -268,7 +260,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Karpathy/topic/" class="md-tabs__link">
+        <a href="../../../Karpathy/topic/" class="md-tabs__link">
           
   
   
@@ -288,7 +280,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AI_News/topic/" class="md-tabs__link">
+        <a href="../../../AI_News/topic/" class="md-tabs__link">
           
   
   
@@ -315,7 +307,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../AI_Hub_Datasets/topic/" class="md-tabs__link">
+        <a href="../../../AI_Hub_Datasets/topic/" class="md-tabs__link">
           
   
   
@@ -352,7 +344,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
+    <a href="../../.." title="구름이의 공부노트" class="md-nav__button md-logo" aria-label="구름이의 공부노트" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -382,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -406,31 +398,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -448,7 +435,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -466,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Agentic_Workflow/topic/" class="md-nav__link">
+      <a href="../../../Agentic_Workflow/topic/" class="md-nav__link">
         
   
   
@@ -507,20 +494,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -556,7 +540,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OpenClaw_Skills/research-to-practice/topic/" class="md-nav__link">
+      <a href="../../../OpenClaw_Skills/research-to-practice/topic/" class="md-nav__link">
         
   
   
@@ -591,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OpenClaw_Skills/paper-banana/topic/" class="md-nav__link">
+      <a href="../../../OpenClaw_Skills/paper-banana/topic/" class="md-nav__link">
         
   
   
@@ -626,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OpenClaw_Skills/harness-100-selector/topic/" class="md-nav__link">
+      <a href="../../../OpenClaw_Skills/harness-100-selector/topic/" class="md-nav__link">
         
   
   
@@ -675,20 +659,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -724,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/topic/" class="md-nav__link">
+      <a href="../../../MedGemma/topic/" class="md-nav__link">
         
   
   
@@ -759,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/01_overview/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/01_overview/" class="md-nav__link">
         
   
   
@@ -787,7 +768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/02_quick_reference/" class="md-nav__link">
         
   
   
@@ -815,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/03_finetuning/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/03_finetuning/" class="md-nav__link">
         
   
   
@@ -843,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/04_dicom_integration/" class="md-nav__link">
         
   
   
@@ -871,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/05_ehr_navigator/" class="md-nav__link">
         
   
   
@@ -899,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/06_notebooks/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/06_notebooks/" class="md-nav__link">
         
   
   
@@ -927,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
+      <a href="../../../MedGemma/notes/07_challenge_projects/" class="md-nav__link">
         
   
   
@@ -960,44 +941,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ONNX Study
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -1020,120 +967,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 학습 목표 (Learning Objectives)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#curriculum" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#phase-1-onnx-the-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 1: ONNX의 본질과 구조 (The Core)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-2-the-art-of-conversion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 2: 변환의 기술 (The Art of Conversion)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-3-onnx-runtime-ort-execution-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 3: ONNX Runtime (ORT) &amp; Execution Providers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-4-optimization-quantization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-5-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 5: 디버깅과 커스텀 (Advanced)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 관련 프로젝트
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1146,7 +979,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Prompt_Engineering/topic/" class="md-nav__link">
+      <a href="../../../Prompt_Engineering/topic/" class="md-nav__link">
         
   
   
@@ -1240,7 +1073,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Karpathy/topic/" class="md-nav__link">
+      <a href="../../../Karpathy/topic/" class="md-nav__link">
         
   
   
@@ -1275,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../BorisChernyTips/topic/" class="md-nav__link">
+      <a href="../../../BorisChernyTips/topic/" class="md-nav__link">
         
   
   
@@ -1310,7 +1143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AntigravityKit/topic/" class="md-nav__link">
+      <a href="../../../AntigravityKit/topic/" class="md-nav__link">
         
   
   
@@ -1404,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_News/topic/" class="md-nav__link">
+      <a href="../../../AI_News/topic/" class="md-nav__link">
         
   
   
@@ -1439,7 +1272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Ki67_SeedMap_Caching/topic/" class="md-nav__link">
+      <a href="../../topic/" class="md-nav__link">
         
   
   
@@ -1585,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/topic/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/topic/" class="md-nav__link">
         
   
   
@@ -1620,7 +1453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/01_overview/" class="md-nav__link">
         
   
   
@@ -1648,7 +1481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
+      <a href="../../../AI_Hub_Datasets/notes/02_medical_datasets/" class="md-nav__link">
         
   
   
@@ -1711,10 +1544,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 학습 목표 (Learning Objectives)
+        1. 동기
       
     </span>
   </a>
@@ -1722,22 +1555,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#curriculum" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+        2. 구현
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
+    <nav class="md-nav" aria-label="2. 구현">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#phase-1-onnx-the-core" class="md-nav__link">
+  <a href="#2-1-cpu-gpu" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 1: ONNX의 본질과 구조 (The Core)
+        2-1. CPU → GPU 변환 매핑
       
     </span>
   </a>
@@ -1745,43 +1578,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-2-the-art-of-conversion" class="md-nav__link">
+  <a href="#2-2-gpu-distance-transform" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 2: 변환의 기술 (The Art of Conversion)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-3-onnx-runtime-ort-execution-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 3: ONNX Runtime (ORT) &amp; Execution Providers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-4-optimization-quantization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-5-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 5: 디버깅과 커스텀 (Advanced)
+        2-2. GPU Distance Transform
       
     </span>
   </a>
@@ -1794,10 +1594,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 관련 프로젝트
+        3. 결과
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. GPU 전환의 한계
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 권장사항
       
     </span>
   </a>
@@ -1824,53 +1646,78 @@
   
 
 
-<h1 id="onnx-deep-dive-from-concept-to-optimization">ONNX Deep Dive: From Concept to Optimization<a class="headerlink" href="#onnx-deep-dive-from-concept-to-optimization" title="Permanent link">&para;</a></h1>
-<h2 id="learning-objectives">📚 학습 목표 (Learning Objectives)<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
-<p>단순히 라이브러리를 호출(<code>export</code>)하는 수준을 넘어, <strong>"왜 빨라지는가?", "내부적으로 어떤 일이 일어나는가?"</strong>를 이해하고, 변환 과정에서 발생하는 트러블슈팅 능력과 커스텀 최적화 능력을 갖추는 것을 목표로 합니다.</p>
-<h2 id="curriculum">🗺️ 커리큘럼 &amp; 목차 (Curriculum)<a class="headerlink" href="#curriculum" title="Permanent link">&para;</a></h2>
-<h3 id="phase-1-onnx-the-core">Phase 1: ONNX의 본질과 구조 (The Core)<a class="headerlink" href="#phase-1-onnx-the-core" title="Permanent link">&para;</a></h3>
+<h1 id="gpu-seed-map">GPU Seed Map 연산<a class="headerlink" href="#gpu-seed-map" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 동기<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>Seed map 캐싱의 cold start 비용을 줄이기 위해 scipy 연산을 PyTorch GPU로 전환.</p>
+<h2 id="2">2. 구현<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="2-1-cpu-gpu">2-1. CPU → GPU 변환 매핑<a class="headerlink" href="#2-1-cpu-gpu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>CPU (scipy/numpy)</th>
+<th>GPU (PyTorch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>scipy.ndimage.convolve</code></td>
+<td><code>F.conv2d</code> (2D convolution)</td>
+</tr>
+<tr>
+<td><code>scipy.ndimage.distance_transform_edt</code></td>
+<td>Custom GPU approximation</td>
+</tr>
+<tr>
+<td><code>np.log</code> × 6</td>
+<td><code>torch.log</code> × 6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-2-gpu-distance-transform">2-2. GPU Distance Transform<a class="headerlink" href="#2-2-gpu-distance-transform" title="Permanent link">&para;</a></h3>
+<p>scipy의 <code>distance_transform_edt</code>에 대한 GPU 근사 구현:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">_gpu_distance_transform</span><span class="p">(</span><span class="n">binary_mask</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># Iterative dilation-based approximation</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="c1"># scipy의 정확한 EDT와 다르지만 캐싱 목적에는 충분</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="o">...</span>
+</code></pre></div></p>
+<h2 id="3">3. 결과<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>상태</th>
+<th>CPU Cold</th>
+<th>GPU Cold</th>
+<th>Warm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wall Time</td>
+<td>154.0s</td>
+<td>152.3s</td>
+<td>48.0s</td>
+</tr>
+<tr>
+<td>Speedup</td>
+<td>2.58x</td>
+<td>2.59x</td>
+<td>2.41x</td>
+</tr>
+</tbody>
+</table>
+<p><strong>결론</strong>: GPU 연산은 cold start에서 <strong>~1.1% 개선</strong>에 그침.
+캐시가 한 번 생성되면 warm 상태에서는 CPU/GPU 차이 없음.</p>
+<h2 id="4-gpu">4. GPU 전환의 한계<a class="headerlink" href="#4-gpu" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>scipy → PyTorch 변환의 정확도 차이</strong>: EDT 근사는 정확도 손실 가능</li>
+<li><strong>이미 캐싱이 해결</strong>: warm 상태에서는 계산 자체를 안 하므로 GPU 연산 불필요</li>
+<li><strong>구현 복잡도</strong>: GPU 버전 유지보수 비용 &gt; 1.1% 개선 효과</li>
+</ol>
+<h2 id="5">5. 권장사항<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="../notes/01_Concept_and_Architecture/">01. Concept &amp; Architecture</a></strong><ul>
-<li>ONNX가 무엇이며 왜 필요한가? (Intermediate Representation, IR)</li>
-<li>Computation Graph, Nodes, Operators, Opset Versioning.</li>
-</ul>
-</li>
-</ul>
-<h3 id="phase-2-the-art-of-conversion">Phase 2: 변환의 기술 (The Art of Conversion)<a class="headerlink" href="#phase-2-the-art-of-conversion" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="../notes/02_Tracing_and_Export/">02. Tracing &amp; Export</a></strong><ul>
-<li>Tracing vs Scripting: PyTorch 모델을 ONNX로 변환하는 두 가지 메커니즘.</li>
-<li>Dynamic Axes: 가변 입력(Batch, Sequence Length) 처리 방법.</li>
-</ul>
-</li>
-</ul>
-<h3 id="phase-3-onnx-runtime-ort-execution-providers">Phase 3: ONNX Runtime (ORT) &amp; Execution Providers<a class="headerlink" href="#phase-3-onnx-runtime-ort-execution-providers" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="../notes/03_Runtime_and_Providers/">03. Runtime &amp; Providers</a></strong><ul>
-<li>ORT Architecture: 추론 엔진이 그래프를 최적화하는 과정.</li>
-<li>Execution Providers (EP): CPU, CUDA, TensorRT 등 하드웨어 가속기 연결.</li>
-</ul>
-</li>
-</ul>
-<h3 id="phase-4-optimization-quantization">Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)<a class="headerlink" href="#phase-4-optimization-quantization" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="../notes/04_Optimization_and_Quantization/">04. Optimization &amp; Quantization</a></strong><ul>
-<li>Graph Optimization: Constant Folding, Operator Fusion.</li>
-<li>Quantization: FP32 → INT8 변환의 원리와 Dynamic/Static Quantization 실습.</li>
-</ul>
-</li>
-</ul>
-<h3 id="phase-5-advanced">Phase 5: 디버깅과 커스텀 (Advanced)<a class="headerlink" href="#phase-5-advanced" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong><a href="../notes/05_Advanced_Topics/">05. Advanced Topics</a></strong><ul>
-<li>Troubleshooting: 지원하지 않는 연산자(Unsupported Operator) 해결법.</li>
-<li>Custom Ops: ONNX 표준에 없는 연산자 직접 구현하기.</li>
-</ul>
-</li>
-</ul>
-<h2 id="_1">🔗 관련 프로젝트<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>PhiGuard V3</strong>: [실습 대상] GLiNER 모델 ONNX 변환 및 최적화.</li>
+<li><strong>운영 환경</strong>: CPU 캐싱만 사용 (단순, 안정적)</li>
+<li><strong>대규모 cold start</strong>: GPU 고려하되, ROI가 매우 낮음</li>
+<li><strong>캐시 무효화가 잦은 경우</strong>: GPU 연산이 더 유의미할 수 있음</li>
 </ul>
 
 
@@ -1878,9 +1725,6 @@
 
 
 
-
-  
-  
 
 
 
@@ -1930,10 +1774,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

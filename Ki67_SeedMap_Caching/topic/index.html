@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="딥러닝 모델의 경량화, 가속화, 호환성을 위한 ONNX(Open Neural Network Exchange)의 원리부터 심화 최적화 기법(양자화)까지 체계적으로 학습함.">
+        <meta name="description" content="Ki-67 Training Speed Optimization: Seed Map Disk Caching으로 2.67x 속도 향상">
       
       
       
-        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/ONNX_Study/topic/">
+        <link rel="canonical" href="https://iorikyo79.github.io/goorm-study-notes/Ki67_SeedMap_Caching/topic/">
       
       
-        <link rel="prev" href="../../MedGemma/notes/07_challenge_projects/">
+        <link rel="prev" href="../../AI_News/topic/">
       
       
-        <link rel="next" href="../../Prompt_Engineering/topic/">
+        <link rel="next" href="../../AI_Hub_Datasets/topic/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>ONNX Study - 구름이의 공부노트</title>
+        <title>Ki-67 Seed Map Caching - 구름이의 공부노트</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#onnx-deep-dive-from-concept-to-optimization" class="md-skip">
+        <a href="#ki-67-seed-map-caching" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ONNX Study
+              Ki-67 Seed Map Caching
             
           </span>
         </div>
@@ -242,12 +242,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../Agentic_Workflow/topic/" class="md-tabs__link">
           
   
@@ -284,10 +282,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../AI_News/topic/" class="md-tabs__link">
           
   
@@ -406,31 +406,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -448,7 +443,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -507,20 +502,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -675,20 +667,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -960,44 +949,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    ONNX Study
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--🟢 Active"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ONNX_Study/topic/" class="md-nav__link">
         
   
   
@@ -1020,120 +975,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="목차">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      목차
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 학습 목표 (Learning Objectives)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#curriculum" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#phase-1-onnx-the-core" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 1: ONNX의 본질과 구조 (The Core)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-2-the-art-of-conversion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 2: 변환의 기술 (The Art of Conversion)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-3-onnx-runtime-ort-execution-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 3: ONNX Runtime (ORT) &amp; Execution Providers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-4-optimization-quantization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-5-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 5: 디버깅과 커스텀 (Advanced)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔗 관련 프로젝트
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1349,26 +1190,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -1386,7 +1232,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1436,10 +1282,44 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Ki67_SeedMap_Caching/topic/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ki-67 Seed Map Caching
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--completed"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1462,6 +1342,226 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개요
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        배경
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="배경">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        병목 원인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        실험 환경
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        핵심 결과
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="핵심 결과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        속도 최적화 실험 결과
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        결론
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        학습 내용
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="학습 내용">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 병목 분석 방법론
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-seed-map-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Seed Map Caching 구현
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gpu-seed-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. GPU Seed Map 연산
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 실무 교훈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        적용된 코드 변경
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="적용된 코드 변경">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcdatasetstrain_ki67py" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/datasets/train_ki67.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcdatasetsutilspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/datasets/utils.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        참고 자료
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1711,10 +1811,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📚 학습 목표 (Learning Objectives)
+        개요
       
     </span>
   </a>
@@ -1722,22 +1822,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#curriculum" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🗺️ 커리큘럼 &amp; 목차 (Curriculum)
+        배경
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🗺️ 커리큘럼 &amp; 목차 (Curriculum)">
+    <nav class="md-nav" aria-label="배경">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#phase-1-onnx-the-core" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 1: ONNX의 본질과 구조 (The Core)
+        병목 원인
       
     </span>
   </a>
@@ -1745,43 +1845,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#phase-2-the-art-of-conversion" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 2: 변환의 기술 (The Art of Conversion)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-3-onnx-runtime-ort-execution-providers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 3: ONNX Runtime (ORT) &amp; Execution Providers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-4-optimization-quantization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phase-5-advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Phase 5: 디버깅과 커스텀 (Advanced)
+        실험 환경
       
     </span>
   </a>
@@ -1794,10 +1861,149 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 관련 프로젝트
+        핵심 결과
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="핵심 결과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        속도 최적화 실험 결과
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        결론
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        학습 내용
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="학습 내용">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 병목 분석 방법론
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-seed-map-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Seed Map Caching 구현
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gpu-seed-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. GPU Seed Map 연산
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 실무 교훈
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        적용된 코드 변경
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="적용된 코드 변경">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srcdatasetstrain_ki67py" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/datasets/train_ki67.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#srcdatasetsutilspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        src/datasets/utils.py
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        참고 자료
       
     </span>
   </a>
@@ -1824,53 +2030,163 @@
   
 
 
-<h1 id="onnx-deep-dive-from-concept-to-optimization">ONNX Deep Dive: From Concept to Optimization<a class="headerlink" href="#onnx-deep-dive-from-concept-to-optimization" title="Permanent link">&para;</a></h1>
-<h2 id="learning-objectives">📚 학습 목표 (Learning Objectives)<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
-<p>단순히 라이브러리를 호출(<code>export</code>)하는 수준을 넘어, <strong>"왜 빨라지는가?", "내부적으로 어떤 일이 일어나는가?"</strong>를 이해하고, 변환 과정에서 발생하는 트러블슈팅 능력과 커스텀 최적화 능력을 갖추는 것을 목표로 합니다.</p>
-<h2 id="curriculum">🗺️ 커리큘럼 &amp; 목차 (Curriculum)<a class="headerlink" href="#curriculum" title="Permanent link">&para;</a></h2>
-<h3 id="phase-1-onnx-the-core">Phase 1: ONNX의 본질과 구조 (The Core)<a class="headerlink" href="#phase-1-onnx-the-core" title="Permanent link">&para;</a></h3>
+<h1 id="ki-67-seed-map-caching">Ki-67 Seed Map Caching<a class="headerlink" href="#ki-67-seed-map-caching" title="Permanent link">&para;</a></h1>
+<h2 id="_1">개요<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Ki-67 디지털 병리 모델(PyTorch Lightning) 학습 속도 최적화 프로젝트. 
+CPU 기반 데이터 증강(<code>add_seed_map</code>)이 병목으로 확인되어, seed map 디스크 캐싱으로 <strong>2.67x 학습 속도 향상</strong> 달성.</p>
+<h2 id="_2">배경<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">병목 원인<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../notes/01_Concept_and_Architecture/">01. Concept &amp; Architecture</a></strong><ul>
-<li>ONNX가 무엇이며 왜 필요한가? (Intermediate Representation, IR)</li>
-<li>Computation Graph, Nodes, Operators, Opset Versioning.</li>
+<li><code>add_seed_map</code> 함수에서 <code>scipy.convolve</code>, <code>distance_transform_edt</code>, <code>np.log x6</code> 연산을 매 iteration, 매 epoch 반복</li>
+<li>GPU 연산은 ~5ms/iter인데 CPU 증강이 ~250ms/iter 소요</li>
+<li>RTX 4090의 <strong>80% 이상 시간을 데이터 대기</strong>로 낭비</li>
 </ul>
-</li>
-</ul>
-<h3 id="phase-2-the-art-of-conversion">Phase 2: 변환의 기술 (The Art of Conversion)<a class="headerlink" href="#phase-2-the-art-of-conversion" title="Permanent link">&para;</a></h3>
+<h3 id="_4">실험 환경<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU</td>
+<td>NVIDIA RTX 4090 (24GB)</td>
+</tr>
+<tr>
+<td>Framework</td>
+<td>PyTorch 1.12.1 + Lightning 1.9.2</td>
+</tr>
+<tr>
+<td>Data</td>
+<td>Ki67+ERPR_260327_train (subset)</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>ResNet50+FPN+SpatialEmb (39.3M params)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">핵심 결과<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">속도 최적화 실험 결과<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>실험</th>
+<th>Wall Time (s)</th>
+<th>Speed (it/s)</th>
+<th>Speedup</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Baseline (FP32)</td>
+<td>115.3</td>
+<td>3.69</td>
+<td>1.00x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>AMP (FP16)</td>
+<td>117.2</td>
+<td>3.65</td>
+<td>0.99x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>cuDNN Benchmark</td>
+<td>118.6</td>
+<td>3.65</td>
+<td>0.97x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Batch=4</td>
+<td>116.4</td>
+<td>1.84</td>
+<td>0.99x</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Batch=8+AMP</td>
+<td>115.1</td>
+<td>2.20</td>
+<td>1.00x</td>
+</tr>
+<tr>
+<td>1</td>
+<td>pin_memory+persistent_workers</td>
+<td>117.7</td>
+<td>3.57</td>
+<td>0.98x</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Seed Map Caching (cold)</strong></td>
+<td><strong>154.0</strong></td>
+<td><strong>9.52</strong></td>
+<td><strong>2.58x</strong></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Seed Map Caching (warm)</strong></td>
+<td><strong>47.9</strong></td>
+<td><strong>9.86</strong></td>
+<td><strong>2.67x</strong> ✅</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPU Seed (cold)</td>
+<td>152.3</td>
+<td>9.43</td>
+<td>2.59x</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GPU Seed (warm)</td>
+<td>48.0</td>
+<td>9.70</td>
+<td>2.41x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">결론<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../notes/02_Tracing_and_Export/">02. Tracing &amp; Export</a></strong><ul>
-<li>Tracing vs Scripting: PyTorch 모델을 ONNX로 변환하는 두 가지 메커니즘.</li>
-<li>Dynamic Axes: 가변 입력(Batch, Sequence Length) 처리 방법.</li>
+<li><strong>GPU 최적화 (AMP, cuDNN, batch size)</strong> → 모두 0% 개선 (병목이 GPU가 아님)</li>
+<li><strong>DataLoader 설정 (pin_memory, persistent_workers)</strong> → 0% 개선</li>
+<li><strong>Seed map 디스크 캐싱</strong> → <strong>2.67x 향상</strong> 🎉 (최초 1회만 cold start 비용)</li>
 </ul>
-</li>
-</ul>
-<h3 id="phase-3-onnx-runtime-ort-execution-providers">Phase 3: ONNX Runtime (ORT) &amp; Execution Providers<a class="headerlink" href="#phase-3-onnx-runtime-ort-execution-providers" title="Permanent link">&para;</a></h3>
+<h2 id="_8">학습 내용<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="1"><a href="../notes/01_bottleneck_analysis/">1. 병목 분석 방법론</a><a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>GPU/CPU 병목 식별: 프로파일링으로 데이터 파이프라인 최적화 포인트 찾기</p>
+<h3 id="2-seed-map-caching"><a href="../notes/02_seed_map_caching/">2. Seed Map Caching 구현</a><a class="headerlink" href="#2-seed-map-caching" title="Permanent link">&para;</a></h3>
+<p><code>.seed.npy</code> 파일 기반 디스크 캐싱 전략과 구현 상세</p>
+<h3 id="3-gpu-seed-map"><a href="../notes/03_gpu_seed_map/">3. GPU Seed Map 연산</a><a class="headerlink" href="#3-gpu-seed-map" title="Permanent link">&para;</a></h3>
+<p>PyTorch 기반 GPU distance transform 구현과 한계 분석</p>
+<h3 id="4"><a href="../notes/04_lessons_learned/">4. 실무 교훈</a><a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>Claude Code와 협업 시 권한 관리, tmux 제어 팁</p>
+<h2 id="_9">적용된 코드 변경<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="srcdatasetstrain_ki67py"><code>src/datasets/train_ki67.py</code><a class="headerlink" href="#srcdatasetstrain_ki67py" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../notes/03_Runtime_and_Providers/">03. Runtime &amp; Providers</a></strong><ul>
-<li>ORT Architecture: 추론 엔진이 그래프를 최적화하는 과정.</li>
-<li>Execution Providers (EP): CPU, CUDA, TensorRT 등 하드웨어 가속기 연결.</li>
+<li><code>pin_memory=True, persistent_workers=True</code> 추가</li>
+<li><code>_load_data()</code>에 <code>.seed.npy</code> 캐시 로드 로직 추가</li>
 </ul>
-</li>
-</ul>
-<h3 id="phase-4-optimization-quantization">Phase 4: 최적화와 양자화 (Optimization &amp; Quantization)<a class="headerlink" href="#phase-4-optimization-quantization" title="Permanent link">&para;</a></h3>
+<h3 id="srcdatasetsutilspy"><code>src/datasets/utils.py</code><a class="headerlink" href="#srcdatasetsutilspy" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../notes/04_Optimization_and_Quantization/">04. Optimization &amp; Quantization</a></strong><ul>
-<li>Graph Optimization: Constant Folding, Operator Fusion.</li>
-<li>Quantization: FP32 → INT8 변환의 원리와 Dynamic/Static Quantization 실습.</li>
+<li><code>_compute_seed_map()</code> — 공통 seed map 계산 함수</li>
+<li><code>_compute_seed_map_gpu()</code> — PyTorch GPU 버전</li>
+<li><code>_gpu_distance_transform()</code> — GPU distance transform 근사</li>
+<li><code>add_seed_map()</code> — 캐시 경로 스킵 로직</li>
 </ul>
-</li>
-</ul>
-<h3 id="phase-5-advanced">Phase 5: 디버깅과 커스텀 (Advanced)<a class="headerlink" href="#phase-5-advanced" title="Permanent link">&para;</a></h3>
+<h2 id="_10">참고 자료<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong><a href="../notes/05_Advanced_Topics/">05. Advanced Topics</a></strong><ul>
-<li>Troubleshooting: 지원하지 않는 연산자(Unsupported Operator) 해결법.</li>
-<li>Custom Ops: ONNX 표준에 없는 연산자 직접 구현하기.</li>
-</ul>
-</li>
-</ul>
-<h2 id="_1">🔗 관련 프로젝트<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>PhiGuard V3</strong>: [실습 대상] GLiNER 모델 ONNX 변환 및 최적화.</li>
+<li>프로젝트 위치: <code>/mnt/Disk1/source/DP_IHC/Ki67_pytorchlightning/</code></li>
+<li>실험 리포트: <code>_workspace/experiment_report.md</code></li>
+<li>백업: <code>_workspace/backup/</code></li>
+<li>MLFlow: <code>mlflow ui --backend-store-uri file:///mnt/Disk1/source/DP_IHC/Ki67_pytorchlightning/mlruns</code></li>
 </ul>
 
 
